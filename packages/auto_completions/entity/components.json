@@ -179,12 +179,7 @@
 				"feed_items": {
 					"$dynamic.list.next_index": {
 						"item": {
-							"@import.value": "$general.item_identifier",
-							"any_tag": {
-								"$dynamic.list.next_index": {
-									"@meta": { "is_value": true }
-								}
-							}
+							"@import.value": "$general.item_identifier"
 						},
 						"growth": "$general.decimal"
 					}
@@ -349,7 +344,9 @@
 						"@import.value": "$general.item_identifier",
 						"any_tag": {
 							"$dynamic.list.next_index": {
-								"@meta": { "is_value": true }
+								"@meta": {
+									"is_value": true
+								}
 							}
 						}
 					}
@@ -443,7 +440,9 @@
 						"@import.value": "$general.item_identifier",
 						"any_tag": {
 							"$dynamic.list.next_index": {
-								"@meta": { "is_value": true }
+								"@meta": {
+									"is_value": true
+								}
 							}
 						}
 					}
@@ -613,14 +612,22 @@
 		}
 	],
 	"minecraft:dweller": {
-		"dwelling_type": ["village"],
-		"dweller_role": ["hostile", "inhabitant", "defender"],
+		"dwelling_type": [
+			"village"
+		],
+		"dweller_role": [
+			"hostile",
+			"inhabitant",
+			"defender"
+		],
 		"update_interval_base": "$general.number",
 		"update_interval_variant": "$general.number",
 		"can_find_poi": "$general.boolean",
 		"can_migrate": "$general.boolean",
 		"first_founding_reward": "$general.number",
-		"preferred_profession": ["weaponsmith"]
+		"preferred_profession": [
+			"weaponsmith"
+		]
 	},
 	"minecraft:economy_trade_table": {
 		"@meta": {
@@ -685,7 +692,9 @@
 								"@import.value": "$general.item_identifier",
 								"any_tag": {
 									"$dynamic.list.next_index": {
-										"@meta": { "is_value": true }
+										"@meta": {
+											"is_value": true
+										}
 									}
 								}
 							}
@@ -804,7 +813,9 @@
 								"@import.value": "$general.item_identifier",
 								"any_tag": {
 									"$dynamic.list.next_index": {
-										"@meta": { "is_value": true }
+										"@meta": {
+											"is_value": true
+										}
 									}
 								}
 							}
@@ -849,12 +860,7 @@
 				"items": {
 					"$dynamic.list.next_index": {
 						"item": {
-							"@import.value": "$general.item_identifier",
-							"any_tag": {
-								"$dynamic.list.next_index": {
-									"@meta": { "is_value": true }
-								}
-							}
+							"@import.value": "$general.item_identifier"
 						},
 						"heal_amount": "$general.number",
 						"filters": "$entity.filters",
@@ -1468,7 +1474,9 @@
 					"spawn_entity": "$general.entity_identifier",
 					"spawn_event": "$entity.general.event_string",
 					"spawn_item": "$general.item_identifier",
-					"spawn_method": ["born"],
+					"spawn_method": [
+						"born"
+					],
 					"spawn_sound": "$general.sound",
 					"filters": "$entity.filters",
 					"single_use": "$general.boolean"
@@ -1487,7 +1495,9 @@
 						"spawn_entity": "$general.entity_identifier",
 						"spawn_event": "$entity.general.event_string",
 						"spawn_item": "$general.item_identifier",
-						"spawn_method": ["born"],
+						"spawn_method": [
+							"born"
+						],
 						"spawn_sound": "$general.sound",
 						"filters": "$entity.filters",
 						"single_use": "$general.boolean"
@@ -1524,24 +1534,14 @@
 				"auto_reject_items": {
 					"$dynamic.list.next_index": {
 						"item": {
-							"@import.value": "$general.item_identifier",
-							"any_tag": {
-								"$dynamic.list.next_index": {
-									"@meta": { "is_value": true }
-								}
-							}
+							"@import.value": "$general.item_identifier"
 						}
 					}
 				},
 				"feed_items": {
 					"$dynamic.list.next_index": {
 						"item": {
-							"@import.value": "$general.item_identifier",
-							"any_tag": {
-								"$dynamic.list.next_index": {
-									"@meta": { "is_value": true }
-								}
-							}
+							"@import.value": "$general.item_identifier"
 						},
 						"temper_mod": "$general.number"
 					}
