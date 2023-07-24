@@ -1,10 +1,15 @@
 {
 	"module_type": [
 		"data",
+		"script",
 		"resources",
 		"client_data",
 		"interface",
 		"world_template"
 	],
-	"capabilities": ["experimental_custom_ui", "chemistry", "raytraced"]
+	"capabilities": [
+		"experimental_custom_ui",
+		"chemistry",
+		"raytraced"
+	]
 }
