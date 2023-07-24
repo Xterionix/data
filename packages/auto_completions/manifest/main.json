@@ -48,7 +48,8 @@
                 "@meta": {
                     "is_value": true
                 }
-            }
+            },
+            "language": "$manifest.general.script_languages"
         }
     },
     "metadata": {
