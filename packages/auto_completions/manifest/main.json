@@ -34,16 +34,6 @@
             "uuid": "$dynamic.utils.uuid",
             "version": {
                 "$dynamic.list.index_triple": "$general.number"
-            }
-        }
-    },
-    "dependencies": {
-        "$dynamic.list.next_index": {
-            "uuid": "$dynamic.utils.uuid",
-            "module_name": "$manifest.general.script_modules",
-            "version": {
-                "$dynamic.list.index_triple": "$general.number",
-                "$placeholder": "$manifest.general.script_versions"
             },
             "entry": {
                 "@meta": {
@@ -51,6 +41,18 @@
                 }
             },
             "language": "$manifest.general.script_languages"
+        }
+    },
+    "dependencies": {
+        "$dynamic.list.next_index": {
+            "uuid": "$dynamic.utils.uuid",
+            "module_name": "$manifest.general.script_modules",
+            "version": [
+                {
+                    "$dynamic.list.index_triple": "$general.number"
+                },
+                "$manifest.general.script_versions"
+            ]
         }
     },
     "metadata": {
