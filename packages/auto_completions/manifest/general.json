@@ -11,5 +11,12 @@
 		"experimental_custom_ui",
 		"chemistry",
 		"raytraced"
+	],
+	"script_modules": [
+		"@minecraft/server",
+		"@minecraft/server-ui",
+		"@minecraft/server-gametest",
+		"@minecraft/server-admin",
+		"@minecraft/server-net"
 	]
 }
