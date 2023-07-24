@@ -362,20 +362,22 @@
 		"black"
 	],
 	"structures": [
-		"buriedtreasure",
-		"endcity",
+		"ancient_city",
+		"bastion_remnant",
+		"buried_treasure",
+		"end_city",
 		"fortress",
 		"mansion",
 		"mineshaft",
 		"monument",
-		"pillageroutpost",
+		"pillager_outpost",
+		"ruined_portal",
 		"ruins",
 		"shipwreck",
 		"stronghold",
 		"temple",
-		"village",
-		"ancientcity",
-		"bastionremnant"
+		"trail_ruins",
+		"village"
 	],
 	"particle_name": [
 		"mobspellambient",
