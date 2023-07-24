@@ -315,6 +315,7 @@
 		"slot.armor.legs",
 		"slot.chest",
 		"slot.enderchest",
+		"slot.equippable",
 		"slot.hotbar",
 		"slot.inventory",
 		"slot.saddle",
