@@ -192,11 +192,12 @@
 		"@import.value.file_identifier": "($dynamic.setting.project_prefix + $dynamic.current_file_name)"
 	},
 	"inventory_type": [
-		"minecart_chest",
 		"horse",
+		"minecart_chest",
+		"chest_boat",
 		"minecart_hopper",
-		"container",
 		"inventory",
+		"container",
 		"hopper"
 	],
 	"damage_type": [
