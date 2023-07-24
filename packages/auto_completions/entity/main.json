@@ -2,7 +2,9 @@
 	"format_version": "$general.format_version",
 	"minecraft:entity": {
 		"@meta": {
-			"expand_path_exceptions": ["do_not_upgrade"]
+			"expand_path_exceptions": [
+				"do_not_upgrade"
+			]
 		},
 		"do_not_upgrade": {},
 		"description": {
@@ -43,32 +45,27 @@
 					}
 				}
 			],
-			"$versioned_template.properties": [
-				{
-					"$if": "$format_version >= 1.17.0",
-					"$data": {
-						"$placeholder": {
-							"range": {
-								"$dynamic.list.index_pair": {
-									"@meta": {
-										"is_value": true
-									}
-								}
-							},
-							"type" : [
-								"int",
-								"bool",
-								"float",
-								"enum"
-							],
-							"default": {
-								"@meta": {
-									"is_value": true
-								}
-							},
-							"client_sync": "$general.boolean"
+			"properties": [
+				"$placeholder": {
+					"range": {
+						"$dynamic.list.index_pair": {
+							"@meta": {
+								"is_value": true
+							}
 						}
-					}
+					},
+					"type": [
+						"int",
+						"bool",
+						"float",
+						"enum"
+					],
+					"default": {
+						"@meta": {
+							"is_value": true
+						}
+					},
+					"client_sync": "$general.boolean"
 				}
 			]
 		},
@@ -90,8 +87,9 @@
 		"events": {
 			"$asObject": "$entity.general.built_in_event",
 			"$placeholder": {
-				"@meta": { "validate": "entity/eventStructure.js" },
-
+				"@meta": {
+					"validate": "entity/eventStructure.js"
+				},
 				"$versioned_template.trigger": [
 					{
 						"$if": "$format_version >= 1.16.0",
@@ -114,7 +112,10 @@
 						"$data": {
 							"type": "$general.damage_type",
 							"amount": "$general.number",
-							"target": ["self", "holder"]
+							"target": [
+								"self",
+								"holder"
+							]
 						}
 					}
 				],
@@ -137,7 +138,10 @@
 						"$if": "$format_version >= 1.16.100",
 						"$data": {
 							"effect": "$general.effect_name",
-							"target": ["other", "self"],
+							"target": [
+								"other",
+								"self"
+							],
 							"duration": "$general.number",
 							"amplifier": "$general.number"
 						}
@@ -148,7 +152,10 @@
 						"$if": "$format_version >= 1.16.100",
 						"$data": {
 							"effect": "$general.effect_name",
-							"target": ["other", "self"]
+							"target": [
+								"other",
+								"self"
+							]
 						}
 					}
 				],
@@ -157,7 +164,10 @@
 						"$if": "$format_version >= 1.16.100",
 						"$data": {
 							"data": "$general.number",
-							"target": ["self", "other"],
+							"target": [
+								"self",
+								"other"
+							],
 							"effect": {
 								"@import.value.particle": "$dynamic.cache.particle.ids",
 								"@import.value": "$vanilla.particle_identifier"
@@ -169,7 +179,10 @@
 					{
 						"$if": "$format_version >= 1.16.100",
 						"$data": {
-							"target": ["self", "other"],
+							"target": [
+								"self",
+								"other"
+							],
 							"sound": "$function.general.sound_definitions"
 						}
 					}
@@ -178,7 +191,10 @@
 					{
 						"$if": "$format_version >= 1.16.100",
 						"$data": {
-							"target": ["self", "other"],
+							"target": [
+								"self",
+								"other"
+							],
 							"avoid_water": "$general.boolean",
 							"destintion": {
 								"$dynamic.list.index_triple": "$general.number"
@@ -244,15 +260,10 @@
 						"$dynamic.list.next_index": "$function.embedded"
 					}
 				},
-				"$versioned_template.set_property": [
-					{
-						"$if": "$format_version >= 1.17.0",
-						"$data": {
-							"$placeholder": {
-								"@meta": {
-									"is_value": true
-								}
-							}
+				"set_property": [
+					"$placeholder": {
+						"@meta": {
+							"is_value": true
 						}
 					}
 				]
