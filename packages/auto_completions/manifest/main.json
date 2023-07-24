@@ -48,7 +48,7 @@
             "uuid": "$dynamic.utils.uuid",
             "module_name": "$manifest.general.script_modules",
             "$dynamic_template.version": {
-                "$key": "$dynamic.children.type",
+                "$key": "$dynamic.siblings",
                 "uuid": {
                     "$dynamic.list.index_triple": "$general.number"
                 },
