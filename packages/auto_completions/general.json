@@ -9,7 +9,15 @@
 				}
 			}
 		},
-		"@import.value": ["0", "1", "2", "3", "4", "5", "@wildcard"]
+		"@import.value": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"@wildcard"
+		]
 	},
 	"number0_15": {
 		"@meta": {
@@ -74,9 +82,17 @@
 				}
 			}
 		},
-		"@import.value": ["45", "90", "135", "180", "225", "270", "335", "360"]
+		"@import.value": [
+			"45",
+			"90",
+			"135",
+			"180",
+			"225",
+			"270",
+			"335",
+			"360"
+		]
 	},
-
 	"boolean": {
 		"@meta": {
 			"validate": {
@@ -87,7 +103,10 @@
 				}
 			}
 		},
-		"@import.value": ["true", "false"]
+		"@import.value": [
+			"true",
+			"false"
+		]
 	},
 	"number_boolean": {
 		"@meta": {
@@ -99,9 +118,11 @@
 				}
 			}
 		},
-		"@import.value": ["0", "1"]
+		"@import.value": [
+			"0",
+			"1"
+		]
 	},
-
 	"format_version": {
 		"@meta": {
 			"validate": "formatVersion.js",
@@ -132,7 +153,16 @@
 			"1.18.20",
 			"1.18.30",
 			"1.19.0",
-			"1.19.10"
+			"1.19.10",
+			"1.19.20",
+			"1.19.30",
+			"1.19.40",
+			"1.19.50",
+			"1.19.60",
+			"1.19.70",
+			"1.19.80",
+			"1.20.0",
+			"1.20.10"
 		]
 	},
 	"translatable_text": {
@@ -274,7 +304,9 @@
 		"23000",
 		"24000"
 	],
-	"poi_type": ["bed"],
+	"poi_type": [
+		"bed"
+	],
 	"slot_type": [
 		"slot.armor",
 		"slot.armor.chest",
@@ -392,24 +424,35 @@
 	],
 	"entity_identifier": {
 		"@meta": {
-			"definitions": ["entity"]
+			"definitions": [
+				"entity"
+			]
 		},
 		"@import.value.entity": "$dynamic.cache.entity.identifiers and $vanilla.entity_identifier"
 	},
 	"block_identifier": {
 		"@meta": {
-			"definitions": ["block"]
+			"definitions": [
+				"block"
+			]
 		},
 		"@import.value.block": "$dynamic.cache.block.identifiers and $vanilla.block_identifier"
 	},
 	"item_identifier": {
 		"@meta": {
-			"definitions": ["item"]
+			"definitions": [
+				"item"
+			]
 		},
 		"@import.value.item": "$dynamic.cache.item.identifiers and $vanilla.item_identifier"
 	},
 	"model_identifier": {
-		"@meta": { "is_value": true, "definitions": ["entity_model"] },
+		"@meta": {
+			"is_value": true,
+			"definitions": [
+				"entity_model"
+			]
+		},
 		"@import.value": "$dynamic.cache.model.identifiers",
 		"@import.value_old": "$dynamic.cache.model.old_identifiers"
 	},
@@ -531,7 +574,12 @@
 		"peaceful",
 		"p"
 	],
-	"gamemode": ["adventure", "creative", "default", "survival"],
+	"gamemode": [
+		"adventure",
+		"creative",
+		"default",
+		"survival"
+	],
 	"biome_tag": [
 		"monster",
 		"animal",
