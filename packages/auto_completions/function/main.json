@@ -77,7 +77,6 @@
 				"$function.general.location": {
 					"$function.general.location": {
 						"$load": "$function.main",
-
 						"detect": {
 							"$function.general.location": {
 								"$function.general.location": {
@@ -104,7 +103,6 @@
 								"$function.general.block_identifier": {
 									"$general.number": {
 										"$function.general.fill_option": {},
-
 										"replace": {
 											"$function.general.block_identifier": "$general.number"
 										}
@@ -152,7 +150,7 @@
 		"$function.general.target_selector": {}
 	},
 	"locate": {
-		"$function.general.structure_name": {}
+		"$general.structures": {}
 	},
 	"list": {},
 	"me": {},
@@ -225,7 +223,6 @@
 					"$function.general.teleport_rules": "$function.general.how_to_fill"
 				}
 			},
-
 			"stop_riding": {},
 			"summon_rider": {
 				"$function.general.entity_identifier": "$dynamic.cache.entity.events"
@@ -233,6 +230,7 @@
 		}
 	},
 	"reload": {},
+	"camera": {},
 	"replaceitem": {
 		"block": {
 			"$function.general.location": {
@@ -317,11 +315,17 @@
 			"setdisplay": {
 				"sidebar": {
 					"$dynamic.cache.function.scoreboards": {},
-					"$placeholder": ["ascending", "descending"]
+					"$placeholder": [
+						"ascending",
+						"descending"
+					]
 				},
 				"list": {
 					"$dynamic.cache.function.scoreboards": {},
-					"$placeholder": ["ascending", "descending"]
+					"$placeholder": [
+						"ascending",
+						"descending"
+					]
 				},
 				"belowname": {
 					"$dynamic.cache.function.scoreboards": {}
@@ -384,7 +388,11 @@
 			"$function.general.location": {
 				"$function.general.location": {
 					"$function.general.block_identifier": {
-						"$general.number": ["destroy", "keep", "replace"]
+						"$general.number": [
+							"destroy",
+							"keep",
+							"replace"
+						]
 					}
 				}
 			}
@@ -400,7 +408,10 @@
 							"$function.general.location": {
 								"$function.general.location": {
 									"$function.general.location": {
-										"$general.boolean": ["disk", "memory"],
+										"$general.boolean": [
+											"disk",
+											"memory"
+										],
 										"disk": {},
 										"memory": {}
 									}
