@@ -42,7 +42,8 @@
             "uuid": "$dynamic.utils.uuid",
             "module_name": "$manifest.general.script_modules",
             "version": {
-                "$dynamic.list.index_triple": "$general.number"
+                "$dynamic.list.index_triple": "$general.number",
+                "$placeholder": "$manifest.general.script_versions"
             },
             "entry": {
                 "@meta": {
