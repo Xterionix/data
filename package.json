@@ -1,6 +1,6 @@
 {
-	"name": "bridge-data",
-	"version": "1.1.40",
+	"name": "bridgex-data",
+	"version": "1.1.41",
 	"description": "Provide data for the bridge. editor",
 	"main": "dist/auto-completions.js",
 	"scripts": {
@@ -8,14 +8,6 @@
 		"build": "deno run --allow-read --allow-write scripts/build.ts",
 		"dev": "deno run --allow-read --allow-write scripts/watch.ts"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/bridge-core/data.git"
-	},
-	"author": "",
-	"license": "GPL-3.0-or-later",
-	"bugs": {
-		"url": "https://github.com/bridge-core/data/issues"
-	},
-	"homepage": "https://github.com/bridge-core/data#readme"
+	"author": "Xterionix",
+	"license": "GPL-3.0-or-later"
 }
