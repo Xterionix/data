@@ -1,6 +1,8 @@
 {
 	"@meta": {
-		"expand_path_exceptions": ["decrement_stack"]
+		"expand_path_exceptions": [
+			"decrement_stack"
+		]
 	},
 	"randomize": {
 		"$dynamic.list.next_index": {
@@ -21,28 +23,40 @@
 		"command": {
 			"$dynamic.list.next_index": "$function.embedded_no_slash"
 		},
-		"target": ["self", "other"]
+		"target": [
+			"self",
+			"other"
+		]
 	},
 	"add_mob_effect": {
 		"effect": "$general.effect_name",
-		"target": ["other", "self"],
+		"target": [
+			"other",
+			"self"
+		],
 		"duration": "$general.number",
 		"amplifier": "$general.number"
 	},
 	"remove_mob_effect": {
 		"effect": "$general.effect_name",
-		"target": ["self", "other"]
+		"target": [
+			"self",
+			"other"
+		]
 	},
 	"set_block_property": {
 		"$dynamic.block.property": {
 			"$dynamic_template": {
-				"$key": "$dynamic.currentNodeKey",
+				"$key": "$dynamic.current_node_key",
 				"$load": "$dynamic.block.property_obj"
 			}
 		}
 	},
 	"teleport": {
-		"target": ["self", "other"],
+		"target": [
+			"self",
+			"other"
+		],
 		"avoid_water": "$general.boolean",
 		"destintion": {
 			"$dynamic.list.index_triple": "$general.number"
@@ -54,25 +68,38 @@
 	},
 	"damage": {
 		"amount": "$general.number",
-		"target": ["item", "other", "self"],
+		"target": [
+			"item",
+			"other",
+			"self"
+		],
 		"type": "$general.damage_type"
 	},
 	"decrement_stack": {
 		"ignore_game_mode": "$general.boolean"
 	},
 	"die": {
-		"target": ["self", "other"]
+		"target": [
+			"self",
+			"other"
+		]
 	},
 	"play_effect": {
 		"data": "$general.number",
-		"target": ["self", "other"],
+		"target": [
+			"self",
+			"other"
+		],
 		"effect": {
 			"@import.value.particle": "$dynamic.cache.particle.ids",
 			"@import.value": "$vanilla.particle_identifier"
 		}
 	},
 	"play_sound": {
-		"target": ["self", "other"],
+		"target": [
+			"self",
+			"other"
+		],
 		"sound": "$function.general.sound_definitions"
 	},
 	"set_block": {
@@ -89,7 +116,10 @@
 	},
 	"trigger": {
 		"event": "asValue($dynamic.block.events)",
-		"target": ["self", "other"],
+		"target": [
+			"self",
+			"other"
+		],
 		"condition": "$molang.embedded"
 	}
 }
