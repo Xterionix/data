@@ -43,6 +43,11 @@
             "module_name": "$manifest.general.script_modules",
             "version": {
                 "$dynamic.list.index_triple": "$general.number"
+            },
+            "entry": {
+                "@meta": {
+                    "is_value": true
+                }
             }
         }
     },
