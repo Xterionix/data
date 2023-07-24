@@ -1,8 +1,16 @@
 {
     "format_version": "$general.number",
     "header": {
-        "name": {"@meta": {"is_value": true}},
-        "description": {"@meta": {"is_value": true}},
+        "name": {
+            "@meta": {
+                "is_value": true
+            }
+        },
+        "description": {
+            "@meta": {
+                "is_value": true
+            }
+        },
         "uuid": "$dynamic.utils.uuid",
         "version": {
             "$dynamic.list.index_triple": "$general.number"
@@ -18,7 +26,11 @@
     "modules": {
         "$dynamic.list.next_index": {
             "type": "$manifest.general.module_type",
-            "description": {"@meta": {"is_value": true}},
+            "description": {
+                "@meta": {
+                    "is_value": true
+                }
+            },
             "uuid": "$dynamic.utils.uuid",
             "version": {
                 "$dynamic.list.index_triple": "$general.number"
@@ -28,25 +40,44 @@
     "dependencies": {
         "$dynamic.list.next_index": {
             "uuid": "$dynamic.utils.uuid",
+            "module_name": "$manifest.general.script_modules",
             "version": {
                 "$dynamic.list.index_triple": "$general.number"
             }
         }
     },
     "metadata": {
-        "authors": {"@meta": {"is_value": true}},
-        "license": {"@meta": {"is_value": true}},
-        "url": {"@meta": {"is_value": true}}
+        "authors": {
+            "@meta": {
+                "is_value": true
+            }
+        },
+        "license": {
+            "@meta": {
+                "is_value": true
+            }
+        },
+        "url": {
+            "@meta": {
+                "is_value": true
+            }
+        }
     },
     "capabilities": {
         "$dynamic.list.next_index": "$manifest.general.capabilities"
     },
     "subpacks": {
-        "$dynamic.list.next_index":{
+        "$dynamic.list.next_index": {
             "folder_name": {
-                "@meta": {"is_value": true}
+                "@meta": {
+                    "is_value": true
+                }
             },
-            "name": {"@meta": {"is_value": true}},
+            "name": {
+                "@meta": {
+                    "is_value": true
+                }
+            },
             "memory_tier": "$general.number"
         }
     }
