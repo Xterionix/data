@@ -47,12 +47,13 @@
         "$dynamic.list.next_index": {
             "uuid": "$dynamic.utils.uuid",
             "module_name": "$manifest.general.script_modules",
-            "version": [
-                {
+            "$dynamic_template.version": {
+                "$key": "$dynamic.children.type",
+                "uuid": {
                     "$dynamic.list.index_triple": "$general.number"
                 },
-                "$manifest.general.script_versions"
-            ]
+                "module_name": "$manifest.general.script_versions"
+            }
         }
     },
     "metadata": {
