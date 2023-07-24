@@ -45,7 +45,7 @@
 					}
 				}
 			],
-			"properties": [
+			"properties": {
 				"$placeholder": {
 					"range": {
 						"$dynamic.list.index_pair": {
@@ -67,7 +67,7 @@
 					},
 					"client_sync": "$general.boolean"
 				}
-			]
+			}
 		},
 		"component_groups": {
 			"$placeholder": "$entity.general.components"
@@ -260,13 +260,13 @@
 						"$dynamic.list.next_index": "$function.embedded"
 					}
 				},
-				"set_property": [
+				"set_property": {
 					"$placeholder": {
 						"@meta": {
 							"is_value": true
 						}
 					}
-				]
+				}
 			}
 		}
 	}
