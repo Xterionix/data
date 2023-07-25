@@ -47,12 +47,9 @@
         "$dynamic.list.next_index": {
             "uuid": "$dynamic.utils.uuid",
             "module_name": "$manifest.general.script_modules",
-            "$dynamic_template.version": {
-                "$key": "$dynamic.siblings",
-                "uuid": {
-                    "$dynamic.list.index_triple": "$general.number"
-                },
-                "module_name": "$manifest.general.script_versions"
+            "version": {
+                "$dynamic.list.index_triple": "$general.number",
+                "@import.value": "$manifest.general.script_versions"
             }
         }
     },
