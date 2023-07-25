@@ -54,7 +54,8 @@
 		"includes": "dialogue/",
 		"file_viewer": "json",
 		"start_state": "dialog/main",
-		"file_creator": "dialog"
+		"file_creator": "dialog",
+		"highlighter": "dialog"
 	},
 	{
 		"id": "entity",
