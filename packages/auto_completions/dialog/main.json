@@ -1,3 +1,42 @@
 {
-    "format_version": "$general.format_version"
+    "format_version": "$general.format_version",
+    "minecraft:npc_dialogue": {
+        "scenes": {
+            "$dynamic.list.next_index": {
+                "scene_tag": {
+                    "@meta": {
+                        "is_value": true
+                    }
+                },
+                "npc_name": {
+                    "@meta": {
+                        "is_value": true
+                    }
+                },
+                "text": {
+                    "@meta": {
+                        "is_value": true
+                    }
+                },
+                "buttons": {
+                    "$dynamic.list.next_index": {
+                        "name": {
+                            "@meta": {
+                                "is_value": true
+                            }
+                        },
+                        "commands": {
+                            "$dynamic.list.next_index": "$function.embedded"
+                        }
+                    }
+                },
+                "on_open_commands": {
+                    "$dynamic.list.next_index": "$function.embedded"
+                },
+                "on_close_commands": {
+                    "$dynamic.list.next_index": "$function.embedded"
+                }
+            }
+        }
+    }
 }
