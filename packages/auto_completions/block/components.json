@@ -131,7 +131,7 @@
 	],
 	"$versioned_template.minecraft:crafting_table": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.50",
 			"$data": {
 				"custom_description": {
 					"@meta": {
@@ -141,6 +141,24 @@
 				"grid_size": [
 					"3"
 				],
+				"crafting_tags": {
+					"$dynamic.list.next_index": "$recipe.general.tags"
+				},
+				"@meta": {
+					"propose_filter": {
+						"value": "No"
+					}
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.19.50",
+			"$data": {
+				"table_name": {
+					"@meta": {
+						"is_value": true
+					}
+				},
 				"crafting_tags": {
 					"$dynamic.list.next_index": "$recipe.general.tags"
 				}
@@ -267,7 +285,17 @@
 				},
 				"@import.value": [
 					"false"
-				]
+				],
+				"@meta": {
+					"validate": {
+						"confirm": "Bridge.Node",
+						"then": {
+							"is_warning": true,
+							"show": true,
+							"message": "Invalid data type: Expected number or number range"
+						}
+					}
+				}
 			}
 		}
 	],
