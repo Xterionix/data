@@ -5,10 +5,9 @@
     "loop": {
         "$placeholder": "$molang.main"
     },
-
     "c": {
         ".": {
-            "$placeholder": {
+            "$molang.general.context": {
                 "$molang.general.operator": "$molang.main"
             }
         }
@@ -22,7 +21,9 @@
     },
     "v": {
         ".": {
-            "$molang.general.variable": { "$molang.general.operator": "$molang.main" }
+            "$molang.general.variable": {
+                "$molang.general.operator": "$molang.main"
+            }
         }
     },
     "m": {
@@ -41,7 +42,7 @@
     },
     "context": {
         ".": {
-            "$placeholder": {
+            "$molang.general.context": {
                 "$molang.general.operator": "$molang.main"
             }
         }
@@ -55,7 +56,9 @@
     },
     "variable": {
         ".": {
-            "$molang.general.variable": { "$molang.general.operator": "$molang.main" }
+            "$molang.general.variable": {
+                "$molang.general.operator": "$molang.main"
+            }
         }
     },
     "math": {
@@ -72,7 +75,9 @@
             }
         }
     },
-    "this": { "$molang.general.operator": "$molang.main" },
+    "this": {
+        "$molang.general.operator": "$molang.main"
+    },
     "return": "$molang.main",
     "break": {},
     "continue": {},
