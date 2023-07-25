@@ -1,6 +1,8 @@
 {
 	"@meta": {
-		"expand_path_exceptions": ["minecraft:unit_cube"]
+		"expand_path_exceptions": [
+			"minecraft:unit_cube"
+		]
 	},
 	"$versioned_template.minecraft:destroy_time": [
 		{
@@ -54,12 +56,22 @@
 				"@meta": {
 					"compile": "if(Bridge.Node.data === '') { return new Bridge.JSONTree(undefined, (Bridge.Node.get('color') || {}).data) } else { return Bridge.Node }"
 				},
-				"color": { "@meta": { "is_value": true, "is_color": true } }
+				"color": {
+					"@meta": {
+						"is_value": true,
+						"is_color": true
+					}
+				}
 			}
 		},
 		{
 			"$if": "$format_version >= 1.16.0",
-			"$data": { "@meta": { "is_value": true, "is_color": true } }
+			"$data": {
+				"@meta": {
+					"is_value": true,
+					"is_color": true
+				}
+			}
 		}
 	],
 	"minecraft:flammable": {
@@ -122,9 +134,13 @@
 			"$if": "$format_version >= 1.16.100",
 			"$data": {
 				"custom_description": {
-					"@meta": { "is_value": true }
+					"@meta": {
+						"is_value": true
+					}
 				},
-				"grid_size": ["3"],
+				"grid_size": [
+					"3"
+				],
 				"crafting_tags": {
 					"$dynamic.list.next_index": "$recipe.general.tags"
 				}
@@ -189,7 +205,13 @@
 			"$if": "$format_version >= 1.16.100",
 			"$data": {
 				"event": "$dynamic.block.events",
-				"target": ["self", "other", "target", "parent", "baby"],
+				"target": [
+					"self",
+					"other",
+					"target",
+					"parent",
+					"baby"
+				],
 				"condition": "$molang.embedded",
 				"min_fall_distance": "$general.number"
 			}
@@ -221,7 +243,6 @@
 				"range": {
 					"$dynamic.list.index_pair": "$general.number"
 				},
-
 				"on_tick": "$block.general.event_definition"
 			}
 		}
@@ -236,7 +257,7 @@
 	],
 	"$versioned_template.minecraft:entity_collision": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.50",
 			"$data": {
 				"origin": {
 					"$dynamic.list.index_triple": "$general.number"
@@ -244,7 +265,25 @@
 				"size": {
 					"$dynamic.list.index_triple": "$general.number"
 				},
-				"@import.value": ["false"]
+				"@import.value": [
+					"false"
+				]
+			}
+		}
+	],
+	"$versioned_template.minecraft:collision_box": [
+		{
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.50",
+			"$data": {
+				"origin": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"size": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"@import.value": [
+					"false"
+				]
 			}
 		}
 	],
@@ -258,7 +297,9 @@
 				"size": {
 					"$dynamic.list.index_triple": "$general.number"
 				},
-				"@import.value": ["false"]
+				"@import.value": [
+					"false"
+				]
 			}
 		}
 	],
@@ -277,7 +318,10 @@
 	"$versioned_template.minecraft:breathability": [
 		{
 			"$if": "$format_version >= 1.16.100",
-			"$data": ["air", "solid"]
+			"$data": [
+				"air",
+				"solid"
+			]
 		}
 	],
 	"$versioned_template.minecraft:onlypistonpush": [
@@ -335,7 +379,11 @@
 	"$versioned_template.minecraft:display_name": [
 		{
 			"$if": "$project_target_version >= 1.16.100",
-			"$data": { "@meta": { "is_value": true } }
+			"$data": {
+				"@meta": {
+					"is_value": true
+				}
+			}
 		}
 	]
 }
