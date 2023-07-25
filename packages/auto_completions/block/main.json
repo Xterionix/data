@@ -6,12 +6,30 @@
 			"is_experimental": "$general.boolean",
 			"$versioned_template.properties": [
 				{
-					"$if": "$format_version >= 1.16.100 and $format_version < 1.19.80",
+					"$if": "$format_version >= 1.16.100 and $format_version < 1.19.70",
 					"$data": {
 						"$placeholder": {
 							"$dynamic.list.next_index": {
 								"@import.value.number": "$general.number",
 								"@import.value.boolean": "$general.boolean",
+								"@meta": {
+									"validate": null
+								}
+							}
+						}
+					}
+				},
+				{
+					"$if": "$format_version >= 1.19.70",
+					"$data": {
+						"$placeholder": {
+							"$dynamic.list.next_index": {
+								"@import.value.number": "$general.number",
+								"@import.value.boolean": "$general.boolean",
+								"values": {
+									"min": "$general.number",
+									"max": "$general.number"
+								},
 								"@meta": {
 									"validate": null
 								}
