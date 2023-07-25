@@ -1,15 +1,26 @@
 {
 	"$dynamic.list.next_index": {
 		"condition": "$loot_table.general.conditions",
-
 		"$dynamic_template": {
 			"$key": "$dynamic.children.condition",
-
+			"match_tool": {
+				"item": "$general.item_identifier",
+				"count": "$general.number",
+				"enchantments": {
+					"$dynamic.list.next_index": {
+						"$general.enchantment_name": {
+							"level": "$general.number"
+						}
+					}
+				}
+			},
 			"has_mark_variant": {
 				"value": "$general.number"
 			},
 			"entity_properties": {
-				"entity": ["this"],
+				"entity": [
+					"this"
+				],
 				"properties": {
 					"on_fire": "$general.boolean"
 				}
