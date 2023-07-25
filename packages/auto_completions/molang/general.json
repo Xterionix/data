@@ -296,10 +296,12 @@
     "noise"
   ],
   "variable": [
+    "attack_time"
+  ],
+  "world_gen_variable": [
     "worldx",
     "worldz",
-    "worldy",
-    "attack_time"
+    "worldy"
   ],
   "context": [
     "block_face",
