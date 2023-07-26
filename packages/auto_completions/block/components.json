@@ -377,7 +377,7 @@
 	],
 	"$versioned_template.minecraft:block_collision": [
 		{
-			"$if": "$format_version >= 1.18.10 and $format_version < 1.19.50",
+			"$if": "$format_version >= 1.18.10 and $format_version < 1.19.10",
 			"$data": {
 				"origin": {
 					"$dynamic.list.index_triple": "$general.number"
@@ -395,6 +395,23 @@
 		}
 	],
 	"$versioned_template.minecraft:collision_box": [
+		{
+			"$if": "$format_version >= 1.19.10 and $format_version < 1.19.50",
+			"$data": {
+				"origin": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"size": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"@import.value": [
+					"false"
+				],
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
+		},
 		{
 			"$if": "$format_version >= 1.19.50",
 			"$data": {
