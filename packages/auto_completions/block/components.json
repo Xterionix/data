@@ -318,7 +318,19 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.19.40 and $format_version < 1.20.10",
+			"$if": "$format_version >= 1.19.40 and $format_version < 1.19.80",
+			"$data": {
+				"@import.value": [
+					"$general.model_identifier"
+				],
+				"identifier": "$general.model_identifier",
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.19.80 and $format_version < 1.20.10",
 			"$data": {
 				"@import.value": [
 					"$general.model_identifier"
@@ -326,6 +338,9 @@
 				"identifier": "$general.model_identifier",
 				"bone_visibility": {
 					"$placeholder": "$general.boolean"
+				},
+				"@meta": {
+					"validate": "updateToNewBlock.js"
 				}
 			}
 		},
