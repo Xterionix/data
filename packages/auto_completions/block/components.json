@@ -441,7 +441,62 @@
 	],
 	"$versioned_template.minecraft:pick_collision": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.18.10",
+			"$data": {
+				"origin": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"size": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"@import.value": [
+					"false"
+				],
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
+		}
+	],
+	"$versioned_template.minecraft:aim_collision": [
+		{
+			"$if": "$format_version >= 1.18.10 and $format_version < 1.19.20",
+			"$data": {
+				"origin": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"size": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"@import.value": [
+					"false"
+				],
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
+		}
+	],
+	"$versioned_template.minecraft:selection_box": [
+		{
+			"$if": "$format_version >= 1.19.20 and $format_version < 1.19.60",
+			"$data": {
+				"origin": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"size": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"@import.value": [
+					"false"
+				],
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.19.60",
 			"$data": {
 				"origin": {
 					"$dynamic.list.index_triple": "$general.number"
