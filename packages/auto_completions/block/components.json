@@ -428,7 +428,8 @@
 			"$if": "$project_target_version >= 1.16.100",
 			"$data": {
 				"@meta": {
-					"is_value": true
+					"is_value": true,
+					"validate": "updateToNewBlock.js"
 				}
 			}
 		}
