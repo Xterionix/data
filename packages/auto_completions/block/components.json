@@ -139,23 +139,13 @@
 					}
 				},
 				"grid_size": [
-					"3"
+					"4"
 				],
 				"crafting_tags": {
 					"$dynamic.list.next_index": "$recipe.general.tags"
 				},
 				"@meta": {
-					"validate": {
-						"confirm": "Bridge.Node",
-						"then": {
-							"is_warning": true,
-							"show": true,
-							"message": "Invalid data type: Expected number or number range"
-						}
-					},
-					"propose_filter": {
-						"value": "No"
-					}
+					"validate": "block.js"
 				}
 			}
 		},
