@@ -104,7 +104,7 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.16.0",
+			"$if": "$format_version >= 1.16.0 and $format_version < 1.19.50",
 			"$data": "$general.decimal"
 		}
 	],
@@ -131,7 +131,7 @@
 	],
 	"$versioned_template.minecraft:crafting_table": [
 		{
-			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.50",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.10",
 			"$data": {
 				"custom_description": {
 					"@meta": {
@@ -150,7 +150,7 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.19.50",
+			"$if": "$format_version >= 1.19.10",
 			"$data": {
 				"table_name": {
 					"@meta": {
