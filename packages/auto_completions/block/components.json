@@ -285,14 +285,7 @@
 					"false"
 				],
 				"@meta": {
-					"validate": {
-						"confirm": "Bridge.Node",
-						"then": {
-							"is_warning": true,
-							"show": true,
-							"message": "Invalid data type: Expected number or number range"
-						}
-					}
+					"validate": "updateToNewBlock.js"
 				}
 			}
 		}
