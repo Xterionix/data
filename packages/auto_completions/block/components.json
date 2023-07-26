@@ -139,13 +139,13 @@
 					}
 				},
 				"grid_size": [
-					"4"
+					"3"
 				],
 				"crafting_tags": {
 					"$dynamic.list.next_index": "$recipe.general.tags"
 				},
 				"@meta": {
-					"validate": "block.js"
+					"validate": "updateToNewBlock.js"
 				}
 			}
 		},
