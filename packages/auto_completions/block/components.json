@@ -45,7 +45,14 @@
 		},
 		{
 			"$if": "$format_version >= 1.16.0 and $format_version < 1.19.20",
-			"$data": "$general.decimal"
+			"$data": {
+				"@import.value": [
+					"$general.decimal"
+				],
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
 		}
 	],
 	"$versioned_template.minecraft:light_emission": [
