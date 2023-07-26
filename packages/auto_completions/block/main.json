@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "$general.file_identifier and $general.block_identifier",
 			"is_experimental": "$general.boolean",
+			"traits": "$block.traits",
 			"menu_category": {
 				"category": "$general.item_category",
 				"group": "$item.general.item_group_reference",
