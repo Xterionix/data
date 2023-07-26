@@ -44,8 +44,14 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.16.0",
+			"$if": "$format_version >= 1.16.0 and $format_version < 1.19.20",
 			"$data": "$general.decimal"
+		}
+	],
+	"$versioned_template.minecraft:light_emission": [
+		{
+			"$if": "$format_version >= 1.19.20",
+			"$data": "$general.number"
 		}
 	],
 	"$versioned_template.minecraft:block_light_absorption": [
