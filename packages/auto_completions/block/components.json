@@ -637,12 +637,6 @@
 			}
 		}
 	],
-	"$versioned_template.minecraft:preventsjumping": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": "$general.boolean"
-		}
-	],
 	"$versioned_template.minecraft:rotation": [
 		{
 			"$if": "$format_version >= 1.16.100",
