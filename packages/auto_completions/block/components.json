@@ -571,7 +571,34 @@
 	],
 	"$versioned_template.minecraft:placement_filter": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.60",
+			"$data": {
+				"conditions": {
+					"$dynamic.list.next_index": {
+						"block_filter": {
+							"$dynamic.list.next_index": "$general.block_identifier"
+						},
+						"allowed_faces": {
+							"$dynamic.list.next_index": [
+								"up",
+								"down",
+								"north",
+								"south",
+								"east",
+								"west",
+								"side",
+								"all"
+							]
+						}
+					}
+				},
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.19.60",
 			"$data": {
 				"conditions": {
 					"$dynamic.list.next_index": {
