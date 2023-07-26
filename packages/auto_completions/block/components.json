@@ -407,33 +407,6 @@
 			}
 		}
 	],
-	"$versioned_template.minecraft:breakonpush": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": "$general.boolean"
-		}
-	],
-	"$versioned_template.minecraft:immovable": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": "$general.boolean"
-		}
-	],
-	"$versioned_template.minecraft:breathability": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": [
-				"air",
-				"solid"
-			]
-		}
-	],
-	"$versioned_template.minecraft:onlypistonpush": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": "$general.boolean"
-		}
-	],
 	"$versioned_template.minecraft:placement_filter": [
 		{
 			"$if": "$format_version >= 1.16.100",
@@ -472,12 +445,6 @@
 			"$data": {
 				"$dynamic.list.index_triple": "$general.number"
 			}
-		}
-	],
-	"$versioned_template.minecraft:unwalkable": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": "$general.boolean"
 		}
 	],
 	"$versioned_template.minecraft:display_name": [
