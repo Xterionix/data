@@ -15,8 +15,22 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": "$general.number"
+			"$if": "$format_version >= 1.16.0 and $format_version < 1.19.20",
+			"$data": "$general.number",
+			"@meta": {
+				"validate": "updateToNewBlock.js"
+			}
+		}
+	],
+	"$versioned_template.destructible_by_mining": [
+		{
+			"$if": "$format_version >= 1.19.20",
+			"$data": {
+				"seconds_to_destroy": "$general.decimal",
+				"@import.value": [
+					"false"
+				]
+			}
 		}
 	],
 	"$versioned_template.minecraft:block_light_emission": [
