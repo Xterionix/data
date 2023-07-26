@@ -103,7 +103,10 @@
 			"$if": "$format_version >= 1.19.10",
 			"$data": {
 				"catch_chance_modifier": "$general.number",
-				"destroy_chance_modifier": "$general.number"
+				"destroy_chance_modifier": "$general.number",
+				"@import.value": [
+					"false"
+				]
 			}
 		}
 	],
