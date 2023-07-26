@@ -247,8 +247,28 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.19.40",
-			"$data": "$general.model_identifier"
+			"$if": "$format_version >= 1.19.40 and $format_version < 1.20.10",
+			"$data": {
+				"@import.value": [
+					"$general.model_identifier"
+				],
+				"identifier": "$general.model_identifier",
+				"bone_visibility": {
+					"$placeholder": "$general.boolean"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.10",
+			"$data": {
+				"@import.value": [
+					"$general.model_identifier"
+				],
+				"identifier": "$general.model_identifier",
+				"bone_visibility": {
+					"$placeholder": "$general.boolean and $molang.embedded"
+				}
+			}
 		}
 	],
 	"$versioned_template.minecraft:on_step_on": [
