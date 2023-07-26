@@ -221,7 +221,23 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.19.10",
+			"$if": "$format_version >= 1.19.10 and $format_version < 1.19.50",
+			"$data": {
+				"table_name": {
+					"@meta": {
+						"is_value": true
+					}
+				},
+				"crafting_tags": {
+					"$dynamic.list.next_index": "$recipe.general.tags"
+				},
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.19.50",
 			"$data": {
 				"table_name": {
 					"@meta": {
