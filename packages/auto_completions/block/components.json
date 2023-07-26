@@ -236,7 +236,37 @@
 	],
 	"$versioned_template.minecraft:material_instances": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.40",
+			"$data": {
+				"$placeholder": {
+					"texture": "$dynamic.rp.terrain_texture",
+					"render_method": [
+						"opaque",
+						"blend",
+						"alpha_test",
+						"double_sided"
+					],
+					"ambient_occlusion": "$general.boolean",
+					"face_dimming": "$general.boolean"
+				},
+				"*": {
+					"texture": "$dynamic.rp.terrain_texture",
+					"render_method": [
+						"opaque",
+						"blend",
+						"alpha_test",
+						"double_sided"
+					],
+					"ambient_occlusion": "$general.boolean",
+					"face_dimming": "$general.boolean"
+				},
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.19.40",
 			"$data": {
 				"$placeholder": {
 					"texture": "$dynamic.rp.terrain_texture",
