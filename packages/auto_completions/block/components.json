@@ -88,10 +88,25 @@
 			}
 		}
 	],
-	"minecraft:flammable": {
-		"burn_odds": "$general.decimal",
-		"flame_odds": "$general.decimal"
-	},
+	"$versioned_template.minecraft:flammable": [
+		{
+			"$if": "$format_version < 1.19.10",
+			"$data": {
+				"burn_odds": "$general.decimal",
+				"flame_odds": "$general.decimal",
+				"@meta": {
+					"validate": "updateToNewBlock.js"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.19.10",
+			"$data": {
+				"catch_chance_modifier": "$general.number",
+				"destroy_chance_modifier": "$general.number"
+			}
+		}
+	],
 	"$versioned_template.minecraft:friction": [
 		{
 			"$if": "$format_version < 1.16.0",
