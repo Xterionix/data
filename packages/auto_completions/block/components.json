@@ -104,8 +104,22 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.16.0 and $format_version < 1.19.50",
-			"$data": "$general.decimal"
+			"$if": "$format_version >= 1.16.0 and $format_version < 1.19.20",
+			"$data": "$general.decimal",
+			"@meta": {
+				"validate": "updateToNewBlock.js"
+			}
+		}
+	],
+	"$versioned_template.minecraft:destructible_by_explosion": [
+		{
+			"$if": "$format_version >= 1.19.20",
+			"$data": {
+				"explosion_resistance": "$general.number",
+				"@import.value": [
+					"false"
+				]
+			}
 		}
 	],
 	"$versioned_template.minecraft:loot": [
