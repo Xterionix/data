@@ -196,8 +196,7 @@
 	],
 	"$versioned_template.minecraft:unit_cube": [
 		{
-			"$if": "$format_version >= 1.16.100",
-			"$legacy_if": "$dynamic.bridge_core.is_holiday_creator_features",
+			"$if": "$holiday_creator_features",
 			"$data": {}
 		}
 	],
