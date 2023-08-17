@@ -1163,7 +1163,18 @@
 	},
 	"minecraft:shooter": {
 		"def": "$general.entity_identifier",
-		"aux_val": "$general.potion_number_id"
+		"aux_val": "$general.potion_number_id",
+		"magic": "$general.boolean",
+		"power": "$general.decimal",
+		"projectiles": {
+			"dynamic.list.next_index": {
+				"def": "$general.entity_identifier",
+				"aux_val": "$general.potion_number_id",
+				"chance": "$general.decimal",
+				"filters": "$entity.filters"
+			}
+		},
+		"sound": "$general.sound"
 	},
 	"minecraft:sittable": {
 		"sit_event": "$entity.general.event_definition",
