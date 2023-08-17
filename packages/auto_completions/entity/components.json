@@ -7,6 +7,7 @@
 			"minecraft:block_climber",
 			"minecraft:burns_in_daylight",
 			"minecraft:can_climb",
+			"minecraft:can_fly",
 			"minecraft:can_power_jump",
 			"minecraft:hide",
 			"minecraft:home",
@@ -301,19 +302,7 @@
 	},
 	"minecraft:burns_in_daylight": {},
 	"minecraft:can_climb": {},
-	"$versioned_template.minecraft:can_fly": [
-		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": "$general.boolean"
-		},
-		{
-			"$if": "$format_version < 1.16.0",
-			"$data": {
-				"value": "$general.boolean"
-			}
-		}
-	],
-	"minecraft:can_fly": "$general.boolean",
+	"minecraft:can_fly": {},
 	"minecraft:can_power_jump": {},
 	"minecraft:celebrate_hunt": {
 		"celebration_targets": "$entity.filters",
