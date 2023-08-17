@@ -1274,7 +1274,8 @@
 		"max_dist": "$general.number",
 		"goal_radius": "$general.number",
 		"speed_multiplier": "$general.decimal",
-		"entity_types": "$entity.general.entity_types"
+		"entity_types": "$entity.general.entity_types",
+		"cooldown": "$general.number"
 	},
 	"minecraft:behavior.skeleton_horse_trap": {
 		"@meta": {
