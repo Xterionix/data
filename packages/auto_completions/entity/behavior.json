@@ -722,7 +722,18 @@
 		"filters": "$entity.filters",
 		"probability": "$general.decimal"
 	},
-	"minecraft:behavior.look_at_player": "$entity.behavior.minecraft:behavior&dot;look_at_entity",
+	"minecraft:behavior.look_at_player": {
+		"priority": "$general.number",
+		"angle_of_view_horizontal": "$general.degree",
+		"angle_of_view_vertical": "$general.degree",
+		"look_distance": "$general.number",
+		"look_time": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"filters": "$entity.filters",
+		"probability": "$general.decimal",
+		"target_distance": "$general.number"
+	},
 	"minecraft:behavior.look_at_target": "$entity.behavior.minecraft:behavior&dot;look_at_entity",
 	"minecraft:behavior.look_at_trading_player": "$entity.behavior.minecraft:behavior&dot;look_at_entity",
 	"minecraft:behavior.make_love": {
