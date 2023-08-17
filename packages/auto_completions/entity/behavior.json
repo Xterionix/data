@@ -1396,14 +1396,14 @@
 		"knockback_vertical_strength": "$general.decimal",
 		"speed_multiplier": "$general.decimal"
 	},
-	"minecraft:behavior.squid_move_away_from_ground": {
+	"minecraft:behavior.squid_dive": {
 		"@meta": {
 			"validate": {
 				"confirm": "!Bridge.File.usesEntity('minecraft:squid')",
 				"then": {
 					"show": true,
 					"is_warning": true,
-					"message": "\"minecraft:behavior.squid_move_away_from_ground\" can only be used by squids"
+					"message": "\"minecraft:behavior.squid_dive\" can only be used by squids"
 				}
 			}
 		},
@@ -1435,14 +1435,14 @@
 		},
 		"priority": "$general.number"
 	},
-	"minecraft:behavior.squid_dive": {
+	"minecraft:behavior.squid_move_away_from_ground": {
 		"@meta": {
 			"validate": {
 				"confirm": "!Bridge.File.usesEntity('minecraft:squid')",
 				"then": {
 					"show": true,
 					"is_warning": true,
-					"message": "\"minecraft:behavior.squid_dive\" can only be used by squids"
+					"message": "\"minecraft:behavior.squid_move_away_from_ground\" can only be used by squids"
 				}
 			}
 		},
