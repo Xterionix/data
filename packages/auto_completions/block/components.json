@@ -22,7 +22,7 @@
 			}
 		}
 	],
-	"$versioned_template.destructible_by_mining": [
+	"$versioned_template.minecraft:destructible_by_mining": [
 		{
 			"$if": "$format_version >= 1.19.20",
 			"$data": {
