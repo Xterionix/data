@@ -419,6 +419,7 @@
 			"village"
 		],
 		"dweller_role": [
+			"passive",
 			"hostile",
 			"inhabitant",
 			"defender"
@@ -428,8 +429,21 @@
 		"can_find_poi": "$general.boolean",
 		"can_migrate": "$general.boolean",
 		"first_founding_reward": "$general.number",
+		"dwelling_bounds_tolerance": "$general.decimal",
 		"preferred_profession": [
-			"weaponsmith"
+			"farmer",
+			"fisherman",
+			"shepherd",
+			"fletcher",
+			"librarian",
+			"cartographer",
+			"cleric",
+			"armorer",
+			"weaponsmith",
+			"toolsmith",
+			"butcher",
+			"leatherworker",
+			"mason"
 		]
 	},
 	"minecraft:economy_trade_table": {
