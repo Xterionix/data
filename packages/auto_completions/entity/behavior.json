@@ -1518,6 +1518,14 @@
 		"goal_radius": "$general.decimal",
 		"interval": "$general.number"
 	},
+	"minecraft:behavior.stroll_towards_village": {
+		"cooldown_time": "$general.decimal",
+		"goal_radius": "$general.decimal",
+		"priority": "$general.number",
+		"search_range": "$general.number",
+		"speed_multiplier": "$general.decimal",
+		"start_chance": "$general.decimal"
+	},
 	"minecraft:behavior.summon_entity": {
 		"priority": "$general.number",
 		"summon_choices": {
