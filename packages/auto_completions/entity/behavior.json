@@ -1619,6 +1619,11 @@
 		},
 		"priority": "$general.number"
 	},
+	"minecraft:behavior.target_when_pushed": {
+		"priority": "$general.number",
+		"entity_types": "$entity.general.entity_types",
+		"percent_chance": "$general.decimal"
+	},
 	"minecraft:behavior.tempt": {
 		"priority": "$general.number",
 		"can_get_scared": "$general.boolean",
