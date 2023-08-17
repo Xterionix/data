@@ -484,6 +484,7 @@
 	"minecraft:environment_sensor": {
 		"triggers": "$entity.general.event_definition"
 	},
+	"minecraft:equip_item": {},
 	"minecraft:equipment": {
 		"table": "$dynamic.loot_table_files",
 		"slot_drop_chance": {
@@ -493,12 +494,6 @@
 			}
 		}
 	},
-	"$versioned_template.minecraft:equip_item": [
-		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": {}
-		}
-	],
 	"minecraft:equippable": {
 		"slots": {
 			"$dynamic.list.next_index": {
