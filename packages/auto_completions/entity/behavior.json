@@ -1182,17 +1182,23 @@
 		"avoid_surface": "$general.boolean"
 	},
 	"minecraft:behavior.ranged_attack": {
-		"priority": "$general.number",
-		"attack_interval_max": "$general.number",
-		"attack_interval_min": "$general.number",
-		"attack_radius": "$general.number",
+		"attack_interval": "$general.decimal",
+		"attack_interval_max": "$general.decimal",
+		"attack_interval_min": "$general.decimal",
+		"attack_radius": "$general.decimal",
+		"attack_radius_min": "$general.decimal",
 		"burst_interval": "$general.decimal",
 		"burst_shots": "$general.number",
 		"charge_charged_trigger": "$general.decimal",
 		"charge_shoot_trigger": "$general.decimal",
-		"ranged_fov": "$general.degree",
+		"priority": "$general.number",
+		"ranged_fov": "$general.decimal",
+		"set_persistent": "$general.boolean",
 		"speed_multiplier": "$general.decimal",
-		"target_in_sight_time": "$general.decimal"
+		"swing": "$general.boolean",
+		"target_in_sight_time": "$general.decimal",
+		"x_max_rotation": "$general.degree",
+		"y_max_head_rotation": "$general.degree"
 	},
 	"minecraft:behavior.receive_love": {
 		"@meta": {
