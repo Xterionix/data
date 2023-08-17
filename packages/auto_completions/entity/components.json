@@ -660,9 +660,6 @@
 		},
 		"restriction_radius": "$general.number"
 	},
-	"minecraft:horse.jump_strength": {
-		"value": "$general.decimal"
-	},
 	"minecraft:hurt_on_condition": {
 		"damage_conditions": {
 			"$dynamic.list.next_index": {
@@ -671,6 +668,9 @@
 				"damage_per_tick": "$general.number"
 			}
 		}
+	},
+	"minecraft:horse.jump_strength": {
+		"value": "$general.decimal"
 	},
 	"minecraft:input_ground_controlled": {},
 	"minecraft:insomnia": {
