@@ -37,7 +37,9 @@
 			"minecraft:equip_item",
 			"minecraft:out_of_control",
 			"minecraft:fire_immune",
-			"minecraft:suspect_tracking"
+			"minecraft:suspect_tracking",
+			"minecraft:vibration_damper",
+			"minecraft:vibration_listener"
 		]
 	},
 	"minecraft:addrider": {
