@@ -304,6 +304,29 @@
 		},
 		"priority": "$general.number"
 	},
+	"minecraft:behavior.dragonstrafeplayer": {
+		"@meta": {
+			"validate": {
+				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
+				"then": {
+					"show": true,
+					"is_warning": true,
+					"message": "\"minecraft:behavior.dragonstrafeplayer\" can only be used by the ender dragon"
+				}
+			}
+		},
+		"priority": "$general.number",
+		"active_speed": "$general.decimal",
+		"fireball_range": "$general.decimal",
+		"flight_speed": "$general.decimal",
+		"switch_direction_probability": "$general.decimal",
+		"target_in_range_and_in_view_time": "$general.decimal",
+		"target_zone": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"turn_speed": "$general.decimal",
+		"view_angle": "$general.decimal"
+	},
 	"minecraft:behavior.drink_potion": {
 		"priority": "$general.number",
 		"speed_modifier": "$general.decimal",
@@ -323,19 +346,6 @@
 					"show": true,
 					"is_warning": true,
 					"message": "\"minecraft:behavior.dragontakeoff\" can only be used by the ender dragon"
-				}
-			}
-		},
-		"priority": "$general.number"
-	},
-	"minecraft:behavior.dragonstrafeplayer": {
-		"@meta": {
-			"validate": {
-				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
-				"then": {
-					"show": true,
-					"is_warning": true,
-					"message": "\"minecraft:behavior.dragonstrafeplayer\" can only be used by the ender dragon"
 				}
 			}
 		},
