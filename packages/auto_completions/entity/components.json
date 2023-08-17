@@ -654,17 +654,12 @@
 		"sound_event": "$general.sound"
 	},
 	"minecraft:hide": {},
-	"$versioned_template.minecraft:home": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"restriction_radius": "$general.number"
-			}
+	"minecraft:home": {
+		"home_block_list": {
+			"$dynamic.list.next_index": "$general.block_identifier"
 		},
-		{
-			"$data": {}
-		}
-	],
+		"restriction_radius": "$general.number"
+	},
 	"minecraft:horse.jump_strength": {
 		"value": "$general.decimal"
 	},
