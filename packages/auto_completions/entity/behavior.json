@@ -1220,17 +1220,16 @@
 	"minecraft:behavior.restrict_sun": {
 		"priority": "$general.number"
 	},
-	"$versioned_template.minecraft:behavior.rise_to_liquid_level": [
-		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": {
-				"priority": "$general.number",
-				"liquid_y_offset": "$general.decimal",
-				"rise_delta": "$general.decimal",
-				"sink_delta": "$general.decimal"
-			}
-		}
-	],
+	"minecraft:behavior.rise_to_liquid_level": {
+		"priority": "$general.number",
+		"liquid_y_offset": "$general.decimal",
+		"rise_delta": "$general.decimal",
+		"sink_delta": "$general.decimal"
+	},
+	"minecraft:behavior.roar": {
+		"priority": "$general.number",
+		"duration": "$general.decimal"
+	},
 	"minecraft:behavior.roll": {
 		"priority": "$general.number",
 		"probability": "$general.decimal"
