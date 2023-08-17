@@ -649,6 +649,10 @@
 		"max": "$general.number",
 		"min": "$general.number"
 	},
+	"minecraft:heartbeat": {
+		"interval": "$molang.embedded",
+		"sound_event": "$general.sound"
+	},
 	"minecraft:hide": {},
 	"$versioned_template.minecraft:home": [
 		{
