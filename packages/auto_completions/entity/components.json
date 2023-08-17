@@ -915,13 +915,6 @@
 		"max": "$general.decimal",
 		"min": "$general.decimal"
 	},
-	"minecraft:pushable": {
-		"is_pushable": "$general.boolean",
-		"is_pushable_by_piston": "$general.boolean"
-	},
-	"minecraft:push_through": {
-		"value": "$general.decimal"
-	},
 	"minecraft:preferred_path": {
 		"max_fall_blocks": "$general.number",
 		"jump_cost": "$general.number",
@@ -934,6 +927,13 @@
 				}
 			}
 		}
+	},
+	"minecraft:pushable": {
+		"is_pushable": "$general.boolean",
+		"is_pushable_by_piston": "$general.boolean"
+	},
+	"minecraft:push_through": {
+		"value": "$general.decimal"
 	},
 	"minecraft:projectile": {
 		"on_hit": {
