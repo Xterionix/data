@@ -779,6 +779,7 @@
 		"value": "$general.number"
 	},
 	"minecraft:mob_effect": {
+		"cooldown_time": "$general.number",
 		"effect_range": "$general.number",
 		"mob_effect": "$general.effect_name",
 		"effect_time": "$general.number",
