@@ -552,6 +552,16 @@
 		"throw_sound": "$general.sound",
 		"vertical_throw_mul": "$general.decimal"
 	},
+	"minecraft:behavior.go_and_give_items_to_owner": {
+		"priority": "$general.number",
+		"listen_time": "$general.number",
+		"on_item_throw": "$entity.general.event_definition",
+		"reach_block_distance": "$general.decimal",
+		"run_speed": "$general.decimal",
+		"throw_force": "$general.decimal",
+		"throw_sound": "$general.sound",
+		"vertical_throw_mul": "$general.decimal"
+	},
 	"minecraft:behavior.go_home": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
