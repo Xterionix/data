@@ -9,139 +9,21 @@
 		"on_admire_item_start": "$entity.general.event_definition",
 		"on_admire_item_stop": "$entity.general.event_definition"
 	},
-	"$versioned_template.minecraft:behavior.croak": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"duration": {
-					"$dynamic.list.index_pair": "$general.number"
-				},
-				"filters": "$entity.filters",
-				"interval": {
-					"$dynamic.list.index_pair": "$general.number"
-				}
-			}
-		}
-	],
-	"$versioned_template.minecraft:behavior.dig": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"allow_dig_when_named": "$general.boolean",
-				"digs_in_daylight": "$general.boolean",
-				"duration": "$general.number",
-				"idle_time": "$general.number",
-				"suspicion_is_disturbance": "$general.boolean",
-				"vibration_is_disturbance": "$general.boolean"
-			}
-		}
-	],
-	"$versioned_template.minecraft:behavior.eat_mob": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"eat_animation_time": "$general.decimal",
-				"eat_mob_sound": "$general.sound",
-				"loot_table": "$dynamic.loot_table_files",
-				"pull_in_force": "$general.decimal",
-				"reach_mob_distance": "$general.decimal",
-				"run_speed": "$general.decimal"
-			}
-		}
-	],
-	"$versioned_template.minecraft:behavior.emerge": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"cooldown_time": "$general.number",
-				"duration": "$general.decimal",
-				"on_done": "$entity.general.event_definition"
-			}
-		}
-	],
-	"$versioned_template.minecraft:behavior.go_and_give_items_to_noteblock": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"listen_time": "$general.number",
-				"on_item_throw": "$entity.general.event_definition",
-				"reach_block_distance": "$general.decimal",
-				"run_speed": "$general.decimal",
-				"throw_force": "$general.decimal",
-				"throw_sound": "$general.sound",
-				"vertical_throw_mul": "$general.decimal"
-			}
-		}
-	],
-	"$versioned_template.minecraft:behavior.investigate_suspicious_location": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"goal_radius": "$general.decimal",
-				"speed_multiplier": "$general.decimal"
-			}
-		}
-	],
-	"$versioned_template.minecraft:behavior.roar": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"duration": "$general.decimal"
-			}
-		}
-	],
-	"$versioned_template.minecraft:behavior.sniff": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"cooldown_range": {
-					"$dynamic.list.index_pair": "$general.number"
-				},
-				"duration": "$general.decimal",
-				"sniffing_radius": "$general.decimal",
-				"suspicion_radius_horizontal": "$general.decimal",
-				"suspicion_radius_vertical": "$general.decimal"
-			}
-		}
-	],
-	"$versioned_template.minecraft:behavior.sonic_boom": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"attack_cooldown": "$general.decimal",
-				"attack_damage": "$general.decimal",
-				"attack_range_horizontal": "$general.decimal",
-				"attack_range_vertical": "$general.decimal",
-				"attack_sound": "$general.sound",
-				"charge_sound": "$general.sound",
-				"duration": "$general.decimal",
-				"duration_until_attack_sound": "$general.decimal",
-				"knockback_height_cap": "$general.decimal",
-				"knockback_horizontal_strength": "$general.decimal",
-				"knockback_vertical_strength": "$general.decimal",
-				"speed_multiplier": "$general.decimal"
-			}
-		}
-	],
-	"$versioned_template.minecraft:behavior.stay_near_noteblock": [
-		{
-			"$if": "$format_version >= 1.19.0",
-			"$data": {
-				"listen_time": "$general.number",
-				"speed": "$general.decimal",
-				"start_distance": "$general.decimal",
-				"stop_distance": "$general.decimal"
-			}
-		}
-	],
 	"minecraft:behavior.avoid_block": {
+		"avoid_block_sound": "$general.sound",
 		"priority": "$general.number",
+		"sound_interval": {
+			"@import.value": "$general.number",
+			"dynamic.list.index_pair": "$general.number"
+		},
 		"tick_interval": "$general.number",
 		"search_range": "$general.number",
 		"search_height": "$general.number",
 		"walk_speed_modifier": "$general.decimal",
 		"sprint_speed_modifier": "$general.decimal",
-		"target_selection_method": ["nearest"],
+		"target_selection_method": [
+			"nearest"
+		],
 		"target_blocks": {
 			"$dynamic.list.next_index": "$general.block_identifier"
 		},
@@ -185,7 +67,6 @@
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal"
 	},
-
 	"minecraft:behavior.celebrate": {
 		"priority": "$general.number",
 		"celebration_sound": "$general.sound",
@@ -231,7 +112,6 @@
 		"priority": "$general.number",
 		"mount_speed_multiplier": "$general.decimal"
 	},
-
 	"minecraft:behavior.defend_trusted_target": {
 		"priority": "$general.number",
 		"attack_chance": "$general.decimal",
@@ -284,7 +164,6 @@
 			}
 		}
 	},
-
 	"minecraft:behavior.dragonlanding": {
 		"@meta": {
 			"validate": {
@@ -389,7 +268,6 @@
 		},
 		"priority": "$general.number"
 	},
-
 	"minecraft:behavior.drop_item_for": {
 		"priority": "$general.number",
 		"cooldown": "$general.number",
@@ -485,7 +363,6 @@
 		"wait_time": "$general.number",
 		"speed_multiplier": "$general.decimal"
 	},
-
 	"minecraft:behavior.find_cover": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
@@ -552,7 +429,6 @@
 		"within_radius": "$general.number",
 		"follow_distance": "$general.number"
 	},
-
 	"minecraft:behavior.go_home": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
@@ -746,7 +622,10 @@
 	"minecraft:behavior.move_towards_restriction": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
-		"control_flags": ["move", "look"]
+		"control_flags": [
+			"move",
+			"look"
+		]
 	},
 	"$versioned_template.minecraft:behavior.move_towards_dwelling_restriction": [
 		{
@@ -754,7 +633,10 @@
 			"$data": {
 				"priority": "$general.number",
 				"speed_multiplier": "$general.decimal",
-				"control_flags": ["move", "look"]
+				"control_flags": [
+					"move",
+					"look"
+				]
 			}
 		}
 	],
@@ -764,7 +646,10 @@
 			"$data": {
 				"priority": "$general.number",
 				"speed_multiplier": "$general.decimal",
-				"control_flags": ["move", "look"]
+				"control_flags": [
+					"move",
+					"look"
+				]
 			}
 		}
 	],
@@ -782,7 +667,10 @@
 		"search_height": "$general.number",
 		"goal_radius": "$general.decimal",
 		"stay_duration": "$general.number",
-		"target_selection_method": ["nearest", "random"],
+		"target_selection_method": [
+			"nearest",
+			"random"
+		],
 		"target_offset": {
 			"$dynamic.list.index_triple": "$general.decimal"
 		},
@@ -1094,7 +982,11 @@
 						"max_activation_range": "$general.decimal",
 						"cooldown_time": "$general.decimal",
 						"cast_duration": "$general.decimal",
-						"particle_color": { "@meta": { "is_value": true } },
+						"particle_color": {
+							"@meta": {
+								"is_value": true
+							}
+						},
 						"weight": "$general.number",
 						"filters": "$entity.filters",
 						"start_sound_event": "$general.sound",
@@ -1300,7 +1192,11 @@
 	"minecraft:behavior.stomp_attack": {
 		"priority": "$general.number",
 		"attack_once": "$general.boolean",
-		"attack_types": { "@meta": { "is_value": true } },
+		"attack_types": {
+			"@meta": {
+				"is_value": true
+			}
+		},
 		"random_stop_interval": "$general.number",
 		"reach_multiplier": "$general.decimal",
 		"track_target": "$general.boolean",
@@ -1328,11 +1224,18 @@
 				"cooldown_time": "$general.decimal",
 				"weight": "$general.number",
 				"cast_duration": "$general.decimal",
-				"particle_color": { "@meta": { "is_value": true } },
+				"particle_color": {
+					"@meta": {
+						"is_value": true
+					}
+				},
 				"start_sound_event": "$general.sound",
 				"sequence": {
 					"$dynamic.list.next_index": {
-						"shape": ["circle", "line"],
+						"shape": [
+							"circle",
+							"line"
+						],
 						"target": "$entity.general.filter_targets",
 						"base_delay": "$general.decimal",
 						"delay_per_summon": "$general.decimal",
@@ -1376,7 +1279,6 @@
 		"speed_multiplier": "$general.decimal",
 		"search_range": "$general.number",
 		"stop_distance": "$general.number",
-
 		"entity_types": {
 			"$dynamic.list.next_index": {
 				"filters": "$entity.general.entity_types"
