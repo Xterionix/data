@@ -719,6 +719,7 @@
 		"look_time": {
 			"$dynamic.list.index_pair": "$general.number"
 		},
+		"filters": "$entity.filters",
 		"probability": "$general.decimal"
 	},
 	"minecraft:behavior.look_at_player": "$entity.behavior.minecraft:behavior&dot;look_at_entity",
