@@ -76,6 +76,21 @@
 			}
 		}
 	],
+	"minecraft:anger_level": {
+		"anger_decrement_interval": "$general.decimal",
+		"angry_boost": "$general.number",
+		"angry_threshold": "$general.number",
+		"default_annoyingness": "$general.number",
+		"max_anger": "$general.number",
+		"nuisance_filter": "$entity.filters",
+		"on_increase_sounds": {
+			"$dynamic.list.next_index": {
+				"condition": "$molang.embedded",
+				"sound": "$general.sound"
+			}
+		},
+		"remove_targets_below_angry_threshold": "$general.boolean"
+	},
 	"minecraft:ambient_sound_interval": {
 		"range": "$general.number",
 		"value": "$general.number",
