@@ -960,6 +960,10 @@
 		"target_invisible_multiplier": "$general.decimal",
 		"target_sneak_visibility_multiplier": "$general.decimal"
 	},
+	"minecraft:behavior.ocelot_sit_on_block": {
+		"priority": "$general.number",
+		"speed_multiplier": "$general.decimal"
+	},
 	"minecraft:behavior.ocelotattack": {
 		"priority": "$general.number",
 		"sneak_speed_multiplier": "$general.decimal",
@@ -972,10 +976,6 @@
 		"max_sneak_range": "$general.number",
 		"max_sprint_range": "$general.number",
 		"reach_multiplier": "$general.number"
-	},
-	"minecraft:behavior.ocelot_sit_on_block": {
-		"priority": "$general.number",
-		"speed_multiplier": "$general.decimal"
 	},
 	"minecraft:behavior.offer_flower": {
 		"priority": "$general.number"
