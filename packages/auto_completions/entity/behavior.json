@@ -1277,20 +1277,18 @@
 		"entity_types": "$entity.general.entity_types",
 		"cooldown": "$general.number"
 	},
-	"minecraft:behavior.skeleton_horse_trap": {
+	"minecraft:behavior.silverfish_merge_with_stone": {
 		"@meta": {
 			"validate": {
-				"confirm": "!Bridge.File.usesEntity('minecraft:horse') || !Bridge.File.usesEntity('minecraft:donkey') || !Bridge.File.usesEntity('minecraft:mule') || !Bridge.File.usesEntity('minecraft:skeleton_horse')",
+				"confirm": "!Bridge.File.usesEntity('minecraft:silverfish')",
 				"then": {
 					"show": true,
 					"is_warning": true,
-					"message": "\"minecraft:behavior.skeleton_horse_trap\" can only be used by horse like entites"
+					"message": "\"minecraft:behavior.silverfish_merge_with_stone\" can only be used by silverfish"
 				}
 			}
 		},
-		"priority": "$general.number",
-		"within_radius": "$general.number",
-		"duration": "$general.number"
+		"priority": "$general.number"
 	},
 	"minecraft:behavior.silverfish_wake_up_friends": {
 		"@meta": {
@@ -1305,18 +1303,20 @@
 		},
 		"priority": "$general.number"
 	},
-	"minecraft:behavior.silverfish_merge_with_stone": {
+	"minecraft:behavior.skeleton_horse_trap": {
 		"@meta": {
 			"validate": {
-				"confirm": "!Bridge.File.usesEntity('minecraft:silverfish')",
+				"confirm": "!Bridge.File.usesEntity('minecraft:horse') || !Bridge.File.usesEntity('minecraft:donkey') || !Bridge.File.usesEntity('minecraft:mule') || !Bridge.File.usesEntity('minecraft:skeleton_horse')",
 				"then": {
 					"show": true,
 					"is_warning": true,
-					"message": "\"minecraft:behavior.silverfish_merge_with_stone\" can only be used by silverfish"
+					"message": "\"minecraft:behavior.skeleton_horse_trap\" can only be used by horse like entites"
 				}
 			}
 		},
-		"priority": "$general.number"
+		"priority": "$general.number",
+		"within_radius": "$general.number",
+		"duration": "$general.number"
 	},
 	"minecraft:behavior.sleep": {
 		"priority": "$general.number",
