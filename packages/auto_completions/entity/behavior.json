@@ -207,6 +207,11 @@
 		"vibration_is_disturbance": "$general.boolean",
 		"on_start": "$entity.general.event_definition"
 	},
+	"minecraft:behavior.drink_milk": {
+		"priority": "$general.number",
+		"filter": "$entity.filters",
+		"cooldown_seconds": "$general.number"
+	},
 	"minecraft:behavior.door_interact": {
 		"priority": "$general.number"
 	},
