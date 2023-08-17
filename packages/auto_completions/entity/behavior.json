@@ -235,6 +235,19 @@
 		},
 		"turn_speed": "$general.decimal"
 	},
+	"minecraft:behavior.dragondeath": {
+		"@meta": {
+			"validate": {
+				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
+				"then": {
+					"show": true,
+					"is_warning": true,
+					"message": "\"minecraft:behavior.dragondeath\" can only be used by the ender dragon"
+				}
+			}
+		},
+		"priority": "$general.number"
+	},
 	"minecraft:behavior.drink_potion": {
 		"priority": "$general.number",
 		"speed_modifier": "$general.decimal",
@@ -319,19 +332,6 @@
 					"show": true,
 					"is_warning": true,
 					"message": "\"minecraft:behavior.dragonholdingpattern\" can only be used by the ender dragon"
-				}
-			}
-		},
-		"priority": "$general.number"
-	},
-	"minecraft:behavior.dragondeath": {
-		"@meta": {
-			"validate": {
-				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
-				"then": {
-					"show": true,
-					"is_warning": true,
-					"message": "\"minecraft:behavior.dragondeath\" can only be used by the ender dragon"
 				}
 			}
 		},
