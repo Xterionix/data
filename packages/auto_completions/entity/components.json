@@ -508,6 +508,17 @@
 			}
 		}
 	},
+	"minecraft:exhaustion_values": {
+		"attack": "$general.decimal",
+		"damage": "$general.decimal",
+		"heal": "$general.decimal",
+		"jump": "$general.decimal",
+		"mine": "$general.decimal",
+		"sprint": "$general.decimal",
+		"sprint_jump": "$general.decimal",
+		"swim": "$general.decimal",
+		"walk": "$general.decimal"
+	},
 	"minecraft:experience_reward": {
 		"on_bred": "$molang.embedded",
 		"on_death": "$molang.embedded"
