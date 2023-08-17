@@ -584,7 +584,12 @@
 						"is_value": true
 					}
 				},
-				"allele_range": "$general.number",
+				"allele_range": {
+					"@import.value": "$general.number",
+					"range_max": "$general.number",
+					"range_min": "$general.number"
+				},
+				"mutation_rate": "$general.decimal",
 				"genetic_variants": {
 					"$dynamic.list.next_index": {
 						"main_allele": "$general.number",
