@@ -1242,46 +1242,33 @@
 		"priority": "$general.number",
 		"sound_interval": "$general.number"
 	},
-	"$versioned_template.minecraft:behavior.send_event": [
-		{
-			"$data": {
-				"priority": "$general.number",
-				"event_choices": {
-					"$dynamic.list.next_index": {
-						"min_activation_range": "$general.decimal",
-						"max_activation_range": "$general.decimal",
-						"cooldown_time": "$general.decimal",
-						"cast_duration": "$general.decimal",
-						"particle_color": {
-							"@meta": {
-								"is_value": true
-							}
-						},
-						"weight": "$general.number",
-						"filters": "$entity.filters",
-						"start_sound_event": "$general.sound",
-						"sequence": {
-							"$dynamic.list.next_index": {
-								"base_delay": "$general.decimal",
-								"event": "$dynamic.cache.entity.events",
-								"sound_event": "$general.sound"
-							}
-						}
+	"minecraft:behavior.send_event": {
+		"priority": "$general.number",
+		"event_choices": {
+			"$dynamic.list.next_index": {
+				"min_activation_range": "$general.decimal",
+				"max_activation_range": "$general.decimal",
+				"cooldown_time": "$general.decimal",
+				"cast_duration": "$general.decimal",
+				"particle_color": {
+					"@meta": {
+						"is_value": true
 					}
-				}
-			}
-		},
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"event_choices": {
+				},
+				"weight": "$general.number",
+				"filters": "$entity.filters",
+				"start_sound_event": "$general.sound",
+				"sequence": {
 					"$dynamic.list.next_index": {
-						"look_at_target": "$general.boolean"
+						"base_delay": "$general.decimal",
+						"event": "$dynamic.cache.entity.events",
+						"sound_event": "$general.sound"
 					}
-				}
+				},
+				"look_at_target": "$general.boolean"
 			}
 		}
-	],
+	},
 	"minecraft:behavior.share_items": {
 		"priority": "$general.number",
 		"max_dist": "$general.number",
