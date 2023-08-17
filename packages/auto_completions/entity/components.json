@@ -892,7 +892,8 @@
 	"minecraft:persistent": {},
 	"minecraft:physics": {
 		"has_collision": "$general.boolean",
-		"has_gravity": "$general.boolean"
+		"has_gravity": "$general.boolean",
+		"push_towards_closest_space": "$general.boolean"
 	},
 	"minecraft:player.saturation": {
 		"value": "$general.number",
