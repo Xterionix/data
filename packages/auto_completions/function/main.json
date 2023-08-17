@@ -5,19 +5,20 @@
 			"$function.general.ability": "$general.boolean"
 		}
 	},
-	"clear": {
-		"$function.general.target_selector": {
-			"$function.general.item_identifier": {
-				"$general.number": "$general.number"
-			}
-		}
-	},
+	"camera": {},
 	"camerashake": {
 		"add": {
 			"$function.general.target_selector": {
 				"$general.decimal": {
 					"$general.decimal": "$function.general.shake_types"
 				}
+			}
+		}
+	},
+	"clear": {
+		"$function.general.target_selector": {
+			"$function.general.item_identifier": {
+				"$general.number": "$general.number"
 			}
 		}
 	},
@@ -50,6 +51,10 @@
 			}
 		}
 	},
+	"connect": {},
+	"damage": {},
+	"daylock": {},
+	"dialogue": {},
 	"difficulty": "$general.game_difficulty",
 	"effect": {
 		"$function.general.target_selector": {
@@ -134,6 +139,7 @@
 			"$general.number": {}
 		}
 	},
+	"gametest": {},
 	"give": {
 		"$function.general.target_selector": {
 			"$function.general.item_identifier": {
@@ -143,20 +149,23 @@
 			}
 		}
 	},
+	"inputpermission": {},
 	"kick": {
 		"$function.general.target_selector": {}
 	},
 	"kill": {
 		"$function.general.target_selector": {}
 	},
+	"list": {},
 	"locate": {
 		"$general.structures": {}
 	},
-	"list": {},
+	"loot": {},
 	"me": {},
 	"mobevent": {
 		"$function.general.mob_event": "$general.boolean"
 	},
+	"msg": {},
 	"music": {
 		"volume": "$general.decimal",
 		"stop": "$general.decimal",
@@ -211,26 +220,7 @@
 			}
 		}
 	},
-	"ride": {
-		"$function.general.target_selector": {
-			"summon_ride": {
-				"$function.general.entity_identifier": {
-					"$function.general.ride_rules": "$dynamic.cache.entity.events"
-				}
-			},
-			"start_riding": {
-				"$function.general.target_selector": {
-					"$function.general.teleport_rules": "$function.general.how_to_fill"
-				}
-			},
-			"stop_riding": {},
-			"summon_rider": {
-				"$function.general.entity_identifier": "$dynamic.cache.entity.events"
-			}
-		}
-	},
 	"reload": {},
-	"camera": {},
 	"replaceitem": {
 		"block": {
 			"$function.general.location": {
@@ -270,6 +260,24 @@
 						}
 					}
 				}
+			}
+		}
+	},
+	"ride": {
+		"$function.general.target_selector": {
+			"summon_ride": {
+				"$function.general.entity_identifier": {
+					"$function.general.ride_rules": "$dynamic.cache.entity.events"
+				}
+			},
+			"start_riding": {
+				"$function.general.target_selector": {
+					"$function.general.teleport_rules": "$function.general.how_to_fill"
+				}
+			},
+			"stop_riding": {},
+			"summon_rider": {
+				"$function.general.entity_identifier": "$dynamic.cache.entity.events"
 			}
 		}
 	},
@@ -383,6 +391,8 @@
 			}
 		}
 	},
+	"script": {},
+	"scriptevent": {},
 	"setblock": {
 		"$function.general.location": {
 			"$function.general.location": {
@@ -399,6 +409,20 @@
 		}
 	},
 	"setmaxplayers": "$general.number",
+	"setworldspawn": {
+		"$function.general.location": {
+			"$function.general.location": "$function.general.location"
+		}
+	},
+	"spawnpoint": {
+		"$function.general.target_selector": {
+			"$function.general.location": {
+				"$function.general.location": {
+					"$function.general.location": {}
+				}
+			}
+		}
+	},
 	"structure": {
 		"save": {
 			"$placeholder": {
@@ -443,20 +467,6 @@
 							}
 						}
 					}
-				}
-			}
-		}
-	},
-	"setworldspawn": {
-		"$function.general.location": {
-			"$function.general.location": "$function.general.location"
-		}
-	},
-	"spawnpoint": {
-		"$function.general.target_selector": {
-			"$function.general.location": {
-				"$function.general.location": {
-					"$function.general.location": {}
 				}
 			}
 		}
@@ -641,6 +651,7 @@
 	"titleraw": "$function.main.title",
 	"toggledownfall": {},
 	"tp": "$function.main.teleport",
+	"volumearea": {},
 	"w": {
 		"$function.general.target_selector": {}
 	},
@@ -648,6 +659,7 @@
 		"$function.general.weather_type": "$general.number",
 		"query": {}
 	},
+	"wsserver": {},
 	"xp": {
 		"$general.number": {
 			"L": "$function.general.target_selector",
