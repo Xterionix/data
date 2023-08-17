@@ -182,7 +182,7 @@
 		"boost_items": {
 			"$dynamic.list.next_index": {
 				"item": "$general.item_identifier",
-				"item_damage": "$general.number",
+				"damage": "$general.number",
 				"replace_item": "$general.item_identifier"
 			}
 		}
