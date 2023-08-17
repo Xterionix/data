@@ -424,35 +424,14 @@
 			}
 		}
 	],
-	"$versioned_template.minecraft:bribeable": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"bribe_cooldown": "$general.number",
-				"bribe_items": {
-					"$dynamic.list.next_index": {
-						"@import.value": "$general.item_identifier",
-						"any_tag": {
-							"$dynamic.list.next_index": {
-								"@meta": {
-									"is_value": true
-								}
-							}
-						}
-					}
-				}
-			}
-		},
-		{
-			"$if": "$format_version < 1.16.100",
-			"$data": {
-				"bribe_cooldown": "$general.number",
-				"bribe_items": {
-					"$dynamic.list.next_index": "$general.item_identifier"
-				}
+	"minecraft:bribeable": {
+		"bribe_cooldown": "$general.number",
+		"bribe_items": {
+			"$dynamic.list.next_index": {
+				"@import.value": "$general.item_identifier"
 			}
 		}
-	],
+	},
 	"minecraft:burns_in_daylight": {},
 	"minecraft:can_climb": {},
 	"$versioned_template.minecraft:can_fly": [
