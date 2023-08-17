@@ -645,6 +645,25 @@
 		"goal_radius": "$general.decimal",
 		"speed_multiplier": "$general.decimal"
 	},
+	"minecraft:behavior.jump_to_block": {
+		"priority": "$general.number",
+		"search_width": "$general.number",
+		"search_height": "$general.number",
+		"minimum_path_length": "$general.number",
+		"scale_factor": "$general.decimal",
+		"cooldown_range": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"forbidden_blocks": {
+			"$dynamic.list.next_index": "$general.block_identifier"
+		},
+		"preferred_blocks": {
+			"$dynamic.list.next_index": "$general.block_identifier"
+		},
+		"max_velocity": "$general.decimal",
+		"minimum_distance": "$general.number",
+		"preferred_blocks_chance": "$general.decimal"
+	},
 	"minecraft:behavior.knockback_roar": {
 		"priority": "$general.number",
 		"attack_time": "$general.decimal",
@@ -657,21 +676,6 @@
 		"damage_filters": "$entity.filters",
 		"on_roar_end": "$entity.general.event_definition"
 	},
-	"$versioned_template.minecraft:behavior.jump_to_block": [
-		{
-			"$if": "$format_version >= 1.16.200",
-			"$data": {
-				"priority": "$general.number",
-				"search_width": "$general.number",
-				"search_height": "$general.number",
-				"minimum_path_length": "$general.number",
-				"scale_factor": "$general.decimal",
-				"cooldown_range": {
-					"$dynamic.list.index_pair": "$general.number"
-				}
-			}
-		}
-	],
 	"minecraft:behavior.lay_egg": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
