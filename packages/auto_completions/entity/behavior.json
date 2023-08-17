@@ -1211,7 +1211,8 @@
 				}
 			}
 		},
-		"priority": "$general.number"
+		"priority": "$general.number",
+		"speed_multiplier": "$general.decimal"
 	},
 	"minecraft:behavior.restrict_sun": {
 		"priority": "$general.number"
