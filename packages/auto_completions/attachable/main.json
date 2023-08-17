@@ -8,61 +8,84 @@
             },
             "materials": {
                 "$placeholder": {
-                    "@meta": { "is_value": true },
+                    "@meta": {
+                        "is_value": true
+                    },
                     "@import.value.material": "$client_entity.general.material"
                 }
             },
             "textures": {
                 "$placeholder": {
-                    "@meta": { "is_value": true },
+                    "@meta": {
+                        "is_value": true
+                    },
                     "@import.value.entity_texture": "$dynamic.rp.model_png and $dynamic.rp.item_png"
                 }
             },
             "geometry": {
-                "$placeholder": { "@meta": { "is_value": true } }
+                "$placeholder": {
+                    "@meta": {
+                        "is_value": true
+                    }
+                }
             },
             "animations": {
-				"$placeholder": {
-					"@meta": {
-						"is_value": true,
-						"definitions": [
-							"rp_animation",
-							"rp_animation_controller"
-						]
-					},
-					"@import.value.animations": "$dynamic.cache.rp_animation.ids and $dynamic.cache.rp_animation_controller.ids"
-				},
-				"@meta": {
-					"validate": {
-						"confirm": "Bridge.Node.children.length == 0",
-						"then": {
-							"show": true,
-							"message": "Node has too few children (0 < 1)"
-						}
-					}
-				}
-			},
+                "$placeholder": {
+                    "@meta": {
+                        "is_value": true,
+                        "definitions": [
+                            "rp_animation",
+                            "rp_animation_controller"
+                        ]
+                    },
+                    "@import.value.animations": "$dynamic.cache.rp_animation.ids and $dynamic.cache.rp_animation_controller.ids"
+                },
+                "@meta": {
+                    "validate": {
+                        "confirm": "Bridge.Node.children.length == 0",
+                        "then": {
+                            "show": true,
+                            "message": "Node has too few children (0 < 1)"
+                        }
+                    }
+                }
+            },
             "scripts": {
                 "pre_animation": {
-                    "$dynamic.list.next_index": { "@meta": { "is_value": true, "is_molang": true } }
+                    "$dynamic.list.next_index": {
+                        "@meta": {
+                            "is_value": true,
+                            "is_molang": true
+                        }
+                    }
                 },
-                "parent_setup": { "@meta": { "is_value": true, "is_molang": true } },
+                "parent_setup": {
+                    "@meta": {
+                        "is_value": true,
+                        "is_molang": true
+                    }
+                },
                 "$versioned_template.animate": [
-					{
-						"$if": "$format_version > 1.8.0",
-						"$data": {
-							"$dynamic.list.next_index": {
-								"$dynamic.client_entity.animation_references": {},
-								"$placeholder": "$molang.embedded",
-								"@import.value.animation": "$dynamic.client_entity.animation_references"
-							}
-						}
-					}
-				],
+                    {
+                        "$if": "$format_version > 1.8.0",
+                        "$data": {
+                            "$dynamic.list.next_index": {
+                                "$dynamic.client_entity.animation_references": {},
+                                "$placeholder": "$molang.embedded",
+                                "@import.value.animation": "$dynamic.client_entity.animation_references"
+                            }
+                        }
+                    }
+                ]
             },
             "render_controllers": {
                 "$dynamic.list.next_index": {
-                    "@meta": { "is_value": true, "definitions": [ "render_controller" ] },
+                    "@meta": {
+                        "is_value": true,
+                        "definitions": [
+                            "render_controller"
+                        ]
+                    },
                     "@import.value.render_controller": "$dynamic.cache.render_controller.ids"
                 }
             }
