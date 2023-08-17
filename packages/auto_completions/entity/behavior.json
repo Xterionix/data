@@ -814,6 +814,15 @@
 		"speed_multiplier": "$general.decimal",
 		"timeout_cooldown": "$general.number"
 	},
+	"minecraft:behavior.move_outdoors": {
+		"priority": "$general.number",
+		"speed_multiplier": "$general.decimal",
+		"timeout_cooldown": "$general.number",
+		"goal_radius": "$general.decimal",
+		"search_count": "$general.number",
+		"search_height": "$general.number",
+		"search_range": "$general.number"
+	},
 	"minecraft:behavior.move_through_village": {
 		"@meta": {
 			"validate": {
