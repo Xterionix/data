@@ -570,9 +570,6 @@
 	"minecraft:friction_modifier": {
 		"value": "$general.decimal"
 	},
-	"minecraft:foot_size": {
-		"value": "$general.decimal"
-	},
 	"minecraft:genetics": {
 		"mutation_rate": "$general.decimal",
 		"genes": {
