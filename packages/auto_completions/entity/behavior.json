@@ -605,7 +605,8 @@
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
 		"poi_type": "$general.poi_type",
-		"duration": "$general.number"
+		"duration": "$general.number",
+		"timeout_cooldown": "$general.decimal"
 	},
 	"minecraft:behavior.hover": {
 		"priority": "$general.number",
