@@ -13,7 +13,6 @@
 		"avoid_block_sound": "$general.sound",
 		"priority": "$general.number",
 		"sound_interval": {
-			"@import.value": "$general.number",
 			"dynamic.list.index_pair": "$general.number"
 		},
 		"tick_interval": "$general.number",
@@ -30,6 +29,8 @@
 		"on_escape": "$entity.general.event_definition"
 	},
 	"minecraft:behavior.avoid_mob_type": {
+		"avoid_target_xz": "$general.number",
+		"avoid_target_y": "$general.number",
 		"priority": "$general.number",
 		"entity_types": "$entity.general.entity_types",
 		"ignore_visibility": "$general.boolean",
@@ -42,8 +43,7 @@
 		"on_escape_event": "$entity.general.event_definition",
 		"avoid_mob_sound": "$general.sound",
 		"sound_interval": {
-			"range_min": "$general.number",
-			"range_max": "$general.number"
+			"dynamic.list.index_pair": "$general.number"
 		}
 	},
 	"minecraft:behavior.barter": {
