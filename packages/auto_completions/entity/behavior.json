@@ -1011,10 +1011,17 @@
 	"minecraft:behavior.panic": {
 		"priority": "$general.number",
 		"force": "$general.boolean",
-		"damage_sources": "$general.damage_type",
+		"damage_sources": {
+			"$dynamic.list.next_index": "$general.damage_type"
+		},
 		"ignore_mob_damage": "$general.boolean",
+		"panic_sound": "$general.sound",
 		"prefer_water": "$general.boolean",
-		"speed_multiplier": "$general.decimal"
+		"speed_multiplier": "$general.decimal",
+		"sound_interval": {
+			"@import.value": "$general.number",
+			"dynamic.list.index_pair": "$general.number"
+		}
 	},
 	"minecraft:behavior.peek": {
 		"priority": "$general.number"
