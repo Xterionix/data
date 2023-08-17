@@ -5,6 +5,7 @@
 	*/
 	"@meta": {
 		"expand_path_exceptions": [
+			"minecraft:block_climber",
 			"minecraft:burns_in_daylight",
 			"minecraft:can_climb",
 			"minecraft:can_power_jump",
@@ -163,6 +164,7 @@
 		"barter_table": "$dynamic.loot_table_files",
 		"cooldown_after_being_attacked": "$general.number"
 	},
+	"minecraft:block_climber": {},
 	"minecraft:block_sensor": {
 		"sensor_radius": "$general.number",
 		"on_break": {
