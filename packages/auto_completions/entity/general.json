@@ -1,6 +1,6 @@
 {
-	"components": "$entity.annotations and $entity.behavior and $entity.components and $dynamic.plugins.custom_components",
-	"beta_components": "$entity.annotations and $entity.behavior and $entity.components and $entity.beta_components and $dynamic.plugins.custom_components",
+	"components": "$entity.annotations and $entity.behavior and $entity.components and $entity.triggers and $dynamic.plugins.custom_components",
+	"beta_components": "$entity.annotations and $entity.behavior and $entity.components and $entity.triggers and $entity.beta_components and $dynamic.plugins.custom_components",
 	"built_in_event": [
 		"minecraft:entity_born",
 		"minecraft:entity_spawned",
