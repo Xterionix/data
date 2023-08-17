@@ -197,6 +197,16 @@
 		"x_max_rotation": "$general.degree",
 		"y_max_head_rotation": "$general.degree"
 	},
+	"minecraft:behavior.dig": {
+		"priority": "$general.number",
+		"allow_dig_when_named": "$general.boolean",
+		"digs_in_daylight": "$general.boolean",
+		"duration": "$general.number",
+		"idle_time": "$general.number",
+		"suspicion_is_disturbance": "$general.boolean",
+		"vibration_is_disturbance": "$general.boolean",
+		"on_start": "$entity.general.event_definition"
+	},
 	"minecraft:behavior.door_interact": {
 		"priority": "$general.number"
 	},
