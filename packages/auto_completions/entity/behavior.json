@@ -623,7 +623,14 @@
 		"priority": "$general.number",
 		"alert_same_type": "$general.boolean",
 		"entity_types": "$entity.general.entity_types",
-		"hurt_owner": "$general.boolean"
+		"hurt_owner": "$general.boolean",
+		"cooldown": "$general.number",
+		"filters": "$entity.filters",
+		"max_dist": "$general.decimal",
+		"must_see": "$general.boolean",
+		"reevaluate_description": "$general.boolean",
+		"walk_speed_multiplier": "$general.decimal",
+		"sprint_speed_multiplier": "$general.decimal"
 	},
 	"minecraft:behavior.inspect_bookshelf": {
 		"priority": "$general.number",
