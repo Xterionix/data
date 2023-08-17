@@ -743,45 +743,17 @@
 			}
 		}
 	},
-	"$versioned_template.minecraft:giveable": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"triggers": {
-					"$dynamic.list.next_index": {
-						"cooldown": "$general.number",
-						"items": {
-							"$dynamic.list.next_index": {
-								"@import.value": "$general.item_identifier",
-								"any_tag": {
-									"$dynamic.list.next_index": {
-										"@meta": {
-											"is_value": true
-										}
-									}
-								}
-							}
-						},
-						"on_give": "$entity.general.event_definition"
-					}
-				}
-			}
-		},
-		{
-			"$if": "$format_version < 1.16.100",
-			"$data": {
-				"triggers": {
-					"$dynamic.list.next_index": {
-						"cooldown": "$general.number",
-						"items": {
-							"$dynamic.list.next_index": "$general.item_identifier"
-						},
-						"on_give": "$entity.general.event_definition"
-					}
-				}
+	"minecraft:giveable": {
+		"triggers": {
+			"$dynamic.list.next_index": {
+				"cooldown": "$general.number",
+				"items": {
+					"$dynamic.list.next_index": "$general.item_identifier"
+				},
+				"on_give": "$entity.general.event_definition"
 			}
 		}
-	],
+	},
 	"minecraft:ground_offset": {
 		"value": "$general.decimal"
 	},
