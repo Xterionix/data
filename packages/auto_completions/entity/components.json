@@ -563,12 +563,12 @@
 	"minecraft:flying_speed": {
 		"value": "$general.decimal"
 	},
-	"minecraft:friction_modifier": {
-		"value": "$general.decimal"
-	},
 	"minecraft:follow_range": {
 		"value": "$general.number",
 		"max": "$general.number"
+	},
+	"minecraft:friction_modifier": {
+		"value": "$general.decimal"
 	},
 	"minecraft:foot_size": {
 		"value": "$general.decimal"
