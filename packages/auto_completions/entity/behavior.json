@@ -527,7 +527,10 @@
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
 		"start_distance": "$general.number",
-		"stop_distance": "$general.number"
+		"stop_distance": "$general.number",
+		"can_teleport": "$general.boolean",
+		"ignore_vibration": "$general.boolean",
+		"max_distance": "$general.decimal"
 	},
 	"minecraft:behavior.follow_parent": {
 		"priority": "$general.number",
