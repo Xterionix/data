@@ -325,6 +325,11 @@
 	"minecraft:color2": {
 		"value": "$general.number"
 	},
+	"minecraft:combat_regeneration": {
+		"regeneration_duration": "$general.number",
+		"apply_to_family": "$general.boolean",
+		"apply_to_self": "$general.boolean"
+	},
 	"$versioned_template.minecraft:inside_block_notifier": [
 		{
 			"$if": "$format_version >= 1.16.100",
@@ -361,14 +366,6 @@
 					"max_optimized_distance": "$general.number",
 					"use_motion_prediction_hints": "$general.boolean"
 				}
-			}
-		}
-	],
-	"$versioned_template.minecraft:combat_regeneration": [
-		{
-			"$if": "$format_version >= 1.16.220",
-			"$data": {
-				"regeneration_duration": "$general.number"
 			}
 		}
 	],
