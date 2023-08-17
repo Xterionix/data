@@ -131,7 +131,10 @@
 		"play_attack_sound": "$general.boolean"
 	},
 	"minecraft:attack": {
-		"damage": "$general.number",
+		"damage": {
+			"@import.value": "$general.number",
+			"$dynamic.list.index_pair": "$general.number"
+		},
 		"effect_name": "$general.effect_name",
 		"effect_duration": "$general.number"
 	},
