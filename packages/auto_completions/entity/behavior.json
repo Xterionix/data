@@ -1371,6 +1371,16 @@
 		"prepare_time": "$general.number",
 		"sound": "$general.sound"
 	},
+	"minecraft:behavior.sniff": {
+		"cooldown_range": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"duration": "$general.decimal",
+		"priority": "$general.number",
+		"sniffing_radius": "$general.decimal",
+		"suspicion_radius_horizontal": "$general.decimal",
+		"suspicion_radius_vertical": "$general.decimal"
+	},
 	"minecraft:behavior.squid_move_away_from_ground": {
 		"@meta": {
 			"validate": {
