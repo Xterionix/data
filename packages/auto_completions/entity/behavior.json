@@ -640,6 +640,11 @@
 		"goal_radius": "$general.decimal",
 		"search_count": "$general.number"
 	},
+	"minecraft:behavior.investigate_suspicious_location": {
+		"priority": "$general.number",
+		"goal_radius": "$general.decimal",
+		"speed_multiplier": "$general.decimal"
+	},
 	"minecraft:behavior.knockback_roar": {
 		"priority": "$general.number",
 		"attack_time": "$general.decimal",
