@@ -568,7 +568,8 @@
 		"interval": "$general.number",
 		"goal_radius": "$general.number",
 		"on_home": "$entity.general.event_definition",
-		"on_failed": "$entity.general.event_definition"
+		"on_failed": "$entity.general.event_definition",
+		"calculate_new_path_radius": "$general.decimal"
 	},
 	"minecraft:behavior.guardian_attack": {
 		"priority": "$general.number"
