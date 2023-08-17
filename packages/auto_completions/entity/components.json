@@ -883,69 +883,6 @@
 			}
 		}
 	},
-	"$versioned_template.minecraft:on_death": [
-		{
-			"$if": "$format_version < 1.16.100",
-			"$data": {
-				"@meta": {
-					"validate": {
-						"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
-						"then": {
-							"show": true,
-							"is_warning": true,
-							"message": "\"minecraft:on_death\" can only be used by the ender dragon"
-						}
-					}
-				},
-				"$load": "$entity.general.event_definition"
-			}
-		},
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"$load": "$entity.general.event_definition"
-			}
-		}
-	],
-	"minecraft:on_friendly_anger": "$entity.general.event_definition",
-	"minecraft:on_hurt": "$entity.general.event_definition",
-	"minecraft:on_hurt_by_player": "$entity.general.event_definition",
-	"minecraft:on_ignite": "$entity.general.event_definition",
-	"$versioned_template.minecraft:out_of_control": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {}
-		}
-	],
-	"minecraft:on_start_landing": {
-		"@meta": {
-			"validate": {
-				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
-				"then": {
-					"show": true,
-					"is_warning": true,
-					"message": "\"minecraft:on_start_landing\" can only be used by the ender dragon"
-				}
-			}
-		},
-		"$load": "$entity.general.event_definition"
-	},
-	"minecraft:on_start_takeoff": {
-		"@meta": {
-			"validate": {
-				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
-				"then": {
-					"show": true,
-					"is_warning": true,
-					"message": "\"minecraft:on_start_takeoff\" can only be used by the ender dragon"
-				}
-			}
-		},
-		"$load": "$entity.general.event_definition"
-	},
-	"minecraft:on_target_acquired": "$entity.general.event_definition",
-	"minecraft:on_target_escape": "$entity.general.event_definition",
-	"minecraft:on_wake_with_owner": "$entity.general.event_definition",
 	"minecraft:peek": {
 		"on_open": "$entity.general.event_definition",
 		"on_close": "$entity.general.event_definition",
