@@ -435,14 +435,9 @@
 		},
 		"priority": "$general.number"
 	},
-	"$versioned_template.minecraft:behavior.equip_items": [
-		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": {
-				"priority": "$general.number"
-			}
-		}
-	],
+	"minecraft:behavior.equip_items": {
+		"priority": "$general.number"
+	},
 	"minecraft:behavior.explore_outskirts": {
 		"priority": "$general.number",
 		"explore_dist": "$general.number",
