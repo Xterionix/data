@@ -378,30 +378,18 @@
 			"$dynamic.list.index_triple": "$general.number"
 		}
 	},
-	"$versioned_template.minecraft:behavior.eat_block": [
-		{
-			"$if": "$format_version < 1.16.0",
-			"$data": {
-				"priority": "$general.number",
-				"on_eat": "$entity.general.event_definition"
+	"minecraft:behavior.eat_block": {
+		"priority": "$general.number",
+		"success_chance": "$molang.embedded",
+		"time_until_eat": "$general.number",
+		"eat_and_replace_block_pairs": {
+			"$dynamic.list.next_index": {
+				"eat_block": "$general.block_identifier",
+				"replace_block": "$general.block_identifier"
 			}
 		},
-		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": {
-				"priority": "$general.number",
-				"success_chance": "$molang.embedded",
-				"time_until_eat": "$general.number",
-				"eat_and_replace_block_pairs": {
-					"$dynamic.list.next_index": {
-						"eat_block": "$general.block_identifier",
-						"replace_block": "$general.block_identifier"
-					}
-				},
-				"on_eat": "$entity.general.event_definition"
-			}
-		}
-	],
+		"on_eat": "$entity.general.event_definition"
+	},
 	"minecraft:behavior.eat_carried_item": {
 		"priority": "$general.number",
 		"delay_before_eating": "$general.number"
