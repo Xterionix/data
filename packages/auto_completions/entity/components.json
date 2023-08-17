@@ -1356,6 +1356,8 @@
 	"minecraft:variant": {
 		"value": "$general.number"
 	},
+	"minecraft:vibration_damper": {},
+	"minecraft:vibration_listener": {},
 	"minecraft:walk_animation_speed": {
 		"value": "$general.decimal"
 	},
