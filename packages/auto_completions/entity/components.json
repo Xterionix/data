@@ -883,6 +883,7 @@
 			}
 		}
 	},
+	"minecraft:out_of_control": {},
 	"minecraft:peek": {
 		"on_open": "$entity.general.event_definition",
 		"on_close": "$entity.general.event_definition",
