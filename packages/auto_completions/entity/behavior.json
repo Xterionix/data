@@ -593,7 +593,13 @@
 			}
 		},
 		"priority": "$general.number",
-		"speed_multiplier": "$general.decimal"
+		"speed_multiplier": "$general.decimal",
+		"max_seconds_before_search": "$general.decimal",
+		"search_cooldown_max_seconds": "$general.decimal",
+		"search_count": "$general.number",
+		"search_height": "$general.number",
+		"search_range": "$general.number",
+		"seconds_until_new_task": "$general.decimal"
 	},
 	"minecraft:behavior.hide": {
 		"priority": "$general.number",
