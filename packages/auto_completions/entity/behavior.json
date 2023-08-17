@@ -1104,6 +1104,23 @@
 		"goal_radius": "$general.number",
 		"speed_multiplier": "$general.decimal"
 	},
+	"minecraft:behavior.ram_attack": {
+		"on_start": "$entity.general.event_definition",
+		"baby_knockback_modifier": "$general.decimal",
+		"knockback_force": "$general.decimal",
+		"knockback_height": "$general.decimal",
+		"min_ram_distance": "$general.decimal",
+		"pre_ram_sound": "$general.sound",
+		"priority": "$general.number",
+		"ram_distance": "$general.decimal",
+		"ram_impact_sound": "$general.string",
+		"ram_speed": "$general.decimal",
+		"run_speed": "$general.decimal",
+		"cooldown_range": {
+			"@import.value": "$general.number",
+			"$dynamic.list.index_pair": "$general.number"
+		}
+	},
 	"minecraft:behavior.random_breach": {
 		"$load": "$entity.behavior.minecraft:behavior&dot;random_stroll",
 		"cooldown_time": "$general.number"
@@ -1186,18 +1203,6 @@
 		},
 		"priority": "$general.number"
 	},
-	"$versioned_template.minecraft:behavior.ram_attack": [
-		{
-			"$if": "$format_version >= 1.16.200",
-			"$data": {
-				"priority": "$general.number",
-				"run_speed": "$general.decimal",
-				"ram_speed": "$general.decimal",
-				"ram_distance": "$general.number",
-				"on_start": "$entity.general.event_definition"
-			}
-		}
-	],
 	"minecraft:behavior.restrict_sun": {
 		"priority": "$general.number"
 	},
