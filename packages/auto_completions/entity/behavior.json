@@ -754,13 +754,23 @@
 		"attack_once": "$general.boolean",
 		"max_dist": "$general.number",
 		"melee_fov": "$general.degree",
+		"cooldown_time": "$general.decimal",
+		"inner_boundary_time_increase": "$general.decimal",
+		"max_path_time": "$general.decimal",
+		"min_path_time": "$general.decimal",
 		"random_stop_interval": "$general.decimal",
+		"set_persistent": "$general.boolean",
 		"reach_multiplier": "$general.decimal",
 		"require_complete_path": "$general.boolean",
 		"speed_multiplier": "$general.decimal",
 		"track_target": "$general.boolean",
-		"target_dist": "$general.number",
 		"look_distance": "$general.number",
+		"x_max_rotation": "$general.degree",
+		"y_max_head_rotation": "$general.degree",
+		"outer_boundary_time_increase": "$general.decimal",
+		"path_fail_time_increase": "$general.decimal",
+		"path_inner_boundary": "$general.decimal",
+		"path_outer_boundary": "$general.decimal",
 		"untrackable_cooldown_delay": "$general.number",
 		"target_tracking": {
 			"refresh_period_min": "$general.number",
@@ -772,7 +782,8 @@
 				}
 			}
 		},
-		"on_attack": "$entity.general.event_definition"
+		"on_attack": "$entity.general.event_definition",
+		"on_kill": "$entity.general.event_definition"
 	},
 	"minecraft:behavior.mingle": {
 		"priority": "$general.number",
