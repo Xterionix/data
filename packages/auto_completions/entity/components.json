@@ -785,6 +785,9 @@
 		"effect_time": "$general.number",
 		"entity_filter": "$entity.filters"
 	},
+	"minecraft:movement_sound_distance_offset": {
+		"value": "$general.decimal"
+	},
 	"minecraft:movement": {
 		"value": "$general.decimal"
 	},
