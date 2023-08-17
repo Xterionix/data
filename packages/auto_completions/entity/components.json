@@ -311,8 +311,8 @@
 		"radius": "$general.number",
 		"celebrate_sound": "$general.sound",
 		"sound_interval": {
-			"range_min": "$general.number",
-			"range_max": "$general.number"
+			"@import.value": "$general.number",
+			"$dynamic.list.index_pair": "$general.number"
 		}
 	},
 	"$versioned_template.minecraft:inside_block_notifier": [
