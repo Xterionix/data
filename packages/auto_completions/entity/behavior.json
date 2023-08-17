@@ -394,6 +394,15 @@
 		"priority": "$general.number",
 		"delay_before_eating": "$general.number"
 	},
+	"minecraft:behavior.eat_mob": {
+		"priority": "$general.number",
+		"eat_animation_time": "$general.decimal",
+		"eat_mob_sound": "$general.sound",
+		"loot_table": "$dynamic.loot_table_files",
+		"pull_in_force": "$general.decimal",
+		"reach_mob_distance": "$general.decimal",
+		"run_speed": "$general.decimal"
+	},
 	"minecraft:behavior.enderman_leave_block": {
 		"@meta": {
 			"validate": {
