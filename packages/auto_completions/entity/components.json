@@ -1,6 +1,23 @@
 {
 	/*
 		Todo
+		"$versioned_template.minecraft:inside_block_notifier": [
+		{
+			"$if": "$format_version >= 1.16.100",
+			"$data": {
+				"block_list": {
+					"$dynamic.list.next_index": {
+						"block": {
+							"name": "$general.block_identifier",
+							"states": "$_general.block_states"
+						},
+						"entered_block_event": "$entity.general.event_definition",
+						"exited_block_event": "$entity.general.event_definition"
+					}
+				}
+			}
+		}
+	],
 	*/
 	"@meta": {
 		"expand_path_exceptions": [
@@ -358,52 +375,22 @@
 			}
 		}
 	},
-	"$versioned_template.minecraft:inside_block_notifier": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"block_list": {
-					"$dynamic.list.next_index": {
-						"block": {
-							"name": "$general.block_identifier",
-							"states": "$_general.block_states"
-						},
-						"entered_block_event": "$entity.general.event_definition",
-						"exited_block_event": "$entity.general.event_definition"
-					}
-				}
-			}
-		}
-	],
 	"minecraft:damage_over_time": {
 		"damage_per_hurt": "$general.number",
 		"time_between_hurt": "$general.number"
 	},
-	"$versioned_template.minecraft:damage_sensor": [
-		{
-			"$if": "$format_version >= 1.16.200",
-			"$data": {
-				"triggers": {
-					"$dynamic.list.next_index": {
-						"damage_modifier": "$general.decimal"
-					}
-				}
-			}
-		},
-		{
-			"$data": {
-				"triggers": {
-					"$dynamic.list.next_index": {
-						"on_damage": "$entity.general.event_definition",
-						"cause": "$general.damage_type",
-						"deals_damage": "$general.boolean",
-						"damage_multiplier": "$general.decimal",
-						"on_damage_sound_event": "$general.sound"
-					}
-				}
+	"minecraft:damage_sensor": {
+		"triggers": {
+			"$dynamic.list.next_index": {
+				"on_damage": "$entity.general.event_definition",
+				"cause": "$general.damage_type",
+				"deals_damage": "$general.boolean",
+				"damage_multiplier": "$general.decimal",
+				"on_damage_sound_event": "$general.sound",
+				"damage_modifier": "$general.decimal"
 			}
 		}
-	],
+	},
 	"minecraft:default_look_angle": {
 		"value": "$general.decimal"
 	},
