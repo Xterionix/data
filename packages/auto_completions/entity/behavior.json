@@ -1214,10 +1214,10 @@
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal"
 	},
-	"minecraft:behavior.restrict_sun": {
+	"minecraft:behavior.restrict_open_door": {
 		"priority": "$general.number"
 	},
-	"minecraft:behavior.restrict_open_door": {
+	"minecraft:behavior.restrict_sun": {
 		"priority": "$general.number"
 	},
 	"$versioned_template.minecraft:behavior.rise_to_liquid_level": [
