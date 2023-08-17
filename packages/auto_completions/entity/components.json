@@ -319,6 +319,12 @@
 		"width": "$general.number",
 		"height": "$general.number"
 	},
+	"minecraft:color": {
+		"value": "$general.number"
+	},
+	"minecraft:color2": {
+		"value": "$general.number"
+	},
 	"$versioned_template.minecraft:inside_block_notifier": [
 		{
 			"$if": "$format_version >= 1.16.100",
@@ -358,12 +364,6 @@
 			}
 		}
 	],
-	"minecraft:color": {
-		"value": "$general.number"
-	},
-	"minecraft:color2": {
-		"value": "$general.number"
-	},
 	"$versioned_template.minecraft:combat_regeneration": [
 		{
 			"$if": "$format_version >= 1.16.220",
