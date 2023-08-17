@@ -1232,56 +1232,29 @@
 		},
 		"tame_event": "$entity.general.event_definition"
 	},
-	"$versioned_template.minecraft:tamemount": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"attempt_temper_mod": "$general.number",
-				"auto_reject_items": {
-					"$dynamic.list.next_index": {
-						"item": {
-							"@import.value": "$general.item_identifier"
-						}
-					}
-				},
-				"feed_items": {
-					"$dynamic.list.next_index": {
-						"item": {
-							"@import.value": "$general.item_identifier"
-						},
-						"temper_mod": "$general.number"
-					}
-				},
-				"feed_text": "$general.translatable_text",
-				"min_temper": "$general.number",
-				"max_temper": "$general.number",
-				"ride_text": "$general.translatable_text",
-				"tame_event": "$entity.general.event_definition"
+	"minecraft:tamemount": {
+		"attempt_temper_mod": "$general.number",
+		"autoRejectItems": {
+			"$dynamic.list.next_index": {
+				"item": {
+					"@import.value": "$general.item_identifier"
+				}
 			}
 		},
-		{
-			"$if": "$format_version < 1.16.100",
-			"$data": {
-				"attempt_temper_mod": "$general.number",
-				"auto_reject_items": {
-					"$dynamic.list.next_index": {
-						"item": "$general.item_identifier"
-					}
+		"feed_items": {
+			"$dynamic.list.next_index": {
+				"item": {
+					"@import.value": "$general.item_identifier"
 				},
-				"feed_items": {
-					"$dynamic.list.next_index": {
-						"item": "$general.item_identifier",
-						"temper_mod": "$general.number"
-					}
-				},
-				"feed_text": "$general.translatable_text",
-				"min_temper": "$general.number",
-				"max_temper": "$general.number",
-				"ride_text": "$general.translatable_text",
-				"tame_event": "$entity.general.event_definition"
+				"temper_mod": "$general.number"
 			}
-		}
-	],
+		},
+		"feed_text": "$general.translatable_text",
+		"min_temper": "$general.number",
+		"max_temper": "$general.number",
+		"ride_text": "$general.translatable_text",
+		"tame_event": "$entity.general.event_definition"
+	},
 	"minecraft:target_nearby_sensor": {
 		"inside_range": "$general.number",
 		"outside_range": "$general.number",
