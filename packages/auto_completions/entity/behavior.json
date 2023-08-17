@@ -874,6 +874,10 @@
 		"search_range": "$general.number",
 		"speed_multiplier": "$general.decimal"
 	},
+	"minecraft:behavior.move_towards_dwelling_restriction": {
+		"priority": "$general.number",
+		"speed_multiplier": "$general.decimal"
+	},
 	"minecraft:behavior.move_towards_restriction": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
@@ -882,19 +886,6 @@
 			"look"
 		]
 	},
-	"$versioned_template.minecraft:behavior.move_towards_dwelling_restriction": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"priority": "$general.number",
-				"speed_multiplier": "$general.decimal",
-				"control_flags": [
-					"move",
-					"look"
-				]
-			}
-		}
-	],
 	"$versioned_template.minecraft:behavior.move_towards_home_restriction": [
 		{
 			"$if": "$format_version >= 1.16.100",
