@@ -830,20 +830,27 @@
 		}
 	},
 	"minecraft:navigation.climb": {
-		"is_amphibious": "$general.boolean",
+		"avoid_damage_blocks": "$general.boolean",
 		"avoid_portals": "$general.boolean",
-		"avoid_powder_snow": "$general.boolean",
 		"avoid_sun": "$general.boolean",
 		"avoid_water": "$general.boolean",
-		"avoid_damage_blocks": "$general.boolean",
+		"blocks_to_avoid": {
+			"dynamic.list.next_index": "$general.block_identifier"
+		},
+		"can_breach": "$general.boolean",
 		"can_break_doors": "$general.boolean",
+		"can_jump": "$general.boolean",
 		"can_open_doors": "$general.boolean",
+		"can_open_iron_doors": "$general.boolean",
 		"can_pass_doors": "$general.boolean",
-		"can_path_over_water": "$general.boolean",
-		"can_path_over_lava": "$general.boolean",
 		"can_path_from_air": "$general.boolean",
+		"can_path_over_lava": "$general.boolean",
+		"can_path_over_water": "$general.boolean",
 		"can_sink": "$general.boolean",
-		"can_walk_in_lava": "$general.boolean"
+		"can_swim": "$general.boolean",
+		"can_walk": "$general.boolean",
+		"can_walk_in_lava": "$general.boolean",
+		"is_amphibious": "$general.boolean"
 	},
 	"minecraft:navigation.float": "$entity.components.minecraft:navigation&dot;climb",
 	"minecraft:navigation.fly": "$entity.components.minecraft:navigation&dot;climb",
