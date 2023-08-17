@@ -70,12 +70,10 @@
 		"priority": "$general.number",
 		"celebration_sound": "$general.sound",
 		"sound_interval": {
-			"range_min": "$general.number",
-			"range_max": "$general.number"
+			"dynamic.list.index_pair": "$general.number"
 		},
 		"jump_interval": {
-			"range_min": "$general.number",
-			"range_max": "$general.number"
+			"dynamic.list.index_pair": "$general.number"
 		},
 		"duration": "$general.number",
 		"on_celebration_end_event": "$entity.general.event_definition"
