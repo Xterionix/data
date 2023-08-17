@@ -126,7 +126,9 @@
 		"damage_range": "$general.number",
 		"damage_per_tick": "$general.number",
 		"cause": "$general.damage_type",
-		"entity_filter": "$entity.filters"
+		"entity_filter": "$entity.filters",
+		"damage_cooldown": "$general.decimal",
+		"play_attack_sound": "$general.boolean"
 	},
 	"minecraft:attack": {
 		"damage": "$general.number",
