@@ -624,54 +624,26 @@
 		"charges": "$general.number",
 		"chance": "$general.decimal"
 	},
-	"$versioned_template.minecraft:healable": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"force_use": "$general.boolean",
-				"filters": "$entity.filters",
-				"items": {
+	"minecraft:healable": {
+		"force_use": "$general.boolean",
+		"filters": "$entity.filters",
+		"items": {
+			"$dynamic.list.next_index": {
+				"item": {
+					"@import.value": "$general.item_identifier"
+				},
+				"heal_amount": "$general.number",
+				"effects": {
 					"$dynamic.list.next_index": {
-						"item": {
-							"@import.value": "$general.item_identifier"
-						},
-						"heal_amount": "$general.number",
-						"filters": "$entity.filters",
-						"effects": {
-							"$dynamic.list.next_index": {
-								"name": "$general.effect_name",
-								"chance": "$general.decimal",
-								"duration": "$general.number",
-								"amplifier": "$general.number"
-							}
-						}
-					}
-				}
-			}
-		},
-		{
-			"$if": "$format_version < 1.16.100",
-			"$data": {
-				"force_use": "$general.boolean",
-				"filters": "$entity.filters",
-				"items": {
-					"$dynamic.list.next_index": {
-						"item": "$general.item_identifier",
-						"heal_amount": "$general.number",
-						"filters": "$entity.filters",
-						"effects": {
-							"$dynamic.list.next_index": {
-								"name": "$general.effect_name",
-								"chance": "$general.decimal",
-								"duration": "$general.number",
-								"amplifier": "$general.number"
-							}
-						}
+						"name": "$general.effect_name",
+						"chance": "$general.decimal",
+						"duration": "$general.number",
+						"amplifier": "$general.number"
 					}
 				}
 			}
 		}
-	],
+	},
 	"minecraft:health": {
 		"value": "$general.number",
 		"max": "$general.number",
