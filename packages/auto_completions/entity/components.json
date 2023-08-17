@@ -654,51 +654,20 @@
 			"$data": {}
 		}
 	],
-	"$versioned_template.minecraft:equippable": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"slots": {
-					"$dynamic.list.next_index": {
-						"accepted_items": {
-							"$dynamic.list.next_index": {
-								"@import.value": "$general.item_identifier",
-								"any_tag": {
-									"$dynamic.list.next_index": {
-										"@meta": {
-											"is_value": true
-										}
-									}
-								}
-							}
-						},
-						"interact_text": "$general.translatable_text",
-						"item": "$general.item_identifier",
-						"on_equip": "$entity.general.event_definition",
-						"on_unequip": "$entity.general.event_definition",
-						"slot": "$general.number"
-					}
-				}
-			}
-		},
-		{
-			"$if": "$format_version < 1.16.100",
-			"$data": {
-				"slots": {
-					"$dynamic.list.next_index": {
-						"accepted_items": {
-							"$dynamic.list.next_index": "$general.item_identifier"
-						},
-						"interact_text": "$general.translatable_text",
-						"item": "$general.item_identifier",
-						"on_equip": "$entity.general.event_definition",
-						"on_unequip": "$entity.general.event_definition",
-						"slot": "$general.number"
-					}
-				}
+	"minecraft:equippable": {
+		"slots": {
+			"$dynamic.list.next_index": {
+				"accepted_items": {
+					"$dynamic.list.next_index": "$general.item_identifier"
+				},
+				"interact_text": "$general.translatable_text",
+				"item": "$general.item_identifier",
+				"on_equip": "$entity.general.event_definition",
+				"on_unequip": "$entity.general.event_definition",
+				"slot": "$general.number"
 			}
 		}
-	],
+	},
 	"minecraft:experience_reward": {
 		"on_bred": "$molang.embedded",
 		"on_death": "$molang.embedded"
