@@ -687,6 +687,9 @@
 					"table": "$dynamic.loot_table_files"
 				},
 				"cooldown": "$general.number",
+				"cooldown_after_being_attacked": "$general.number",
+				"equip_item_slot": "$general.number",
+				"health_amount": "$general.number",
 				"hurt_item": "$general.number",
 				"interact_text": "$general.translatable_text",
 				"on_interact": "$entity.general.event_definition",
@@ -702,7 +705,8 @@
 				"transform_to_item": "$general.item_identifier",
 				"barter": "$general.boolean",
 				"admire": "$general.boolean",
-				"use_item": "$general.boolean"
+				"use_item": "$general.boolean",
+				"vibration": "$entity.general.vibrations"
 			}
 		}
 	},
