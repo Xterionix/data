@@ -866,6 +866,14 @@
 		"goal_radius": "$general.decimal",
 		"cooldown_time": "$general.decimal"
 	},
+	"minecraft:behavior.move_to_water": {
+		"priority": "$general.number",
+		"goal_radius": "$general.decimal",
+		"search_count": "$general.number",
+		"search_height": "$general.number",
+		"search_range": "$general.number",
+		"speed_multiplier": "$general.decimal"
+	},
 	"minecraft:behavior.move_towards_restriction": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
@@ -931,14 +939,6 @@
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
 		"poi_type": "$general.poi_type"
-	},
-	"minecraft:behavior.move_to_water": {
-		"priority": "$general.number",
-		"goal_radius": "$general.decimal",
-		"search_count": "$general.number",
-		"search_height": "$general.number",
-		"search_range": "$general.number",
-		"speed_multiplier": "$general.decimal"
 	},
 	"minecraft:behavior.nap": {
 		"priority": "$general.number",
