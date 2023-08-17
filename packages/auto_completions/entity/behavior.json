@@ -78,6 +78,18 @@
 		"duration": "$general.number",
 		"on_celebration_end_event": "$entity.general.event_definition"
 	},
+	"minecraft:behavior.celebrate_survive": {
+		"priority": "$general.number",
+		"celebration_sound": "$general.sound",
+		"sound_interval": {
+			"dynamic.list.index_pair": "$general.number"
+		},
+		"jump_interval": {
+			"dynamic.list.index_pair": "$general.number"
+		},
+		"duration": "$general.number",
+		"on_celebration_end_event": "$entity.general.event_definition"
+	},
 	"minecraft:behavior.charge_attack": {
 		"priority": "$general.number"
 	},
