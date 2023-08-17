@@ -945,9 +945,20 @@
 		"priority": "$general.number",
 		"set_persistent": "$general.boolean",
 		"attack_interval": "$general.number",
+		"attack_interval_min": "$general.number",
+		"attack_owner": "$general.boolean",
+		"entity_types": "$entity.general.prioritized_entity_types",
+		"must_reach": "$general.boolean",
+		"must_see": "$general.boolean",
+		"must_see_forget_duration": "$general.number",
+		"persist_time": "$general.decimal",
 		"reselect_targets": "$general.boolean",
-		"target_search_height": "$general.number",
-		"entity_types": "$entity.general.prioritized_entity_types"
+		"scan_interval": "$general.number",
+		"target_search_height": "$general.decimal",
+		"within_radius": "$general.decimal",
+		"reevaluate_description": "$general.boolean",
+		"target_invisible_multiplier": "$general.decimal",
+		"target_sneak_visibility_multiplier": "$general.decimal"
 	},
 	"minecraft:behavior.ocelotattack": {
 		"priority": "$general.number",
