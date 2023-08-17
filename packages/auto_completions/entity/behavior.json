@@ -248,6 +248,23 @@
 		},
 		"priority": "$general.number"
 	},
+	"minecraft:behavior.dragonflaming": {
+		"@meta": {
+			"validate": {
+				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
+				"then": {
+					"show": true,
+					"is_warning": true,
+					"message": "\"minecraft:behavior.dragonflaming\" can only be used by the ender dragon"
+				}
+			}
+		},
+		"priority": "$general.number",
+		"cooldown_time": "$general.decimal",
+		"flame_time": "$general.decimal",
+		"ground_flame_count": "$general.number",
+		"roar_time": "$general.decimal"
+	},
 	"minecraft:behavior.drink_potion": {
 		"priority": "$general.number",
 		"speed_modifier": "$general.decimal",
@@ -267,19 +284,6 @@
 					"show": true,
 					"is_warning": true,
 					"message": "\"minecraft:behavior.dragonlanding\" can only be used by the ender dragon"
-				}
-			}
-		},
-		"priority": "$general.number"
-	},
-	"minecraft:behavior.dragonflaming": {
-		"@meta": {
-			"validate": {
-				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
-				"then": {
-					"show": true,
-					"is_warning": true,
-					"message": "\"minecraft:behavior.dragonflaming\" can only be used by the ender dragon"
 				}
 			}
 		},
