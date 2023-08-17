@@ -1186,50 +1186,30 @@
 	"minecraft:sound_volume": {
 		"value": "$general.decimal"
 	},
-	"$versioned_template.minecraft:spawn_entity": [
-		{
-			"$if": "$format_version < 1.16.0",
-			"$data": {
-				"$dynamic.list.next_index": {
-					"should_leash": "$general.boolean",
-					"num_to_spawn": "$general.number",
-					"min_wait_time": "$general.number",
-					"max_wait_time": "$general.number",
-					"spawn_entity": "$general.entity_identifier",
-					"spawn_event": "$entity.general.event_string",
-					"spawn_item": "$general.item_identifier",
-					"spawn_method": [
-						"born"
-					],
-					"spawn_sound": "$general.sound",
-					"filters": "$entity.filters",
-					"single_use": "$general.boolean"
-				}
-			}
-		},
-		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": {
-				"entities": {
-					"$dynamic.list.next_index": {
-						"should_leash": "$general.boolean",
-						"num_to_spawn": "$general.number",
-						"min_wait_time": "$general.number",
-						"max_wait_time": "$general.number",
-						"spawn_entity": "$general.entity_identifier",
-						"spawn_event": "$entity.general.event_string",
-						"spawn_item": "$general.item_identifier",
-						"spawn_method": [
-							"born"
-						],
-						"spawn_sound": "$general.sound",
-						"filters": "$entity.filters",
-						"single_use": "$general.boolean"
+	"minecraft:spawn_entity": {
+		"entities": {
+			"$dynamic.list.next_index": {
+				"should_leash": "$general.boolean",
+				"num_to_spawn": "$general.number",
+				"min_wait_time": "$general.number",
+				"max_wait_time": "$general.number",
+				"spawn_entity": "$general.entity_identifier",
+				"spawn_event": "$entity.general.event_string",
+				"spawn_item": "$general.item_identifier",
+				"spawn_item_event": {
+					"@meta": {
+						"is_value": true
 					}
-				}
+				},
+				"spawn_method": [
+					"born"
+				],
+				"spawn_sound": "$general.sound",
+				"filters": "$entity.filters",
+				"single_use": "$general.boolean"
 			}
 		}
-	],
+	},
 	"minecraft:spell_effects": {
 		"add_effects": {
 			"$dynamic.list.next_index": "$entity.general.effect_definition"
