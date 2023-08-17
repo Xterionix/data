@@ -327,17 +327,6 @@
 		"turn_speed": "$general.decimal",
 		"view_angle": "$general.decimal"
 	},
-	"minecraft:behavior.drink_potion": {
-		"priority": "$general.number",
-		"speed_modifier": "$general.decimal",
-		"potions": {
-			"$dynamic.list.next_index": {
-				"id": "$general.potion_number_id",
-				"chance": "$general.decimal",
-				"filters": "$entity.filters"
-			}
-		}
-	},
 	"minecraft:behavior.dragontakeoff": {
 		"@meta": {
 			"validate": {
@@ -350,6 +339,17 @@
 			}
 		},
 		"priority": "$general.number"
+	},
+	"minecraft:behavior.drink_potion": {
+		"priority": "$general.number",
+		"speed_modifier": "$general.decimal",
+		"potions": {
+			"$dynamic.list.next_index": {
+				"id": "$general.potion_number_id",
+				"chance": "$general.decimal",
+				"filters": "$entity.filters"
+			}
+		}
 	},
 	"minecraft:behavior.drop_item_for": {
 		"priority": "$general.number",
