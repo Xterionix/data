@@ -840,6 +840,19 @@
 	},
 	"minecraft:behavior.move_to_land": "$entity.behavior.minecraft:behavior&dot;move_to_water",
 	"minecraft:behavior.move_to_lava": "$entity.behavior.minecraft:behavior&dot;move_to_water",
+	"minecraft:behavior.move_to_liquid": {
+		"priority": "$general.number",
+		"goal_radius": "$general.decimal",
+		"search_count": "$general.number",
+		"search_height": "$general.number",
+		"search_range": "$general.number",
+		"speed_multiplier": "$general.decimal",
+		"material_type": [
+			"Any",
+			"Water",
+			"Lava"
+		]
+	},
 	"minecraft:behavior.move_towards_restriction": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
