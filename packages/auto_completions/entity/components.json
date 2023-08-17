@@ -763,7 +763,10 @@
 	"minecraft:lookat": {
 		"search_radius": "$general.number",
 		"set_target": "$general.boolean",
-		"look_cooldown": "$general.number",
+		"look_cooldown": {
+			"@import.value": "$general.number",
+			"dynamic.list.index_pair": "$general.number"
+		},
 		"filters": "$entity.filters",
 		"look_event": "$entity.general.event_definition",
 		"allow_invulnerable": "$general.boolean"
