@@ -572,7 +572,14 @@
 		"calculate_new_path_radius": "$general.decimal"
 	},
 	"minecraft:behavior.guardian_attack": {
-		"priority": "$general.number"
+		"priority": "$general.number",
+		"elder_extra_magic_damage": "$general.number",
+		"hard_mode_extra_magic_damage": "$general.number",
+		"magic_damage": "$general.number",
+		"min_distance": "$general.decimal",
+		"sound_delay_time": "$general.decimal",
+		"x_max_rotation": "$general.decimal",
+		"y_max_head_rotation": "$general.decimal"
 	},
 	"minecraft:behavior.harvest_farm_block": {
 		"@meta": {
