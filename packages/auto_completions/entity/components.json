@@ -347,6 +347,17 @@
 			"use_motion_prediction_hints": "$general.boolean"
 		}
 	},
+	"minecraft:custom_hit_test": {
+		"hitboxes": {
+			"$dynamic.list.next_index": {
+				"width": "$general.number",
+				"height": "$general.number",
+				"pivot": {
+					"$dynamic.list.index_triple": "$general.number"
+				}
+			}
+		}
+	},
 	"$versioned_template.minecraft:inside_block_notifier": [
 		{
 			"$if": "$format_version >= 1.16.100",
@@ -364,17 +375,6 @@
 			}
 		}
 	],
-	"minecraft:custom_hit_test": {
-		"hitboxes": {
-			"$dynamic.list.next_index": {
-				"width": "$general.number",
-				"height": "$general.number",
-				"pivot": {
-					"$dynamic.list.index_triple": "$general.number"
-				}
-			}
-		}
-	},
 	"minecraft:damage_over_time": {
 		"damage_per_hurt": "$general.number",
 		"time_between_hurt": "$general.number"
