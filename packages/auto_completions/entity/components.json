@@ -76,6 +76,17 @@
 			}
 		}
 	],
+	"minecraft:ambient_sound_interval": {
+		"range": "$general.number",
+		"value": "$general.number",
+		"event_name": "$general.sound",
+		"event_names": {
+			"$dynamic.list.next_index": {
+				"condition": "$molang.embedded",
+				"event_name": "$general.sound"
+			}
+		}
+	},
 	"minecraft:anger_level": {
 		"anger_decrement_interval": "$general.decimal",
 		"angry_boost": "$general.number",
@@ -90,11 +101,6 @@
 			}
 		},
 		"remove_targets_below_angry_threshold": "$general.boolean"
-	},
-	"minecraft:ambient_sound_interval": {
-		"range": "$general.number",
-		"value": "$general.number",
-		"event_name": "$general.sound"
 	},
 	"minecraft:angry": {
 		"broadcast_anger": "$general.boolean",
