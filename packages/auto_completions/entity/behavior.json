@@ -215,6 +215,26 @@
 	"minecraft:behavior.door_interact": {
 		"priority": "$general.number"
 	},
+	"minecraft:behavior.dragonchargeplayer": {
+		"@meta": {
+			"validate": {
+				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
+				"then": {
+					"show": true,
+					"is_warning": true,
+					"message": "\"minecraft:behavior.dragonchargeplayer\" can only be used by the ender dragon"
+				}
+			}
+		},
+		"priority": "$general.number",
+		"active_speed": "$general.decimal",
+		"continue_charge_threshold_time": "$general.decimal",
+		"flight_speed": "$general.decimal",
+		"target_zone": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"turn_speed": "$general.decimal"
+	},
 	"minecraft:behavior.drink_potion": {
 		"priority": "$general.number",
 		"speed_modifier": "$general.decimal",
@@ -273,19 +293,6 @@
 					"show": true,
 					"is_warning": true,
 					"message": "\"minecraft:behavior.dragontakeoff\" can only be used by the ender dragon"
-				}
-			}
-		},
-		"priority": "$general.number"
-	},
-	"minecraft:behavior.dragonchargeplayer": {
-		"@meta": {
-			"validate": {
-				"confirm": "!Bridge.File.usesEntity('minecraft:ender_dragon')",
-				"then": {
-					"show": true,
-					"is_warning": true,
-					"message": "\"minecraft:behavior.dragonchargeplayer\" can only be used by the ender dragon"
 				}
 			}
 		},
