@@ -91,7 +91,11 @@
 		"on_celebration_end_event": "$entity.general.event_definition"
 	},
 	"minecraft:behavior.charge_attack": {
-		"priority": "$general.number"
+		"priority": "$general.number",
+		"max_distance": "$general.number",
+		"min_distance": "$general.number",
+		"speed_multiplier": "$general.decimal",
+		"success_rate": "$general.decimal"
 	},
 	"minecraft:behavior.charge_held_item": {
 		"priority": "$general.number",
