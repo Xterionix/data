@@ -1381,6 +1381,21 @@
 		"suspicion_radius_horizontal": "$general.decimal",
 		"suspicion_radius_vertical": "$general.decimal"
 	},
+	"minecraft:behavior.sonic_boom": {
+		"priority": "$general.number",
+		"attack_cooldown": "$general.decimal",
+		"attack_damage": "$general.decimal",
+		"attack_range_horizontal": "$general.decimal",
+		"attack_range_vertical": "$general.decimal",
+		"attack_sound": "$general.sound",
+		"charge_sound": "$general.sound",
+		"duration": "$general.decimal",
+		"duration_until_attack_sound": "$general.decimal",
+		"knockback_height_cap": "$general.decimal",
+		"knockback_horizontal_strength": "$general.decimal",
+		"knockback_vertical_strength": "$general.decimal",
+		"speed_multiplier": "$general.decimal"
+	},
 	"minecraft:behavior.squid_move_away_from_ground": {
 		"@meta": {
 			"validate": {
