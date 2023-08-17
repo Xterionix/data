@@ -472,9 +472,6 @@
 		"show_trade_screen": "$general.boolean",
 		"use_legacy_price_formula": "$general.boolean"
 	},
-	"minecraft:environment_sensor": {
-		"triggers": "$entity.general.event_definition"
-	},
 	"minecraft:entity_sensor": {
 		"sensor_range": "$general.number",
 		"minimum_count": "$general.number",
@@ -483,6 +480,9 @@
 		"require_all": "$general.boolean",
 		"event_filters": "$entity.filters",
 		"event": "$entity.general.event_string"
+	},
+	"minecraft:environment_sensor": {
+		"triggers": "$entity.general.event_definition"
 	},
 	"minecraft:equipment": {
 		"table": "$dynamic.loot_table_files",
