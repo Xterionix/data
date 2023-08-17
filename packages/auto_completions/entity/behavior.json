@@ -138,10 +138,15 @@
 		}
 	},
 	"minecraft:behavior.defend_trusted_target": {
+		"entity_types": "$entity.general.entity_types",
+		"attack_interval": "$general.number",
+		"cooldown": "$general.number",
 		"priority": "$general.number",
 		"attack_chance": "$general.decimal",
 		"within_radius": "$general.number",
 		"must_see": "$general.boolean",
+		"must_see_forget_duration": "$general.number",
+		"reevaluate_description": "$general.boolean",
 		"aggro_sound": "$general.sound",
 		"sound_chance": "$general.decimal",
 		"on_defend_start": "$entity.general.event_definition"
