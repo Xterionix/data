@@ -1060,7 +1060,18 @@
 			}
 		},
 		"priority": "$general.number",
-		"speed_multiplier": "$general.decimal"
+		"speed_multiplier": "$general.decimal",
+		"chance_to_start": "$general.decimal",
+		"follow_distance": "$general.number",
+		"friend_search_area": {
+			"dynamic.list.index_triple": "$general.number"
+		},
+		"friend_types": {
+			"dynamic.list.next_index": "$general.entity_identifier"
+		},
+		"max_play_duration_seconds": "$general.number",
+		"random_pos_search_height": "$general.number",
+		"random_pos_search_range": "$general.number"
 	},
 	"$versioned_template.minecraft:play_dead": [
 		{
