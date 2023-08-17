@@ -455,6 +455,16 @@
 		"next_y": "$general.number",
 		"timer_ratio": "$general.decimal"
 	},
+	"minecraft:behavior.fertilize_farm_block": {
+		"priority": "$general.number",
+		"goal_radius": "$general.decimal",
+		"max_fertilizer_usage": "$general.number",
+		"search_cooldown_max_seconds": "$general.decimal",
+		"search_count": "$general.number",
+		"search_height": "$general.number",
+		"search_range": "$general.number",
+		"speed_multiplier": "$general.decimal"
+	},
 	"minecraft:behavior.find_cover": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
