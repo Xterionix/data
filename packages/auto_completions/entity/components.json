@@ -1300,7 +1300,6 @@
 		"display_name": "$general.translatable_text",
 		"table": "$dynamic.trade_table_files",
 		"new_screen": "$general.boolean",
-		"hero_demand_discount": "$general.number",
 		"persist_trades": "$general.boolean",
 		"convert_trades_economy": "$general.boolean"
 	},
