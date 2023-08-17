@@ -681,9 +681,22 @@
 	"minecraft:behavior.lay_egg": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
+		"allow_laying_from_below": "$general.boolean",
+		"egg_type": "$general.block_identifier",
 		"search_range": "$general.number",
 		"search_height": "$general.number",
-		"goal_radius": "$general.number",
+		"goal_radius": "$general.decimal",
+		"lay_egg_sound": "$general.sound",
+		"lay_seconds": "$general.number",
+		"target_blocks": {
+			"$dynamic.list.next_index": "$general.block_identifier"
+		},
+		"target_materials_above_block": [
+			"Air",
+			"Water",
+			"Lava"
+		],
+		"use_default_animation": "$general.boolean",
 		"on_lay": "$entity.general.event_definition"
 	},
 	"minecraft:behavior.lay_down": {
