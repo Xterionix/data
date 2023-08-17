@@ -809,9 +809,6 @@
 		"start_speed": "$general.number",
 		"speed_when_turning": "$general.number"
 	},
-	"minecraft:skin_id": {
-		"value": "$general.number"
-	},
 	"minecraft:movement.skip": "$entity.components.minecraft:movement&dot;amphibious",
 	"minecraft:movement.sway": {
 		"$load": "$entity.components.minecraft:movement&dot;amphibious",
@@ -1216,6 +1213,9 @@
 	"minecraft:sittable": {
 		"sit_event": "$entity.general.event_definition",
 		"stand_event": "$entity.general.event_definition"
+	},
+	"minecraft:skin_id": {
+		"value": "$general.number"
 	},
 	"minecraft:sound_volume": {
 		"value": "$general.decimal"
