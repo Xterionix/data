@@ -49,7 +49,8 @@
 			"minecraft:trust",
 			"minecraft:wants_jockey",
 			"minecraft:equip_item",
-			"minecraft:out_of_control"
+			"minecraft:out_of_control",
+			"minecraft:fire_immune"
 		]
 	},
 	"minecraft:addrider": {
@@ -537,7 +538,7 @@
 		"destroy_affected_by_griefing": "$general.boolean",
 		"allow_damage_underwater": "$general.boolean"
 	},
-	"minecraft:fire_immune": "$general.boolean",
+	"minecraft:fire_immune": {},
 	"minecraft:floats_in_liquid": {},
 	"minecraft:flocking": {
 		"in_water": "$general.boolean",
