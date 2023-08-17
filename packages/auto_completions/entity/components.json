@@ -217,22 +217,17 @@
 			"$dynamic.list.next_index": "$general.block_identifier"
 		}
 	},
-	"$versioned_template.minecraft:buoyant": [
-		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": {
-				"apply_gravity": "$general.boolean",
-				"base_buoyancy": "$general.decimal",
-				"big_wave_probability": "$general.decimal",
-				"big_wave_speed": "$general.number",
-				"drag_down_on_buoyancy_removed": "$general.decimal",
-				"liquid_blocks": {
-					"$dynamic.list.next_index": "$general.block_identifier"
-				},
-				"simulate_waves": "$general.boolean"
-			}
-		}
-	],
+	"minecraft:buoyant": {
+		"apply_gravity": "$general.boolean",
+		"base_buoyancy": "$general.decimal",
+		"big_wave_probability": "$general.decimal",
+		"big_wave_speed": "$general.number",
+		"drag_down_on_buoyancy_removed": "$general.decimal",
+		"liquid_blocks": {
+			"$dynamic.list.next_index": "$general.block_identifier"
+		},
+		"simulate_waves": "$general.boolean"
+	},
 	"$versioned_template.minecraft:breedable": [
 		{
 			"$if": "$format_version >= 1.16.100",
