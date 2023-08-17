@@ -473,7 +473,7 @@
 	"minecraft:behavior.find_mount": {
 		"avoid_water": "$general.boolean",
 		"mount_distance": "$general.decimal",
-		"priority": "not set",
+		"priority": "$general.number",
 		"start_delay": "$general.number",
 		"target_needed": "$general.boolean",
 		"within_radius": "$general.decimal"
@@ -541,6 +541,16 @@
 		"speed_multiplier": "$general.decimal",
 		"within_radius": "$general.number",
 		"follow_distance": "$general.number"
+	},
+	"minecraft:behavior.go_and_give_items_to_noteblock": {
+		"priority": "$general.number",
+		"listen_time": "$general.number",
+		"on_item_throw": "$entity.general.event_definition",
+		"reach_block_distance": "$general.decimal",
+		"run_speed": "$general.decimal",
+		"throw_force": "$general.decimal",
+		"throw_sound": "$general.sound",
+		"vertical_throw_mul": "$general.decimal"
 	},
 	"minecraft:behavior.go_home": {
 		"priority": "$general.number",
