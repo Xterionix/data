@@ -662,6 +662,18 @@
 		}
 	},
 	"minecraft:input_ground_controlled": {},
+	"minecraft:inside_block_notifier": {
+		"block_list": {
+			"$dynamic.list.next_index": {
+				"block": {
+					"name": "$general.block_identifier",
+					"states": "$_general.block_states"
+				},
+				"entered_block_event": "$entity.general.event_definition",
+				"exited_block_event": "$entity.general.event_definition"
+			}
+		}
+	},
 	"minecraft:insomnia": {
 		"days_until_insomnia": "$general.number"
 	},
