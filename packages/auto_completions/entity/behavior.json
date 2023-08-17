@@ -60,8 +60,7 @@
 		}
 	},
 	"minecraft:behavior.break_door": {
-		"priority": "$general.number",
-		"speed_multiplier": "$general.decimal"
+		"priority": "$general.number"
 	},
 	"minecraft:behavior.breed": {
 		"priority": "$general.number",
