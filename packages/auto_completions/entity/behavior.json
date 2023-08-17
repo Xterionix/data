@@ -178,9 +178,24 @@
 		"random_stop_interval": "$general.number",
 		"reach_multiplier": "$general.decimal",
 		"attack_duration": "$general.decimal",
+		//	"attack_types": ?
 		"hit_delay_pct": "$general.decimal",
 		"track_target": "$general.boolean",
-		"sound_event": "$general.sound"
+		"sound_event": "$general.sound",
+		"cooldown_time": "$general.decimal",
+		"inner_boundary_time_increase": "$general.decimal",
+		"max_dist": "$general.number",
+		"max_path_time": "$general.decimal",
+		"melee_fov": "$general.degree",
+		"min_path_time": "$general.decimal",
+		"on_attack": "$entity.general.event_definition",
+		"outer_boundary_time_increase": "#general.decimal",
+		"path_fail_time_increase": "$general.decimal",
+		"path_inner_boundary": "$general.decimal",
+		"path_outer_boundary": "$general.decimal",
+		"set_persistent": "$general.boolean",
+		"x_max_rotation": "$general.degree",
+		"y_max_head_rotation": "$general.degree"
 	},
 	"minecraft:behavior.door_interact": {
 		"priority": "$general.number"
