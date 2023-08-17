@@ -1628,6 +1628,7 @@
 		"priority": "$general.number",
 		"can_get_scared": "$general.boolean",
 		"can_tempt_vertically": "$general.boolean",
+		"can_tempt_while_ridden": "$general.boolean",
 		"items": {
 			"$dynamic.list.next_index": "$general.item_identifier"
 		},
@@ -1635,8 +1636,8 @@
 		"within_radius": "$general.number",
 		"tempt_sound": "$general.sound",
 		"sound_interval": {
-			"range_min": "$general.number",
-			"range_max": "$general.number"
+			"@import.value": "$general.number",
+			"dynamic.list.index_pair": "$general.number"
 		}
 	},
 	"minecraft:behavior.trade_interest": {
