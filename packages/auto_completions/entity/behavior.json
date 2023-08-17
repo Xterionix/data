@@ -123,7 +123,9 @@
 	},
 	"minecraft:behavior.controlled_by_player": {
 		"priority": "$general.number",
-		"mount_speed_multiplier": "$general.decimal"
+		"mount_speed_multiplier": "$general.decimal",
+		"fractional_rotation": "$general.number",
+		"fractional_rotation_limit": "$general.number"
 	},
 	"minecraft:behavior.defend_trusted_target": {
 		"priority": "$general.number",
