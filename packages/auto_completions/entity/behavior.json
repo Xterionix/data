@@ -1031,6 +1031,7 @@
 		"goal_radius": "$general.decimal",
 		"search_height": "$general.number",
 		"search_radius": "$general.number",
+		"search_range": "$general.number",
 		"speed_multiplier": "$general.decimal"
 	},
 	"minecraft:behavior.pickup_items": {
