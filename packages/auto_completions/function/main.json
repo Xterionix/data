@@ -5,7 +5,28 @@
 			"$function.general.ability": "$general.boolean"
 		}
 	},
-	"camera": {},
+	"camera": {
+		"$function.general.target_selector": {
+			"clear": {},
+			"fade": {
+				"color": {
+					"$general.number0_255": {
+						"$general.number0_255": "$general.number0_255"
+					}
+				},
+				"time": {
+					"$general.decimal": {
+						"$general.decimal": {
+							"$general.decimal": {
+								"color": "$function.main.camera.$function.general.target_selector.fade.color"
+							}
+						}
+					}
+				}
+			},
+			"set": {}
+		}
+	},
 	"camerashake": {
 		"add": {
 			"$function.general.target_selector": {
