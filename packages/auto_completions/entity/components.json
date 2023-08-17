@@ -1311,10 +1311,15 @@
 		}
 	},
 	"minecraft:transformation": {
+		"add": {
+			"dynamic.list.next_index": "$entity.general.component_group_name"
+		},
 		"into": "$general.entity_identifier",
 		"begin_transformation_sound": "$general.sound",
 		"transformation_sound": "$general.sound",
 		"drop_equipment": "$general.boolean",
+		"preserve_equipment": "$general.boolean",
+		"drop_inventory": "$general.boolean",
 		"keep_owner": "$general.boolean",
 		"keep_level": "$general.boolean",
 		"delay": {
