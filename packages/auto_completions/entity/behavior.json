@@ -1485,17 +1485,27 @@
 		"priority": "$general.number"
 	},
 	"minecraft:behavior.stomp_attack": {
+		"attack_interval": "$general.decimal",
+		"attack_interval_max": "$general.decimal",
+		"attack_interval_min": "$general.decimal",
+		"attack_radius": "$general.decimal",
+		"attack_radius_min": "$general.decimal",
+		"burst_interval": "$general.decimal",
+		"burst_shots": "$general.number",
+		"charge_charged_trigger": "$general.decimal",
+		"charge_shoot_trigger": "$general.decimal",
 		"priority": "$general.number",
+		"ranged_fov": "$general.decimal",
+		"set_persistent": "$general.boolean",
+		"speed_multiplier": "$general.decimal",
+		"swing": "$general.boolean",
+		"target_in_sight_time": "$general.decimal",
+		"x_max_rotation": "$general.degree",
+		"y_max_head_rotation": "$general.degree",
 		"attack_once": "$general.boolean",
-		"attack_types": {
-			"@meta": {
-				"is_value": true
-			}
-		},
 		"random_stop_interval": "$general.number",
 		"reach_multiplier": "$general.decimal",
 		"track_target": "$general.boolean",
-		"speed_multiplier": "$general.decimal",
 		"require_complete_path": "$general.boolean",
 		"stomp_range_multiplier": "$general.decimal",
 		"no_damage_range_multiplier": "$general.decimal"
