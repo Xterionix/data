@@ -1328,14 +1328,17 @@
 		"cooldown_time": "$general.decimal",
 		"timeout_cooldown": "$general.number"
 	},
+	"minecraft:behavior.slime_attack": {
+		"priority": "$general.number",
+		"set_persistent": "$general.boolean",
+		"speed_multiplier": "$general.decimal",
+		"x_max_rotation": "$general.degree",
+		"y_max_rotation": "$general.degree"
+	},
 	"minecraft:behavior.slime_float": {
 		"priority": "$general.number",
 		"jump_chance_percentage": "$general.decimal",
 		"speed_multiplier": "$general.decimal"
-	},
-	"minecraft:behavior.slime_attack": {
-		"priority": "$general.number",
-		"set_persistent": "$general.boolean"
 	},
 	"minecraft:behavior.slime_random_direction": {
 		"priority": "$general.number",
