@@ -998,7 +998,15 @@
 	},
 	"minecraft:behavior.owner_hurt_target": {
 		"priority": "$general.number",
-		"entity_types": "$entity.general.entity_types"
+		"entity_types": "$entity.general.entity_types",
+		"cooldown": "$general.number",
+		"filters": "$entity.filters",
+		"max_dist": "$general.decimal",
+		"must_see": "$general.boolean",
+		"must_see_forget_duration": "$general.decimal",
+		"reevaluate_description": "$general.boolean",
+		"sprint_speed_multiplier": "$general.decimal",
+		"walk_speed_multiplier": "$general.decimal"
 	},
 	"minecraft:behavior.panic": {
 		"priority": "$general.number",
