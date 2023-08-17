@@ -608,6 +608,13 @@
 		"duration": "$general.number",
 		"timeout_cooldown": "$general.decimal"
 	},
+	"minecraft:behavior.hold_ground": {
+		"priority": "$general.number",
+		"within_radius_event": "$entity.general.event_definition",
+		"broadcast": "$general.boolean",
+		"broadcast_range": "$general.decimal",
+		"min_radius": "$general.decimal"
+	},
 	"minecraft:behavior.hover": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal"
