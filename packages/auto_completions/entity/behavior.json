@@ -1149,7 +1149,11 @@
 		"priority": "$general.number",
 		"look_time": {
 			"$dynamic.list.index_pair": "$general.number"
-		}
+		},
+		"angle_of_view_horizontal": "$general.number",
+		"angle_of_view_vertical": "$general.number",
+		"look_distance": "$general.decimal",
+		"probability": "$general.decimal"
 	},
 	"minecraft:behavior.random_look_around_and_sit": {
 		"priority": "$general.number",
