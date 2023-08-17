@@ -570,6 +570,11 @@
 	"minecraft:friction_modifier": {
 		"value": "$general.decimal"
 	},
+	"minecraft:game_event_movement_tracking": {
+		"emit_flap": "$general.boolean",
+		"emit_move": "$general.boolean",
+		"emit_swim": "$general.boolean"
+	},
 	"minecraft:genetics": {
 		"mutation_rate": "$general.decimal",
 		"genes": {
