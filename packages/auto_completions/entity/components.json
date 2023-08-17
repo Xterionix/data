@@ -228,98 +228,69 @@
 		},
 		"simulate_waves": "$general.boolean"
 	},
-	"$versioned_template.minecraft:breedable": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"allow_sitting": "$general.boolean",
-				"blend_attributes": "$general.boolean",
-				"breed_cooldown": "$general.number",
-				"love_filters": "$entity.filters",
-				"breed_items": {
-					"$dynamic.list.next_index": {
-						"@import.value": "$general.item_identifier"
-					}
-				},
-				"breeds_with": {
-					"mate_type": "$general.entity_identifier",
-					"baby_type": "$general.entity_identifier",
-					"breed_event": "$entity.general.event_definition"
-				},
-				"causes_pregnancy": "$general.boolean",
-				"environment_requirements": {
-					"$dynamic.list.next_index": {
-						"blocks": {
-							"$dynamic.list.next_index": "$general.block_identifier"
-						},
-						"count": "$general.number",
-						"radius": "$general.number"
-					}
-				},
-				"extra_baby_chance": "$general.decimal",
-				"inherit_tamed": "$general.boolean",
-				"mutation_factor": {
-					"color": "$general.decimal",
-					"extra_variant": "$general.decimal",
-					"variant": "$general.decimal"
-				},
-				"deny_parents_variant": {
-					"chance": "$general.decimal",
-					"min_variant": "$general.number",
-					"max_variant": "$general.number"
-				},
-				"require_tame": "$general.boolean",
-				"require_full_health": "$general.boolean"
+	"minecraft:breedable": {
+		"allow_sitting": "$general.boolean",
+		"blend_attributes": "$general.boolean",
+		"breed_cooldown": "$general.number",
+		"love_filters": "$entity.filters",
+		"breed_items": {
+			"$dynamic.list.next_index": "$general.item_identifier"
+		},
+		"breeds_with": {
+			"mate_type": "$general.entity_identifier",
+			"baby_type": "$general.entity_identifier",
+			"breed_event": "$entity.general.event_definition",
+			"$dynamic.list.next_index": {
+				"mate_type": "$general.entity_identifier",
+				"baby_type": "$general.entity_identifier",
+				"breed_event": "$entity.general.event_definition"
 			}
 		},
-		{
-			"$if": "$format_version < 1.16.100",
-			"$data": {
-				"allow_sitting": "$general.boolean",
-				"blend_attributes": "$general.boolean",
-				"breed_cooldown": "$general.number",
-				"love_filters": "$entity.filters",
-				"breed_items": {
-					"$dynamic.list.next_index": "$general.item_identifier"
+		"causes_pregnancy": "$general.boolean",
+		"environment_requirements": {
+			"$dynamic.list.next_index": {
+				"blocks": {
+					"$dynamic.list.next_index": "$general.block_identifier"
 				},
-				"breeds_with": {
-					"mate_type": "$general.entity_identifier",
-					"baby_type": "$general.entity_identifier",
-					"breed_event": "$entity.general.event_definition"
-				},
-				"causes_pregnancy": "$general.boolean",
-				"environment_requirements": {
-					"$dynamic.list.next_index": {
-						"blocks": {
-							"$dynamic.list.next_index": "$general.block_identifier"
-						},
-						"count": "$general.number",
-						"radius": "$general.number"
-					}
-				},
-				"extra_baby_chance": "$general.decimal",
-				"inherit_tamed": "$general.boolean",
-				"mutation_factor": {
-					"color": "$general.decimal",
-					"extra_variant": "$general.decimal",
-					"variant": "$general.decimal"
-				},
-				"deny_parents_variant": {
-					"chance": "$general.decimal",
-					"min_variant": "$general.number",
-					"max_variant": "$general.number"
-				},
-				"require_tame": "$general.boolean",
-				"require_full_health": "$general.boolean"
+				"count": "$general.number",
+				"radius": "$general.number"
 			}
 		},
-		{
-			"$if": "$format_version >= 1.16.220",
-			"$data": {
-				"transform_to_item": "$general.item_identifier"
-			}
-		}
-	],
+		"extra_baby_chance": "$general.decimal",
+		"inherit_tamed": "$general.boolean",
+		"mutation_factor": {
+			"color": "$general.decimal",
+			"extra_variant": "$general.decimal",
+			"variant": "$general.decimal"
+		},
+		"mutation_strategy": [
+			"random",
+			"none"
+		],
+		"parent_centric_attribute_blending": {
+			"$dynamic.list.next_index": [
+				"minecraft:health",
+				"minecraft:movement",
+				"minecraft:horse.jump_strength"
+			]
+		},
+		"random_extra_variant_mutation_interval": {
+			"@import.value": "$general.number",
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"random_variant_mutation_interval": {
+			"@import.value": "$general.number",
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"deny_parents_variant": {
+			"chance": "$general.decimal",
+			"min_variant": "$general.number",
+			"max_variant": "$general.number"
+		},
+		"require_tame": "$general.boolean",
+		"require_full_health": "$general.boolean",
+		"transform_to_item": "$general.item_identifier"
+	},
 	"minecraft:bribeable": {
 		"bribe_cooldown": "$general.number",
 		"bribe_items": {
