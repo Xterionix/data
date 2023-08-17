@@ -469,7 +469,8 @@
 			"$dynamic.list.index_pair": "$general.number"
 		},
 		"nearby_cured_discount": "$general.number",
-		"show_trade_screen": "$general.boolean"
+		"show_trade_screen": "$general.boolean",
+		"use_legacy_price_formula": "$general.boolean"
 	},
 	"minecraft:environment_sensor": {
 		"triggers": "$entity.general.event_definition"
