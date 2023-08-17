@@ -1474,6 +1474,13 @@
 		"strike_dist": "$general.decimal",
 		"stuck_blocks": "$entity.filters"
 	},
+	"minecraft:behavior.stay_near_noteblock": {
+		"priority": "$general.number",
+		"listen_time": "$general.number",
+		"speed": "$general.decimal",
+		"start_distance": "$general.decimal",
+		"stop_distance": "$general.decimal"
+	},
 	"minecraft:behavior.stay_while_sitting": {
 		"priority": "$general.number"
 	},
