@@ -665,16 +665,18 @@
 		"preferred_blocks_chance": "$general.decimal"
 	},
 	"minecraft:behavior.knockback_roar": {
-		"priority": "$general.number",
 		"attack_time": "$general.decimal",
 		"cooldown_time": "$general.decimal",
-		"duration": "$general.number",
+		"duration": "$general.decimal",
 		"knockback_damage": "$general.number",
-		"knockback_strength": "$general.number",
+		"knockback_height_cap": "$general.decimal",
+		"knockback_horizontal_strength": "$general.number",
 		"knockback_range": "$general.number",
+		"knockback_vertical_strength": "$general.number",
+		"on_roar_end": "$entity.trigger.event_definition",
+		"priority": "$general.number",
 		"knockback_filters": "$entity.filters",
-		"damage_filters": "$entity.filters",
-		"on_roar_end": "$entity.general.event_definition"
+		"damage_filters": "$entity.filters"
 	},
 	"minecraft:behavior.lay_egg": {
 		"priority": "$general.number",
