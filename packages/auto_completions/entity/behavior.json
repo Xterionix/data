@@ -838,6 +838,7 @@
 		"speed_multiplier": "$general.decimal",
 		"only_at_night": "$general.boolean"
 	},
+	"minecraft:behavior.move_to_land": "$entity.behavior.minecraft:behavior&dot;move_to_water",
 	"minecraft:behavior.move_towards_restriction": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
@@ -899,7 +900,6 @@
 		"on_stay_completed": "$entity.general.event_definition",
 		"on_reach": "$entity.general.event_definition"
 	},
-	"minecraft:behavior.move_to_land": "$entity.behavior.minecraft:behavior&dot;move_to_water",
 	"minecraft.behavior.move_to_poi": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
