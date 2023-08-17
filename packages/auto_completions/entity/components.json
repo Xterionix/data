@@ -111,9 +111,7 @@
 		"filters": "$entity.filters",
 		"broadcast_targets": {
 			"$dynamic.list.next_index": {
-				"@meta": {
-					"is_value": true
-				}
+				"@import.value": "$dynamic.cache.entity.families"
 			}
 		},
 		"calm_event": "$entity.general.event_definition",
@@ -121,8 +119,7 @@
 		"duration_delta": "$general.number",
 		"angry_sound": "$general.sound",
 		"sound_interval": {
-			"range_min": "$general.number",
-			"range_max": "$general.number"
+			"$dynamic.list.index_pair": "$general.number"
 		}
 	},
 	"minecraft:area_attack": {
