@@ -1320,11 +1320,13 @@
 	},
 	"minecraft:behavior.sleep": {
 		"priority": "$general.number",
-		"goal_radius": "$general.number",
 		"speed_multiplier": "$general.decimal",
 		"sleep_collider_height": "$general.decimal",
 		"sleep_collider_width": "$general.decimal",
-		"sleep_y_offset": "$general.decimal"
+		"sleep_y_offset": "$general.decimal",
+		"can_sleep_while_riding": "$general.boolean",
+		"cooldown_time": "$general.decimal",
+		"timeout_cooldown": "$general.number"
 	},
 	"minecraft:behavior.slime_float": {
 		"priority": "$general.number",
