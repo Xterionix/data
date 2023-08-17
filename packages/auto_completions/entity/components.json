@@ -1142,6 +1142,7 @@
 		"all_items_max_amount": "$general.number",
 		"all_items_surplus_amount": "$general.number",
 		"all_items_want_amount": "$general.number",
+		"singular_pickup": "$general.boolean",
 		"items": {
 			"$dynamic.list.next_index": {
 				"priority": "$general.number",
@@ -1150,6 +1151,7 @@
 				"craft_into": "$general.item_identifier",
 				"max_amount": "$general.number",
 				"want_amount": "$general.number",
+				"pickup_only": "$general.boolean",
 				"surplus_amount": "$general.number",
 				"pickup_limit": "$general.number",
 				"admire": "$general.boolean",
