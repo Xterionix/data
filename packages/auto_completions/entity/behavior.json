@@ -507,7 +507,15 @@
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
 		"entity_count": "$general.number",
-		"entity_types": "$entity.general.entity_types"
+		"entity_types": "$entity.general.entity_types",
+		"filters": "$entity.filters",
+		"cooldown": "$general.number",
+		"max_dist": "$general.decimal",
+		"must_see": "$general.boolean",
+		"must_see_forget_duration": "$general.decimal",
+		"reevaluate_description": "$general.boolean",
+		"sprint_speed_multiplier": "$general.decimal",
+		"walk_speed_multiplier": "$general.decimal"
 	},
 	"minecraft:behavior.follow_mob": {
 		"priority": "$general.number",
