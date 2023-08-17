@@ -174,7 +174,8 @@
 				},
 				"on_block_broken": "$entity.general.event_string"
 			}
-		}
+		},
+		"sources": "$entity.filters"
 	},
 	"minecraft:boostable": {
 		"speed_multiplier": "$general.decimal",
