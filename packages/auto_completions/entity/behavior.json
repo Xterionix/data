@@ -1695,5 +1695,15 @@
 		"can_work_in_rain": "$general.boolean",
 		"work_in_rain_tolerance": "$general.number",
 		"on_arrival": "$entity.general.event_definition"
+	},
+	"minecraft:behavior.work_composter": {
+		"$load": "$entity.behavior.minecraft:behavior&dotwork",
+		"items_per_use_max": "$general.number",
+		"min_item_count": "$general.number",
+		"use_block_max": "$general.number",
+		"use_block_min": "$general.number",
+		"block_interaction_max": "$general.number",
+		"can_empty_composter": "$general.boolean",
+		"can_fill_composter": "$general.boolean"
 	}
 }
