@@ -858,36 +858,31 @@
 	"minecraft:navigation.hover": "$entity.components.minecraft:navigation&dot;climb",
 	"minecraft:navigation.swim": "$entity.components.minecraft:navigation&dot;climb",
 	"minecraft:navigation.walk": "$entity.components.minecraft:navigation&dot;climb",
-	"$versioned_template.minecraft:npc": [
-		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": {
-				"npc_data": {
-					"portrait_offsets": {
-						"translate": {
-							"$dynamic.list.index_triple": "$general.number"
-						},
-						"scale": {
-							"$dynamic.list.index_triple": "$general.number"
-						}
-					},
-					"picker_offsets": {
-						"translate": {
-							"$dynamic.list.index_triple": "$general.number"
-						},
-						"scale": {
-							"$dynamic.list.index_triple": "$general.number"
-						}
-					},
-					"skin_list": {
-						"$dynamic.list.next_index": {
-							"variant": "$general.number"
-						}
-					}
+	"minecraft:npc": {
+		"npc_data": {
+			"portrait_offsets": {
+				"translate": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"scale": {
+					"$dynamic.list.index_triple": "$general.number"
+				}
+			},
+			"picker_offsets": {
+				"translate": {
+					"$dynamic.list.index_triple": "$general.number"
+				},
+				"scale": {
+					"$dynamic.list.index_triple": "$general.number"
+				}
+			},
+			"skin_list": {
+				"$dynamic.list.next_index": {
+					"variant": "$general.number"
 				}
 			}
 		}
-	],
+	},
 	"$versioned_template.minecraft:on_death": [
 		{
 			"$if": "$format_version < 1.16.100",
