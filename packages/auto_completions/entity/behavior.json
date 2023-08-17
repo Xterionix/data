@@ -839,6 +839,7 @@
 		"only_at_night": "$general.boolean"
 	},
 	"minecraft:behavior.move_to_land": "$entity.behavior.minecraft:behavior&dot;move_to_water",
+	"minecraft:behavior.move_to_lava": "$entity.behavior.minecraft:behavior&dot;move_to_water",
 	"minecraft:behavior.move_towards_restriction": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
@@ -905,12 +906,6 @@
 		"speed_multiplier": "$general.decimal",
 		"poi_type": "$general.poi_type"
 	},
-	"$versioned_template.minecraft:behavior.move_to_lava": [
-		{
-			"$if": "$format_version >= 1.16.0",
-			"$data": "$entity.behavior.minecraft:behavior&dot;move_to_water"
-		}
-	],
 	"minecraft:behavior.move_to_random_block": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
