@@ -153,7 +153,9 @@
 	},
 	"minecraft:behavior.defend_village_target": {
 		"priority": "$general.number",
-		"entity_types": "$entity.general.entity_types"
+		"entity_types": "$entity.general.entity_types",
+		"must_reach": "$general.boolean",
+		"attack_chance": "$general.decimal"
 	},
 	"minecraft:behavior.delayed_attack": {
 		"@meta": {
