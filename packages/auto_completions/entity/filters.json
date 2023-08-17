@@ -1,6 +1,7 @@
 {
-	"@meta": { "validate": "entity/filterStructure.js" },
-
+	"@meta": {
+		"validate": "entity/filterStructure.js"
+	},
 	"all_of": {
 		"$dynamic.list.next_index": "$entity.filters"
 	},
@@ -28,7 +29,11 @@
 	"$dynamic_template.domain": {
 		"$key": "$dynamic.siblings.test",
 		"has_equipment": "$general.has_equipment_slot",
-		"is_game_rule": "$general.gamerule"
+		"is_game_rule": "$general.gamerule",
+		"bool_property": "$dynamic.entity.properties",
+		"enum_property": "$dynamic.entity.properties",
+		"float_property": "$dynamic.entity.properties",
+		"int_property": "$dynamic.entity.properties"
 	},
 	"$dynamic_template.value": {
 		"$key": "$dynamic.siblings.test",
@@ -42,6 +47,12 @@
 				"is_value": true
 			}
 		},
+		"actor_health": "$general.number",
+		"all_slots_empty": "$general.has_equipment_slot",
+		"any_slot_empty": "$general.has_equipment_slot",
+		"bool_property": "$general.boolean",
+		"float_property": "$general.decimal",
+		"int_property": "$general.number",
 		"is_daytime": "$general.boolean",
 		"is_waterlogged": "$general.boolean",
 		"is_game_rule": "$general.boolean",
@@ -60,6 +71,7 @@
 		"is_climbing": "$general.boolean",
 		"is_sneaking": "$general.boolean",
 		"is_moving": "$general.boolean",
+		"is_missing_health": "$general.boolean",
 		"is_riding": "$general.boolean",
 		"is_owner": "$general.boolean",
 		"is_target": "$general.boolean",
@@ -79,17 +91,41 @@
 		"has_equipment": "$general.item_identifier and $general.block_identifier",
 		"has_component": "('minecraft:effect.' + $general.effect_name) and asValue($entity.general.components)",
 		"has_ability": "$general.ability",
+		"has_nametag": "$general.boolean",
+		"has_property": "$general.boolean",
+		"has_silk_touch": "$general.boolean",
 		"is_family": "$entity.general.family",
 		"has_mob_effect": "$general.effect_name",
 		"has_biome_tag": "$general.biome_tag and $dynamic.cache.biome.tags",
 		"has_damage": "$general.damage_type",
+		"in_block": "$general.block_identifier",
 		"is_color": "$general.color_palette",
 		"is_biome": "$general.biome_name",
+		"is_baby": "$general.boolean",
 		"is_block": "$general.block_identifier",
 		"is_difficulty": "$general.game_difficulty",
-		"is_temperature_type": ["ocean", "cold", "mild", "warm"],
-		"moon_phase": [0, 1, 2, 3, 4, 5, 6, 7],
-		"weather": ["clear", "rain", "thunderstorm", "precipitation"],
+		"is_temperature_type": [
+			"ocean",
+			"cold",
+			"mild",
+			"warm"
+		],
+		"moon_phase": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"weather": [
+			"clear",
+			"rain",
+			"thunderstorm",
+			"precipitation"
+		],
 		"weather_at_position": [
 			"clear",
 			"rain",
@@ -111,6 +147,11 @@
 		"random_chance": "$general.number",
 		"light_level": "$general.number0_15",
 		"is_sleeping": "$general.boolean",
+		"is_raider": "$general.boolean",
+		"is_sneak_held": "$general.boolean",
+		"on_fire": "$general.boolean",
+		"on_hot_block": "$general.boolean",
+		"target_distance": "$general.decimal",
 		"has_tag": {
 			"@meta": {
 				"is_value": true

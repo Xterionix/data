@@ -341,6 +341,7 @@
 		"hand",
 		"head",
 		"leg",
+		"inventory",
 		"torso"
 	],
 	"color_palette": [
