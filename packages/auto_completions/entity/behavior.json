@@ -678,6 +678,11 @@
 		"knockback_filters": "$entity.filters",
 		"damage_filters": "$entity.filters"
 	},
+	"minecraft:behavior.lay_down": {
+		"priority": "$general.number",
+		"interval": "$general.number",
+		"random_stop_interval": "$general.number"
+	},
 	"minecraft:behavior.lay_egg": {
 		"priority": "$general.number",
 		"speed_multiplier": "$general.decimal",
@@ -698,11 +703,6 @@
 		],
 		"use_default_animation": "$general.boolean",
 		"on_lay": "$entity.general.event_definition"
-	},
-	"minecraft:behavior.lay_down": {
-		"priority": "$general.number",
-		"interval": "$general.number",
-		"random_stop_interval": "$general.number"
 	},
 	"minecraft:behavior.leap_at_target": {
 		"priority": "$general.number",
