@@ -315,6 +315,10 @@
 			"$dynamic.list.index_pair": "$general.number"
 		}
 	},
+	"minecraft:collision_box": {
+		"width": "$general.number",
+		"height": "$general.number"
+	},
 	"$versioned_template.minecraft:inside_block_notifier": [
 		{
 			"$if": "$format_version >= 1.16.100",
@@ -332,10 +336,6 @@
 			}
 		}
 	],
-	"minecraft:collision_box": {
-		"width": "$general.number",
-		"height": "$general.number"
-	},
 	"$versioned_template.minecraft:conditional_bandwidth_optimization": [
 		{
 			"$if": "$format_version >= 1.16.100",
