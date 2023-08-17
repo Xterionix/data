@@ -1093,6 +1093,7 @@
 		"family_types": {
 			"$dynamic.list.next_index": "$dynamic.cache.entity.families"
 		},
+		"passenger_max_width": "$general.decimal",
 		"interact_text": "$general.translatable_text",
 		"pull_in_entities": "$general.boolean",
 		"rider_can_interact": "$general.boolean",
