@@ -928,13 +928,6 @@
 			}
 		}
 	},
-	"minecraft:pushable": {
-		"is_pushable": "$general.boolean",
-		"is_pushable_by_piston": "$general.boolean"
-	},
-	"minecraft:push_through": {
-		"value": "$general.decimal"
-	},
 	"minecraft:projectile": {
 		"on_hit": {
 			"@meta": {
@@ -1036,10 +1029,14 @@
 		"liquid_inertia": "$general.decimal",
 		"power": "$general.decimal",
 		"gravity": "$general.decimal",
+		"knockback": "$general.boolean",
+		"lightning": "$general.boolean",
 		"uncertainty_base": "$general.number",
 		"uncertainty_multiplier": "$general.number",
 		"anchor": "$general.number",
-		"angleoffset": "$general.decimal",
+		"angle_offset": "$general.decimal",
+		"splash_potion": "$general.boolean",
+		"splash_range": "$general.number",
 		"semi_random_diff_damage": "$general.boolean",
 		"shoot_target": "$general.boolean",
 		"stop_on_hurt": "$general.boolean",
@@ -1047,10 +1044,24 @@
 		"should_bounce": "$general.boolean",
 		"reflect_on_hurt": "$general.boolean",
 		"catch_fire": "$general.boolean",
+		"crit_particle_on_hurt": "$general.boolean",
+		"destroy_on_hurt": "$general.boolean",
+		"on_fire_time": "$general.decimal",
+		"particle": "$general.particle_name",
+		"potion_effect": "$general.number",
+		"filter": "$entity.filters",
+		"fire_affected_by_griefing": "$general.boolean",
 		"offset": {
 			"$dynamic.list.index_triple": "$general.decimal"
 		},
 		"homing": "$general.boolean"
+	},
+	"minecraft:push_through": {
+		"value": "$general.decimal"
+	},
+	"minecraft:pushable": {
+		"is_pushable": "$general.boolean",
+		"is_pushable_by_piston": "$general.boolean"
 	},
 	"minecraft:raid_trigger": {
 		"triggered_event": "$entity.general.event_definition"
