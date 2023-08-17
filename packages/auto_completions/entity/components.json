@@ -1259,7 +1259,9 @@
 		"inside_range": "$general.number",
 		"outside_range": "$general.number",
 		"on_inside_range": "$entity.general.event_definition",
-		"on_outside_range": "$entity.general.event_definition"
+		"on_outside_range": "$entity.general.event_definition",
+		"on_vision_lost_inside_range": "$entity.general.event_definition",
+		"must_see": "$general.boolean"
 	},
 	"minecraft:teleport": {
 		"random_teleports": "$general.boolean",
