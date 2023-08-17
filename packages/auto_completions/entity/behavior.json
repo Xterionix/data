@@ -1467,7 +1467,7 @@
 		"stalk_speed": "$general.decimal",
 		"max_stalk_dist": "$general.number",
 		"leap_height": "$general.decimal",
-		"leap_dist": "$general.decimal",
+		"leap_distance": "$general.decimal",
 		"pounce_max_dist": "$general.number",
 		"interest_time": "$general.number",
 		"stuck_time": "$general.number",
