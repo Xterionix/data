@@ -217,17 +217,6 @@
 			"$dynamic.list.next_index": "$general.block_identifier"
 		}
 	},
-	"minecraft:buoyant": {
-		"apply_gravity": "$general.boolean",
-		"base_buoyancy": "$general.decimal",
-		"big_wave_probability": "$general.decimal",
-		"big_wave_speed": "$general.number",
-		"drag_down_on_buoyancy_removed": "$general.decimal",
-		"liquid_blocks": {
-			"$dynamic.list.next_index": "$general.block_identifier"
-		},
-		"simulate_waves": "$general.boolean"
-	},
 	"minecraft:breedable": {
 		"allow_sitting": "$general.boolean",
 		"blend_attributes": "$general.boolean",
@@ -298,6 +287,17 @@
 				"@import.value": "$general.item_identifier"
 			}
 		}
+	},
+	"minecraft:buoyant": {
+		"apply_gravity": "$general.boolean",
+		"base_buoyancy": "$general.decimal",
+		"big_wave_probability": "$general.decimal",
+		"big_wave_speed": "$general.number",
+		"drag_down_on_buoyancy_removed": "$general.decimal",
+		"liquid_blocks": {
+			"$dynamic.list.next_index": "$general.block_identifier"
+		},
+		"simulate_waves": "$general.boolean"
 	},
 	"minecraft:burns_in_daylight": {},
 	"minecraft:can_climb": {},
