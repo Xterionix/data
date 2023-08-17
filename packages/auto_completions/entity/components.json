@@ -178,6 +178,7 @@
 				"duration": "$general.number",
 				"feed_items": {
 					"$dynamic.list.next_index": {
+						"@import.value": "$general.item_identifier",
 						"item": {
 							"@import.value": "$general.item_identifier"
 						},
