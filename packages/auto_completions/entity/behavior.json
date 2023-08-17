@@ -127,6 +127,16 @@
 		"fractional_rotation": "$general.number",
 		"fractional_rotation_limit": "$general.number"
 	},
+	"minecraft:behavior.croak": {
+		"priority": "$general.number",
+		"duration": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"filters": "$entity.filters",
+		"interval": {
+			"$dynamic.list.index_pair": "$general.number"
+		}
+	},
 	"minecraft:behavior.defend_trusted_target": {
 		"priority": "$general.number",
 		"attack_chance": "$general.decimal",
