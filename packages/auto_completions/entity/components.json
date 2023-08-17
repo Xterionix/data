@@ -36,7 +36,8 @@
 			"minecraft:wants_jockey",
 			"minecraft:equip_item",
 			"minecraft:out_of_control",
-			"minecraft:fire_immune"
+			"minecraft:fire_immune",
+			"minecraft:suspect_tracking"
 		]
 	},
 	"minecraft:addrider": {
@@ -1223,6 +1224,7 @@
 		"max": "$general.number",
 		"min": "$general.number"
 	},
+	"minecraft:suspect_tracking": {},
 	"minecraft:tameable": {
 		"probability": "$general.decimal",
 		"tame_items": {
