@@ -471,13 +471,12 @@
 		"cooldown_time": "$general.decimal"
 	},
 	"minecraft:behavior.find_mount": {
-		"priority": "$general.number",
-		"within_radius": "$general.number",
 		"avoid_water": "$general.boolean",
-		"mount_distance": "$general.number",
+		"mount_distance": "$general.decimal",
+		"priority": "not set",
 		"start_delay": "$general.number",
 		"target_needed": "$general.boolean",
-		"max_failed_attempts": "$general.number"
+		"within_radius": "$general.decimal"
 	},
 	"minecraft:behavior.find_underwater_treasure": {
 		"priority": "$general.number",
@@ -490,7 +489,8 @@
 		"speed_multiplier": "$general.decimal"
 	},
 	"minecraft:behavior.float": {
-		"priority": "$general.number"
+		"priority": "$general.number",
+		"sink_with_passengers": "$general.boolean"
 	},
 	"minecraft:behavior.float_wander": {
 		"priority": "$general.number",
