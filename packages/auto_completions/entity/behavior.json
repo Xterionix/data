@@ -439,10 +439,21 @@
 		"priority": "$general.number"
 	},
 	"minecraft:behavior.explore_outskirts": {
+		"dist_from_boundary": {
+			"dynamic.list.index_triple": "$general.number"
+		},
 		"priority": "$general.number",
 		"explore_dist": "$general.number",
 		"wait_time": "$general.number",
-		"speed_multiplier": "$general.decimal"
+		"speed_multiplier": "$general.decimal",
+		"max_travel_time": "$general.decimal",
+		"max_wait_time": "$general.decimal",
+		"min_dist_from_target": "$general.decimal",
+		"min_perimeter": "$general.decimal",
+		"min_wait_time": "$general.decimal",
+		"next_xz": "$general.number",
+		"next_y": "$general.number",
+		"timer_ratio": "$general.decimal"
 	},
 	"minecraft:behavior.find_cover": {
 		"priority": "$general.number",
