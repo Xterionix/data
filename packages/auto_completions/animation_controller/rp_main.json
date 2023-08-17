@@ -1,7 +1,9 @@
 {
 	"format_version": "$general.format_version",
 	"animation_controllers": {
-		"@meta": { "validate": "validateIDs.js" },
+		"@meta": {
+			"validate": "validateIDs.js"
+		},
 		"$placeholder": {
 			"initial_state": "$dynamic.animation_controller.current_states",
 			"states": {
@@ -19,7 +21,6 @@
 							}
 						}
 					},
-
 					"animations": {
 						"$dynamic.list.next_index": {
 							"$dynamic.cache.client_entity.animation_references": {},
@@ -35,12 +36,30 @@
 					"particle_effects": {
 						"$dynamic.list.next_index": {
 							"effect": "$dynamic.cache.client_entity.particle_references",
-							"locator": { "@meta": { "is_value": true } }
+							"locator": {
+								"@meta": {
+									"is_value": true
+								}
+							}
 						}
 					},
 					"sound_effects": {
 						"$dynamic.list.next_index": {
 							"effect": "$dynamic.cache.client_entity.sound_references"
+						}
+					},
+					"on_entry": {
+						"$dynamic.list.next_index": {
+							"@meta": {
+								"is_value": true
+							}
+						}
+					},
+					"on_exit": {
+						"$dynamic.list.next_index": {
+							"@meta": {
+								"is_value": true
+							}
 						}
 					}
 				},
