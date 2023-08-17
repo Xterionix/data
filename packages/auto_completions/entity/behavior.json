@@ -403,6 +403,12 @@
 		"reach_mob_distance": "$general.decimal",
 		"run_speed": "$general.decimal"
 	},
+	"minecraft:behavior.emerge": {
+		"priority": "$general.number",
+		"cooldown_time": "$general.number",
+		"duration": "$general.decimal",
+		"on_done": "$entity.general.event_definition"
+	},
 	"minecraft:behavior.enderman_leave_block": {
 		"@meta": {
 			"validate": {
