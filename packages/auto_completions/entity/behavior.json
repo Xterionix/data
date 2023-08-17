@@ -1095,10 +1095,12 @@
 		"blocks": {
 			"$dynamic.list.next_index": "$general.block_identifier"
 		},
+		"initial_eat_delay": "$general.number",
 		"eat_delay": "$general.number",
 		"full_delay": "$general.number",
 		"max_to_eat": "$general.number",
 		"search_range": "$general.number",
+		"search_height": "$general.number",
 		"goal_radius": "$general.number",
 		"speed_multiplier": "$general.decimal"
 	},
