@@ -1,4 +1,8 @@
 {
+	/*
+		Todo
+		1. Check if balloonable properties work with triggers or just event names
+	*/
 	"@meta": {
 		"expand_path_exceptions": [
 			"minecraft:burns_in_daylight",
@@ -149,7 +153,11 @@
 		"value": "$general.number"
 	},
 	"minecraft:balloonable": {
-		"mass": "$general.decimal"
+		"mass": "$general.decimal",
+		"soft_distance": "$general.decimal",
+		"max_distance": "$general.decimal",
+		"on_balloon": "$entity.general.event_definition",
+		"on_unballoon": "$entity.general.event_definition"
 	},
 	"minecraft:barter": {
 		"barter_table": "$dynamic.loot_table_files",
