@@ -74,7 +74,15 @@
 		}
 	},
 	"connect": {},
-	"damage": {},
+	"damage": {
+		"$function.general.target_selector": {
+			"$general.number": {
+				"$general.damage_type": {
+					"entity": "$function.general.target_selector"
+				}
+			}
+		}
+	},
 	"daylock": "$general.boolean",
 	"dialogue": {
 		"change": {
