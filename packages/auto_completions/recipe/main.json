@@ -100,5 +100,14 @@
         "base": "$recipe.general.item_block_identifier",
         "addition": "$recipe.general.item_block_identifier",
         "result": "$recipe.general.item_block_identifier"
+    },
+    "minecraft:recipe_smithing_trim": {
+        "description": "$recipe.general.description",
+        "tags": [
+            "smithing_table"
+        ],
+        "template": "$recipe.general.item_block_identifier",
+        "base": "$recipe.general.item_block_identifier",
+        "addition": "$recipe.general.item_block_identifier"
     }
 }
