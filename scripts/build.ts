@@ -1,5 +1,6 @@
 import { bundleFileDefs } from './bundleFileDefs.ts'
 import { bundleAutoCompletions } from './bundleAutoCompletions.ts'
+import { bundleExperiments } from './bundleExperiments.ts'
 
 export async function build() {
 	try {
@@ -8,6 +9,7 @@ export async function build() {
 
 	await bundleFileDefs()
 	await bundleAutoCompletions()
+	await bundleExperiments()
 }
 
 if (import.meta.main) {
