@@ -34,7 +34,8 @@
 					"$general.decimal": "$function.general.shake_types"
 				}
 			}
-		}
+		},
+		"stop": "$function.general.target_selector"
 	},
 	"clear": {
 		"$function.general.target_selector": {
