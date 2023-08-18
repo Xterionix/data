@@ -231,7 +231,66 @@
 			"$general.structures": "$general.boolean"
 		}
 	},
-	"loot": {},
+	"loot": {
+		"give": {
+			"$function.general.target_selector": {
+				"kill": {
+					"$function.general.target_selector": "$function.general.tool_or_hand"
+				},
+				"loot": {
+					"'\"'$dynamic.loot_table_files'\"'": "$function.general.tool_or_hand"
+				}
+			}
+		},
+		"insert": {
+			"$function.general.location": {
+				"$function.general.location": {
+					"$function.general.location": {
+						"$load": "$function.main.loot.give.$function.general.target_selector"
+					}
+				}
+			}
+		},
+		"replace": {
+			"block": {
+				"$function.general.location": {
+					"$function.general.location": {
+						"$function.general.location": {
+							"slot.container": {
+								"$general.number": {
+									"$load": "$function.main.loot.give.$function.general.target_selector",
+									"$general.number": {
+										"$load": "$function.main.loot.give.$function.general.target_selector"
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"entity": {
+				"$function.general.target_selector": {
+					"$general.slot_type": {
+						"$general.number": {
+							"$load": "$function.main.loot.give.$function.general.target_selector",
+							"$general.number": {
+								"$load": "$function.main.loot.give.$function.general.target_selector"
+							}
+						}
+					}
+				}
+			}
+		},
+		"spawn": {
+			"$function.general.location": {
+				"$function.general.location": {
+					"$function.general.location": {
+						"$load": "$function.main.loot.give.$function.general.target_selector"
+					}
+				}
+			}
+		}
+	},
 	"me": {},
 	"mobevent": {
 		"$function.general.mob_event": "$general.boolean"

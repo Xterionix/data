@@ -591,6 +591,10 @@
 		"slot.weapon.mainhand",
 		"slot.weapon.offhand"
 	],
+	"hands": [
+		"mainhand",
+		"offhand"
+	],
 	"ability": [
 		"worldbuilder",
 		"invulnerable",
