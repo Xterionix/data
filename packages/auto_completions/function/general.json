@@ -64,6 +64,10 @@
 		"disabled"
 	],
 	"tool_or_hand": "$function.general.item_identifier and $general.hands",
+	"profiler_options": [
+		"start",
+		"stop"
+	],
 	"item_identifier": "$vanilla.unprefixed_item_identifier and $dynamic.cache.item.identifiers",
 	"block_identifier": "$vanilla.unprefixed_block_identifier and $dynamic.cache.block.identifiers",
 	"entity_identifier": "$vanilla.unprefixed_entity_identifier and $dynamic.cache.entity.identifiers",

@@ -521,7 +521,17 @@
 			}
 		}
 	},
-	"script": {},
+	"script": {
+		"debugger": {
+			"close": {},
+			"connect": {
+				"$placeholder": "$general.number"
+			},
+			"listen": "$general.number"
+		},
+		"profiler": "$function.general.profiler_options",
+		"watchdog": "exportstats"
+	},
 	"scriptevent": {},
 	"setblock": {
 		"$function.general.location": {
