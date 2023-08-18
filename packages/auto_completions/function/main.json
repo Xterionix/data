@@ -75,7 +75,18 @@
 	"connect": {},
 	"damage": {},
 	"daylock": "$general.boolean",
-	"dialogue": {},
+	"dialogue": {
+		"change": {
+			"$function.general.target_selector": {
+				"$placeholder": "$function.general.target_selector"
+			}
+		},
+		"open": {
+			"$function.general.target_selector": {
+				"$function.general.target_selector": {}
+			}
+		}
+	},
 	"difficulty": "$general.game_difficulty",
 	"effect": {
 		"$function.general.target_selector": {
