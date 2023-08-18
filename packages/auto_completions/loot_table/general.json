@@ -32,7 +32,8 @@
         "set_lore",
         "set_name",
         "specific_enchants",
-        "trader_material_type"
+        "trader_material_type",
+        "explosion_decay"
     ],
     "banner_patterns": [
         "base",
