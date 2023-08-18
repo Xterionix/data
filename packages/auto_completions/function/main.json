@@ -182,7 +182,26 @@
 			"$general.number": {}
 		}
 	},
-	"gametest": {},
+	"gametest": {
+		"create": {
+			"$placeholder": {
+				"$general.number": {
+					"$general.number": "$general.number"
+				}
+			}
+		},
+		"run": {
+			"$placeholder": {
+				"@import.value": "$general.number",
+				"$general.boolean": {
+					"$general.number": "$general.number"
+				}
+			}
+		},
+		"runset": "$general.number",
+		"runsetuntilfail": "$general.number",
+		"$function.general.gametest_options": {}
+	},
 	"give": {
 		"$function.general.target_selector": {
 			"$function.general.item_identifier": {
