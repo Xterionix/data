@@ -532,7 +532,9 @@
 		"profiler": "$function.general.profiler_options",
 		"watchdog": "exportstats"
 	},
-	"scriptevent": {},
+	"scriptevent": {
+		"$placeholder": {}
+	},
 	"setblock": {
 		"$function.general.location": {
 			"$function.general.location": {
@@ -791,7 +793,26 @@
 	"titleraw": "$function.main.title",
 	"toggledownfall": {},
 	"tp": "$function.main.teleport",
-	"volumearea": {},
+	"volumearea": {
+		"add": {
+			"$placeholder": {
+				"$function.general.location": {
+					"$function.general.location": {
+						"$function.general.location": {
+							"$function.general.location": {
+								"$function.general.location": {
+									"$function.general.location": {}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"list": "all-dimensions",
+		"remove": "$function.general.location and $placeholder",
+		"remove_all": {}
+	},
 	"w": {
 		"$function.general.target_selector": {}
 	},
