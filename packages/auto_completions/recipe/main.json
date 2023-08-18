@@ -90,5 +90,15 @@
         "input": "$recipe.general.item_block_identifier",
         "reagent": "$recipe.general.item_block_identifier",
         "output": "$recipe.general.item_block_identifier"
+    },
+    "minecraft:recipe_smithing_transform": {
+        "description": "$recipe.general.description",
+        "tags": [
+            "smithing_table"
+        ],
+        "template": "$recipe.general.item_block_identifier",
+        "base": "$recipe.general.item_block_identifier",
+        "addition": "$recipe.general.item_block_identifier",
+        "result": "$recipe.general.item_block_identifier"
     }
 }
