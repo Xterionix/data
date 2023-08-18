@@ -211,7 +211,13 @@
 			}
 		}
 	},
-	"inputpermission": {},
+	"inputpermission": {
+		"$function.general.inputpermission_actions": {
+			"$function.general.target_selector": {
+				"$function.general.permissions": "$function.general.permission_states"
+			}
+		}
+	},
 	"kick": {
 		"$function.general.target_selector": {}
 	},
