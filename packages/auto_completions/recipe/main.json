@@ -3,7 +3,7 @@
     "minecraft:recipe_furnace": {
         "description": "$recipe.general.description",
         "tags": {
-            "$dynamic.list.next_index": "$recipe.general.tags"
+            "$dynamic.list.next_index": "$recipe.general.furnace_tags"
         },
         "group": {
             "@meta": {
