@@ -226,7 +226,10 @@
 	},
 	"list": {},
 	"locate": {
-		"$general.structures": {}
+		"biome": "$general.vanilla_biomes",
+		"structure": {
+			"$general.structures": "$general.boolean"
+		}
 	},
 	"loot": {},
 	"me": {},
