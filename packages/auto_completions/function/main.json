@@ -226,7 +226,7 @@
 	},
 	"list": {},
 	"locate": {
-		"biome": "$general.vanilla_biomes",
+		"biome": "$biome.general.vanilla_biomes",
 		"structure": {
 			"$general.structures": "$general.boolean"
 		}
