@@ -19,7 +19,7 @@
 						"$general.decimal": {
 							"$general.decimal": {
 								"color": {
-									"$load": "$function.main.camera.$function.general.target_selector.fade.color"
+									"$load": "$function.main.camera.$function&dot;general&dot;target_selector.fade.color"
 								}
 							}
 						}
