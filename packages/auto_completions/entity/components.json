@@ -385,6 +385,11 @@
 	"minecraft:default_look_angle": {
 		"value": "$general.decimal"
 	},
+	"minecraft:dash": {
+		"cooldown_time": "$general.number",
+		"horizontal_momentum": "$general.number",
+		"vertical_momentum": "$general.number"
+	},
 	"minecraft:despawn": {
 		"remove_child_entities": "$general.boolean",
 		"filters": "$entity.filters",
