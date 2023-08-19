@@ -23,11 +23,7 @@
                 }
             },
             "geometry": {
-                "$placeholder": {
-                    "@meta": {
-                        "is_value": true
-                    }
-                }
+                "$placeholder": "$dynamic.rp.geometries"
             },
             "animations": {
                 "$placeholder": {
@@ -38,7 +34,7 @@
                             "rp_animation_controller"
                         ]
                     },
-                    "@import.value.animations": "$dynamic.cache.rp_animation.ids and $dynamic.cache.rp_animation_controller.ids"
+                    "@import.value.animations": "$dynamic.cache.rp_animation.ids and $dynamic.cache.rp_animation_controller.ids and $dynamic.rp.animations"
                 },
                 "@meta": {
                     "validate": {
