@@ -312,7 +312,7 @@
 	"$versioned_template.minecraft:geometry": [
 		{
 			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.40",
-			"$data": "$general.model_identifier",
+			"$data": "$general.model_identifier and $dynamic.rp.block_geometries",
 			"@meta": {
 				"validate": "updateToNewBlock.js"
 			}
@@ -323,7 +323,7 @@
 				"@import.value": [
 					"$general.model_identifier"
 				],
-				"identifier": "$general.model_identifier",
+				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries",
 				"@meta": {
 					"validate": "updateToNewBlock.js"
 				}
@@ -335,7 +335,7 @@
 				"@import.value": [
 					"$general.model_identifier"
 				],
-				"identifier": "$general.model_identifier",
+				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries",
 				"bone_visibility": {
 					"$placeholder": "$general.boolean"
 				},
@@ -350,7 +350,7 @@
 				"@import.value": [
 					"$general.model_identifier"
 				],
-				"identifier": "$general.model_identifier",
+				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries",
 				"bone_visibility": {
 					"$placeholder": "$general.boolean and $molang.embedded"
 				}
