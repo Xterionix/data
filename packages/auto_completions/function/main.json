@@ -238,7 +238,7 @@
 					"$function.general.target_selector": "$function.general.tool_or_hand"
 				},
 				"loot": {
-					"'\"'$dynamic.loot_table_files'\"'": "$function.general.tool_or_hand"
+					"$dynamic.loot_table_files": "$function.general.tool_or_hand"
 				}
 			}
 		},
