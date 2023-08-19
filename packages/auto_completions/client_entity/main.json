@@ -43,10 +43,10 @@
 				}
 			},
 			"geometry": {
-				"$dynamic.rp.geometries": "$general.model_identifier"
+				"$placeholder": "$general.model_identifier and $dynamic.rp.geometries"
 			},
 			"animations": {
-				"$dynamic.rp.animations": {
+				"$placeholder": {
 					"@meta": {
 						"is_value": true,
 						"definitions": [
@@ -54,7 +54,7 @@
 							"rp_animation_controller"
 						]
 					},
-					"@import.value.animations": "$dynamic.cache.rp_animation.ids and $dynamic.cache.rp_animation_controller.ids"
+					"@import.value.animations": "$dynamic.cache.rp_animation.ids and $dynamic.cache.rp_animation_controller.ids and $dynamic.rp.animations"
 				},
 				"@meta": {
 					"validate": {
