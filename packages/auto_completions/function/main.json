@@ -246,7 +246,7 @@
 			"$function.general.location": {
 				"$function.general.location": {
 					"$function.general.location": {
-						"$load": "$function.main.loot.give.$function.general.target_selector"
+						"$load": "$function.main.loot.give.$function&dot;general&dot;target_selector"
 					}
 				}
 			}
@@ -258,9 +258,9 @@
 						"$function.general.location": {
 							"slot.container": {
 								"$general.number": {
-									"$load": "$function.main.loot.give.$function.general.target_selector",
+									"$load": "$function.main.loot.give.$function&dot;general&dot;target_selector",
 									"$general.number": {
-										"$load": "$function.main.loot.give.$function.general.target_selector"
+										"$load": "$function.main.loot.give.$function&dot;general&dot;target_selector"
 									}
 								}
 							}
@@ -272,9 +272,9 @@
 				"$function.general.target_selector": {
 					"$general.slot_type": {
 						"$general.number": {
-							"$load": "$function.main.loot.give.$function.general.target_selector",
+							"$load": "$function.main.loot.give.$function&dot;general&dot;target_selector",
 							"$general.number": {
-								"$load": "$function.main.loot.give.$function.general.target_selector"
+								"$load": "$function.main.loot.give.$function&dot;general&dot;target_selector"
 							}
 						}
 					}
@@ -285,7 +285,7 @@
 			"$function.general.location": {
 				"$function.general.location": {
 					"$function.general.location": {
-						"$load": "$function.main.loot.give.$function.general.target_selector"
+						"$load": "$function.main.loot.give.$function&dot;general&dot;target_selector"
 					}
 				}
 			}
