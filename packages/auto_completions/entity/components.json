@@ -39,7 +39,8 @@
 			"minecraft:fire_immune",
 			"minecraft:suspect_tracking",
 			"minecraft:vibration_damper",
-			"minecraft:vibration_listener"
+			"minecraft:vibration_listener",
+			"minecraft:persist_sit"
 		]
 	},
 	"minecraft:addrider": {
@@ -892,6 +893,7 @@
 		"on_close": "$entity.general.event_definition",
 		"on_target_open": "$entity.general.event_definition"
 	},
+	"minecraft:persist_sit": {},
 	"minecraft:persistent": {},
 	"minecraft:physics": {
 		"has_collision": "$general.boolean",
