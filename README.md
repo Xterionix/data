@@ -1,2 +1,2 @@
 # data
-Provides the latest data for bridge.
+Provides the latest data for bridgeX
