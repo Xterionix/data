@@ -56,7 +56,10 @@
 				}
 			}
 		],
-		"components": "$block.components and $dynamic.plugins.block_custom_components",
+		"components": {
+			"@import.value": "$block.components and $dynamic.plugins.block_custom_components",
+			"validate": "block_component.js"
+		},
 		"$versioned_template.events": [
 			{
 				"$if": "$format_version >= 1.16.100",

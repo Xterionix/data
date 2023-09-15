@@ -16,10 +16,7 @@
 		},
 		{
 			"$if": "$format_version >= 1.16.0 and $format_version < 1.19.20",
-			"$data": "$general.number",
-			"@meta": {
-				"validate": "updateToNewBlock.js"
-			}
+			"$data": "$general.number"
 		}
 	],
 	"$versioned_template.minecraft:destructible_by_mining": [
@@ -48,10 +45,7 @@
 			"$data": {
 				"@import.value": [
 					"$general.decimal"
-				],
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
+				]
 			}
 		}
 	],
@@ -118,10 +112,7 @@
 			"$if": "$format_version < 1.19.10",
 			"$data": {
 				"burn_odds": "$general.decimal",
-				"flame_odds": "$general.decimal",
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
+				"flame_odds": "$general.decimal"
 			}
 		},
 		{
@@ -162,10 +153,7 @@
 		},
 		{
 			"$if": "$format_version >= 1.16.0 and $format_version < 1.19.20",
-			"$data": "$general.decimal",
-			"@meta": {
-				"validate": "updateToNewBlock.js"
-			}
+			"$data": "$general.decimal"
 		}
 	],
 	"$versioned_template.minecraft:destructible_by_explosion": [
@@ -214,30 +202,11 @@
 				],
 				"crafting_tags": {
 					"$dynamic.list.next_index": "$recipe.general.tags"
-				},
-				"@meta": {
-					"validate": "updateToNewBlock.js"
 				}
 			}
 		},
 		{
-			"$if": "$format_version >= 1.19.10 and $format_version < 1.19.50",
-			"$data": {
-				"table_name": {
-					"@meta": {
-						"is_value": true
-					}
-				},
-				"crafting_tags": {
-					"$dynamic.list.next_index": "$recipe.general.tags"
-				},
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
-			}
-		},
-		{
-			"$if": "$format_version >= 1.19.50",
+			"$if": "$format_version >= 1.19.10",
 			"$data": {
 				"table_name": {
 					"@meta": {
@@ -252,37 +221,7 @@
 	],
 	"$versioned_template.minecraft:material_instances": [
 		{
-			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.40",
-			"$data": {
-				"$placeholder": {
-					"texture": "$dynamic.rp.terrain_texture",
-					"render_method": [
-						"opaque",
-						"blend",
-						"alpha_test",
-						"double_sided"
-					],
-					"ambient_occlusion": "$general.boolean",
-					"face_dimming": "$general.boolean"
-				},
-				"*": {
-					"texture": "$dynamic.rp.terrain_texture",
-					"render_method": [
-						"opaque",
-						"blend",
-						"alpha_test",
-						"double_sided"
-					],
-					"ambient_occlusion": "$general.boolean",
-					"face_dimming": "$general.boolean"
-				},
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
-			}
-		},
-		{
-			"$if": "$format_version >= 1.19.40",
+			"$if": "$format_version >= 1.16.100",
 			"$data": {
 				"$placeholder": {
 					"texture": "$dynamic.rp.terrain_texture",
@@ -312,10 +251,7 @@
 	"$versioned_template.minecraft:geometry": [
 		{
 			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.40",
-			"$data": "$general.model_identifier and $dynamic.rp.block_geometries",
-			"@meta": {
-				"validate": "updateToNewBlock.js"
-			}
+			"$data": "$general.model_identifier and $dynamic.rp.block_geometries"
 		},
 		{
 			"$if": "$format_version >= 1.19.40 and $format_version < 1.19.80",
@@ -323,10 +259,7 @@
 				"@import.value": [
 					"$general.model_identifier"
 				],
-				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries",
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
+				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries"
 			}
 		},
 		{
@@ -338,9 +271,6 @@
 				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries",
 				"bone_visibility": {
 					"$placeholder": "$general.boolean"
-				},
-				"@meta": {
-					"validate": "updateToNewBlock.js"
 				}
 			}
 		},
@@ -454,10 +384,7 @@
 				},
 				"@import.value": [
 					"false"
-				],
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
+				]
 			}
 		}
 	],
@@ -473,33 +400,13 @@
 				},
 				"@import.value": [
 					"false"
-				],
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
+				]
 			}
 		}
 	],
 	"$versioned_template.minecraft:collision_box": [
 		{
-			"$if": "$format_version >= 1.19.10 and $format_version < 1.19.50",
-			"$data": {
-				"origin": {
-					"$dynamic.list.index_triple": "$general.number"
-				},
-				"size": {
-					"$dynamic.list.index_triple": "$general.number"
-				},
-				"@import.value": [
-					"false"
-				],
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
-			}
-		},
-		{
-			"$if": "$format_version >= 1.19.50",
+			"$if": "$format_version >= 1.19.10",
 			"$data": {
 				"origin": {
 					"$dynamic.list.index_triple": "$general.number"
@@ -525,10 +432,7 @@
 				},
 				"@import.value": [
 					"false"
-				],
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
+				]
 			}
 		}
 	],
@@ -544,33 +448,13 @@
 				},
 				"@import.value": [
 					"false"
-				],
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
+				]
 			}
 		}
 	],
 	"$versioned_template.minecraft:selection_box": [
 		{
-			"$if": "$format_version >= 1.19.20 and $format_version < 1.19.60",
-			"$data": {
-				"origin": {
-					"$dynamic.list.index_triple": "$general.number"
-				},
-				"size": {
-					"$dynamic.list.index_triple": "$general.number"
-				},
-				"@import.value": [
-					"false"
-				],
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
-			}
-		},
-		{
-			"$if": "$format_version >= 1.19.60",
+			"$if": "$format_version >= 1.19.20",
 			"$data": {
 				"origin": {
 					"$dynamic.list.index_triple": "$general.number"
@@ -586,34 +470,7 @@
 	],
 	"$versioned_template.minecraft:placement_filter": [
 		{
-			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.60",
-			"$data": {
-				"conditions": {
-					"$dynamic.list.next_index": {
-						"block_filter": {
-							"$dynamic.list.next_index": "$general.block_identifier"
-						},
-						"allowed_faces": {
-							"$dynamic.list.next_index": [
-								"up",
-								"down",
-								"north",
-								"south",
-								"east",
-								"west",
-								"side",
-								"all"
-							]
-						}
-					}
-				},
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
-			}
-		},
-		{
-			"$if": "$format_version >= 1.19.60",
+			"$if": "$format_version >= 1.16.100",
 			"$data": {
 				"conditions": {
 					"$dynamic.list.next_index": {
@@ -641,10 +498,7 @@
 		{
 			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.80",
 			"$data": {
-				"$dynamic.list.index_triple": "$general.number",
-				"@meta": {
-					"validate": "updateToNewBlock.js"
-				}
+				"$dynamic.list.index_triple": "$general.number"
 			}
 		}
 	],
@@ -666,16 +520,7 @@
 	],
 	"$versioned_template.minecraft:display_name": [
 		{
-			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.60",
-			"$data": {
-				"@meta": {
-					"is_value": true,
-					"validate": "updateToNewBlock.js"
-				}
-			}
-		},
-		{
-			"$if": "$format_version >= 1.19.60",
+			"$if": "$format_version >= 1.16.100",
 			"$data": {
 				"@meta": {
 					"is_value": true
