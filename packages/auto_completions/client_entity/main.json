@@ -1,3 +1,4 @@
+// To-do: Make render controllers work conditionally
 {
 	"format_version": "$general.format_version",
 	"minecraft:client_entity": {
