@@ -57,8 +57,11 @@
 			}
 		],
 		"components": {
-			"@import.value": "$block.components and $dynamic.plugins.block_custom_components",
-			"validate": "block_component.js"
+			"@meta": {
+				"is_value": true,
+				"validate": "block_component.js"
+			},
+			"@import.value": "$block.components and $dynamic.plugins.block_custom_components"
 		},
 		"$versioned_template.events": [
 			{
