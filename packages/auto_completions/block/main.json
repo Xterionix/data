@@ -60,7 +60,7 @@
 			"@meta": {
 				"validate": "block_component.js"
 			},
-			"@import.value": "$block.components and $dynamic.plugins.block_custom_components"
+			"$load": "$block.general.components"
 		},
 		"$versioned_template.events": [
 			{

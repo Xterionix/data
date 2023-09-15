@@ -14,5 +14,6 @@
 			"baby"
 		],
 		"condition": "$molang.embedded"
-	}
+	},
+	"components": "$block.components and $dynamic.plugins.block_custom_components"
 }
