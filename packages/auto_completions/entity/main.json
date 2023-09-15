@@ -261,7 +261,7 @@
 					}
 				},
 				"set_property": {
-					"$placeholder": {
+					"$dynamic.entity.properties": {
 						"@meta": {
 							"is_value": true
 						}
