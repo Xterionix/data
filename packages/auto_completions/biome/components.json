@@ -5,7 +5,6 @@
 			"minecraft:the_end_surface"
 		]
 	},
-
 	"minecraft:ignore_automatic_features": "$general.boolean",
 	"minecraft:climate": {
 		"downfall": "$general.decimal",
@@ -25,7 +24,6 @@
 		"target_weirdness": "$general.decimal",
 		"weight": "$general.decimal"
 	},
-
 	"minecraft:overworld_height": {
 		"noise_type": "$biome.general.noise_type",
 		"noise_params": {
@@ -57,7 +55,6 @@
 	},
 	"minecraft:mesa_surface": {
 		"$load": "$biome.components.minecraft:surface_parameters",
-
 		"clay_material": "$general.block_identifier",
 		"hard_clay_material": "$general.block_identifier",
 		"bryce_pillars": "$general.boolean",
@@ -108,9 +105,10 @@
 				"scatter_chance": "$feature.general.chance_information",
 				"coordinate_eval_order": "$feature.general.coordinate_eval_order",
 				"x": {
-					"@meta": { "is_molang": true },
+					"@meta": {
+						"is_molang": true
+					},
 					"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.query)",
-
 					"extent": {
 						"$dynamic.list.index_pair": {
 							"@import.value": "$general.number and ('query.' + $molang.general.query)",
@@ -130,9 +128,10 @@
 					"grid_offset": "$general.number"
 				},
 				"z": {
-					"@meta": { "is_molang": true },
+					"@meta": {
+						"is_molang": true
+					},
 					"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.query)",
-
 					"extent": {
 						"$dynamic.list.index_pair": {
 							"@import.value": "$general.number and ('query.' + $molang.general.query)",
@@ -152,9 +151,10 @@
 					"grid_offset": "$general.number"
 				},
 				"y": {
-					"@meta": { "is_molang": true },
+					"@meta": {
+						"is_molang": true
+					},
 					"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.query)",
-
 					"extent": {
 						"$dynamic.list.index_pair": {
 							"@import.value": "$general.number and ('query.' + $molang.general.query)",
@@ -175,7 +175,9 @@
 				},
 				"places_feature": {
 					"$dynamic.list.next_index": {
-						"@meta": { "is_value": true },
+						"@meta": {
+							"is_value": true
+						},
 						"@import.value.feature_ref": "$dynamic.biome.feature_references"
 					}
 				}

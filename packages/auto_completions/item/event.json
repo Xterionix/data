@@ -1,6 +1,9 @@
 {
 	"@meta": {
-		"expand_path_exceptions": ["swing", "decrement_stack"]
+		"expand_path_exceptions": [
+			"swing",
+			"decrement_stack"
+		]
 	},
 	"randomize": {
 		"$dynamic.list.next_index": {
@@ -20,17 +23,25 @@
 	"damage": {
 		"type": "$general.damage_type",
 		"amount": "$general.number",
-		"target": ["self", "holder"]
+		"target": [
+			"self",
+			"holder"
+		]
 	},
 	"add_mob_effect": {
 		"effect": "$general.effect_name",
-		"target": ["holder", "other"],
+		"target": [
+			"holder",
+			"other"
+		],
 		"duration": "$general.number",
 		"amplifier": "$general.number"
 	},
 	"remove_mob_effect": {
 		"effect": "$general.effect_name",
-		"target": ["holder"]
+		"target": [
+			"holder"
+		]
 	},
 	"transform_item": {
 		"transform": {
@@ -55,7 +66,9 @@
 		}
 	},
 	"teleport": {
-		"target": ["holder"],
+		"target": [
+			"holder"
+		],
 		"avoid_water": "$general.boolean",
 		"destination": {
 			"$dynamic.list.index_triple": "$general.number"
@@ -69,6 +82,9 @@
 		"command": {
 			"$dynamic.list.next_index": "$function.embedded_no_slash"
 		},
-		"target": ["other", "holder"]
+		"target": [
+			"other",
+			"holder"
+		]
 	}
 }

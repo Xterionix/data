@@ -6,29 +6,36 @@
 		"fixed_grid",
 		"jittered_grid"
 	],
-	"early_outs": ["none", "first_failure", "first_success"],
-	"coordinate_eval_orders": ["xyz", "zyx", "yxz", "xzy", "zxy", "yzx"],
+	"early_outs": [
+		"none",
+		"first_failure",
+		"first_success"
+	],
+	"coordinate_eval_orders": [
+		"xyz",
+		"zyx",
+		"yxz",
+		"xzy",
+		"zxy",
+		"yzx"
+	],
 	"chance_information": {
 		"numerator": "$general.number",
 		"denominator": "$general.number"
 	},
-
 	"min-max_information": {
 		"min": "$general.number",
 		"max": "$general.number"
 	},
-
 	"range_information": {
 		"range_min": "$general.number",
 		"range_max": "$general.number"
 	},
-
 	"block_reference": {
 		"@import.value.block_id": "$general.block_identifier",
 		"name": "$general.block_identifier",
 		"states": "$_general.block_states"
 	},
-
 	"canopy_reference": {
 		"acacia_canopy": {
 			"canopy_size": "$general.number",
@@ -49,7 +56,12 @@
 				"decoration_chance": "$feature.general.chance_information",
 				"block_reference": "$feature.general.block_reference",
 				"num_steps": "$general.number",
-				"step_direction": ["down", "up", "out", "away"]
+				"step_direction": [
+					"down",
+					"up",
+					"out",
+					"away"
+				]
 			}
 		},
 		"fancy_canopy": {
@@ -89,14 +101,12 @@
 			"leaf_block": "$feature.general.block_reference"
 		}
 	},
-
 	"acacia_branch_reference": {
 		"branch_length": "$feature.general.range_information",
 		"branch_position": "$feature.general.range_information",
 		"branch_chance": "$general.decimal",
 		"$load": "$feature.general.branch_canopy_refence"
 	},
-
 	"mega_branch_reference": {
 		"branch_length": "$general.number",
 		"branch_slope": "$general.decimal",
@@ -104,7 +114,6 @@
 		"branch_altitude_factor": "$feature.general.min-max_information",
 		"$load": "$feature.general.branch_canopy_refence"
 	},
-
 	"branch_canopy_refence": {
 		"branch_canopy": {
 			"acacia_canopy": {
@@ -130,7 +139,12 @@
 					"decoration_chance": "$feature.general.chance_information",
 					"decoration_block": "$feature.general.block_reference",
 					"num_steps": "$general.number",
-					"step_direction": ["down", "up", "out", "away"]
+					"step_direction": [
+						"down",
+						"up",
+						"out",
+						"away"
+					]
 				}
 			},
 			"fancy_canopy": {

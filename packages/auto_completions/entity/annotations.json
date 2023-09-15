@@ -1,6 +1,8 @@
 {
     "@meta": {
-        "expand_path_exceptions": [ "minecraft:annotation.open_door" ]
+        "expand_path_exceptions": [
+            "minecraft:annotation.open_door"
+        ]
     },
     "minecraft:annotation.open_door": {},
     "minecraft:annotation.break_door": {

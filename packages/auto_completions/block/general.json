@@ -6,7 +6,13 @@
 			},
 			"@import.value": "$dynamic.block.events"
 		},
-		"target": ["self", "other", "target", "parent", "baby"],
+		"target": [
+			"self",
+			"other",
+			"target",
+			"parent",
+			"baby"
+		],
 		"condition": "$molang.embedded"
 	}
 }

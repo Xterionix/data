@@ -1,3 +1,7 @@
 {
-    "$dynamic.list.next_index": { "@meta": { "is_value": true } }
+    "$dynamic.list.next_index": {
+        "@meta": {
+            "is_value": true
+        }
+    }
 }

@@ -10,6 +10,10 @@
                 }
             }
         },
-        "@import.value": ["true", "false", "hold_on_last_frame"]
+        "@import.value": [
+            "true",
+            "false",
+            "hold_on_last_frame"
+        ]
     }
 }

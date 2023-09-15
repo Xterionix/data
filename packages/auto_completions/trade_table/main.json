@@ -7,7 +7,7 @@
                 "$dynamic.list.next_index": {
                     "trades": "$trade_table.general.trades",
                     "num_to_select": "$general.number"
-                } 
+                }
             }
         }
     }

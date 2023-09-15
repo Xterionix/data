@@ -1,3 +1,8 @@
 {
-    "population_control": [ "animal", "monster", "pillager", "water_animal" ]
+    "population_control": [
+        "animal",
+        "monster",
+        "pillager",
+        "water_animal"
+    ]
 }

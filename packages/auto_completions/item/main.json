@@ -24,7 +24,6 @@
 			],
 			"is_experimental": "$general.boolean"
 		},
-
 		"components": "$item.components",
 		"$versioned_template.events": [
 			{

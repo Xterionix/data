@@ -7,7 +7,16 @@
 		"lava_resistance",
 		"powder_snow"
 	],
-	"render_distance_types": ["fixed", "render"],
-	"coefficient_types": ["air", "water", "cloud"],
-	"density_types": ["air"]
+	"render_distance_types": [
+		"fixed",
+		"render"
+	],
+	"coefficient_types": [
+		"air",
+		"water",
+		"cloud"
+	],
+	"density_types": [
+		"air"
+	]
 }

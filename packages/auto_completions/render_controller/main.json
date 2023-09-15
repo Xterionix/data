@@ -1,12 +1,13 @@
 {
     "format_version": "$general.format_version",
     "render_controllers": {
-        "@meta": { "validate": "validateIDs.js" },
+        "@meta": {
+            "validate": "validateIDs.js"
+        },
         "$placeholder": {
             "rebuild_animation_matrices": "$general.boolean",
             "light_color_multiplier": "$general.decimal",
-            "ignore_lighting" : "$general.boolean",
-
+            "ignore_lighting": "$general.boolean",
             "color": {
                 "r": "$molang.embedded and $general.number",
                 "g": "$molang.embedded and $general.number",
@@ -36,23 +37,28 @@
                     "$dynamic.list.index_pair": {
                         "@import.value.numbers": "$general.number",
                         "$load": "$molang.embedded",
-                        "@meta": { "validate": null }
+                        "@meta": {
+                            "validate": null
+                        }
                     }
                 },
                 "scale": {
                     "$dynamic.list.index_pair": {
                         "@import.value.numbers": "$general.number",
                         "$load": "$molang.embedded",
-                        "@meta": { "validate": null }
+                        "@meta": {
+                            "validate": null
+                        }
                     }
                 }
             },
-
             "arrays": {
                 "textures": {
                     "$placeholder": {
                         "$dynamic.list.next_index": {
-                            "@meta": { "is_value": true },
+                            "@meta": {
+                                "is_value": true
+                            },
                             "@import.value.texture_ref": "$render_controller.general.texture_ref"
                         }
                     }
@@ -60,7 +66,9 @@
                 "geometries": {
                     "$placeholder": {
                         "$dynamic.list.next_index": {
-                            "@meta": { "is_value": true },
+                            "@meta": {
+                                "is_value": true
+                            },
                             "@import.value.geometry_ref": "$render_controller.general.geometry_ref"
                         }
                     }
@@ -68,13 +76,14 @@
                 "materials": {
                     "$placeholder": {
                         "$dynamic.list.next_index": {
-                            "@meta": { "is_value": true },
+                            "@meta": {
+                                "is_value": true
+                            },
                             "@import.value.material_ref": "$render_controller.general.material_ref"
                         }
                     }
                 }
             },
-
             "geometry": {
                 "@import.value.geometry_ref": "$render_controller.general.geometry_ref",
                 "$load": "$molang.embedded"

@@ -1,7 +1,7 @@
 {
     "bridge:tag": {
         "description": {
-            "identifier":  "$general.file_identifier",
+            "identifier": "$general.file_identifier",
             "animations": {
                 "$placeholder": "$dynamic.animation_ids and $dynamic.animation_controller_ids"
             },

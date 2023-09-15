@@ -84,5 +84,11 @@
 		"lilly_pad",
 		"wheat"
 	],
-	"armor_types": ["leather", "chain", "diamond", "iron", "gold"]
+	"armor_types": [
+		"leather",
+		"chain",
+		"diamond",
+		"iron",
+		"gold"
+	]
 }

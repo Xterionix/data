@@ -19,9 +19,7 @@
 			"@import.value.boolean_simple": "$general.boolean",
 			"up": "$general.boolean",
 			"down": "$general.boolean",
-
 			"side": "$general.boolean",
-
 			"north": "$general.boolean",
 			"south": "$general.boolean",
 			"west": "$general.boolean",
@@ -30,69 +28,95 @@
 		"textures": {
 			"@import.value.terrain_texture_simple": "$dynamic.rp.terrain_texture",
 			"up": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
 			"down": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
-
 			"side": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
-
 			"north": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
 			"south": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
 			"west": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
 			"east": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			}
 		},
 		"carried_textures": {
 			"@import.value.terrain_texture_simple": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
 			"up": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
 			"down": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
-
 			"side": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
-
 			"north": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
 			"south": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
 			"west": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			},
 			"east": {
-				"@meta": { "is_value": true },
+				"@meta": {
+					"is_value": true
+				},
 				"@import.value.terrain_texture_arg": "$dynamic.rp.terrain_texture"
 			}
 		}

@@ -1,8 +1,10 @@
 {
     "@meta": {
-        "expand_path_exceptions": [ "minecraft:spawns_on_surface", "minecraft:spawns_underwater" ]
+        "expand_path_exceptions": [
+            "minecraft:spawns_on_surface",
+            "minecraft:spawns_underwater"
+        ]
     },
-
     "minecraft:spawns_on_surface": {},
     "minecraft:spawns_underground": {},
     "minecraft:spawns_underwater": {},
@@ -12,33 +14,33 @@
     "minecraft:spawns_on_block_prevented_filter": {
         "$dynamic.list.next_index": "$general.block_identifier"
     },
-
     "minecraft:brightness_filter": {
         "min": "$general.number",
         "max": "$general.number",
         "adjust_for_weather": "$general.boolean"
     },
-    
     "minecraft:difficulty_filter": {
         "min": "$general.game_difficulty",
         "max": "$general.game_difficulty"
     },
-
     "minecraft:weight": {
         "default": "$general.number"
     },
-
     "minecraft:herd": {
         "min_size": "$general.number",
         "max_size": "$general.number",
         "event_skip_count": "$general.number",
         "event": {
-            "@meta": { "is_value": true },
+            "@meta": {
+                "is_value": true
+            },
             "@import.value.entity_event": "$dynamic.cache.entity.events"
         },
         "initial_event_count": "$general.number",
         "initial_event": {
-            "@meta": { "is_value": true },
+            "@meta": {
+                "is_value": true
+            },
             "@import.value.entity_event": "$dynamic.cache.entity.events"
         }
     },
@@ -46,7 +48,6 @@
         "surface": "$general.number",
         "underground": "$general.number"
     },
-
     "minecraft:biome_filter": {
         "all_of": {
             "$dynamic.list.next_index": "$spawn_rule.components.minecraft:biome_filter"
@@ -54,15 +55,16 @@
         "any_of": {
             "$dynamic.list.next_index": "$spawn_rule.components.minecraft:biome_filter"
         },
-        "test": [ "has_biome_tag" ],
+        "test": [
+            "has_biome_tag"
+        ],
         "operator": "$entity.general.filter_operators",
         "value": "$general.biome_tag and $dynamic.cache.biome.tags"
     },
     "minecraft:player_in_village_filter": {
-      "distance": "$general.number",
-      "village_border_tolerance": "$general.number"
+        "distance": "$general.number",
+        "village_border_tolerance": "$general.number"
     },
-    
     "minecraft:delay_filter": {
         "min": "$general.number",
         "max": "$general.number",
@@ -73,12 +75,10 @@
         "min": "$general.number",
         "max": "$general.number"
     },
-
-    "minecraft:height_filter":{
+    "minecraft:height_filter": {
         "min": "$general.number",
         "max": "$general.number"
     },
-
     "minecraft:permute_type": {
         "$dynamic.list.next_index": {
             "weight": "$general.number",

@@ -11,8 +11,7 @@
 				"@import.value.number": "$general.number",
 				"min": "$general.number",
 				"max": "$general.number",
-
-				"@meta": { 
+				"@meta": {
 					"validate": [
 						{
 							"confirm": "Bridge.Node.children.length === 0 && (Bridge.Node.data === '' || Number.isNaN(Number(Bridge.Node.data)))",
@@ -29,7 +28,7 @@
 							}
 						}
 					]
-				}			
+				}
 			},
 			"entries": {
 				"$dynamic.list.next_index": {

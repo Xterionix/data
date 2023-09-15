@@ -8,7 +8,6 @@
 		"normal": {
 			"volume": "$simple.general.number_range",
 			"pitch": "$simple.general.number_range",
-
 			"events": {
 				"default": "$simple.general.sound_object",
 				"item.use.on": "$simple.general.sound_object",
@@ -25,10 +24,8 @@
 		"defaults": {
 			"volume": "$simple.general.number_range",
 			"pitch": "$simple.general.number_range",
-
 			"events": {
 				"$placeholder": "$simple.general.sound_object",
-
 				"fall.big": "$simple.general.sound_object",
 				"fall.small": "$simple.general.sound_object",
 				"splash": "$simple.general.sound_object",
@@ -65,13 +62,11 @@
 			"$vanilla.unprefixed_entity_identifier and $dynamic.cache.entity.identifiers": "$simple.sounds.entity_sounds.defaults"
 		}
 	},
-
 	"interactive_sounds": {
 		"block_sounds": {
 			"normal": {
 				"volume": "$simple.general.number_range",
 				"pitch": "$simple.general.number_range",
-
 				"events": {
 					"default": "$simple.general.sound_object",
 					"fall": "$simple.general.sound_object",
@@ -86,10 +81,8 @@
 			"defaults": {
 				"volume": "$simple.general.number_range",
 				"pitch": "$simple.general.number_range",
-
 				"events": {
 					"$placeholder": "$simple.general.sound_object",
-
 					"fall": "$simple.general.sound_object",
 					"jump": "$simple.general.sound_object"
 				}
