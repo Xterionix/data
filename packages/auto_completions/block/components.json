@@ -66,12 +66,12 @@
 			"$data": "$general.decimal"
 		}
 	],
-	"$versioned_template.minecraft:block_light_filter": [
-		{
-			"$if": "$format_version >= 1.18.10 and $format_version < 1.19.10",
-			"$data": "$general.number"
-		}
-	],
+	// "$versioned_template.minecraft:block_light_filter": [
+	// 	{
+	// 		"$if": "$format_version >= 1.18.10 and $format_version < 1.19.10",
+	// 		"$data": "$general.number"
+	// 	}
+	// ],
 	"$versioned_template.minecraft:light_dampening": [
 		{
 			"$if": "$format_version >= 1.19.10",
