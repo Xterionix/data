@@ -64,7 +64,7 @@
 		},
 		"$versioned_template.events": [
 			{
-				"$if": "$format_version >= 1.16.100",
+				"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 				"$data": {
 					"$placeholder": "$block.event"
 				}
