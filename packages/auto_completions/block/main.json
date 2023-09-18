@@ -5,14 +5,19 @@
 			"identifier": "$general.file_identifier and $general.block_identifier",
 			"is_experimental": "$general.boolean",
 			"traits": "$block.traits",
-			"menu_category": {
-				"category": "$general.item_category",
-				"group": "$item.general.item_group_reference",
-				"is_hidden_in_commands": "$general.boolean"
-			},
+			"$versioned_template.menu_category": [
+				{
+					"$if": "$format_version >= 1.19.10",
+					"$data": {
+						"category": "$general.item_category",
+						"group": "$item.general.item_group_reference",
+						"is_hidden_in_commands": "$general.boolean"
+					}
+				}
+			],
 			"$versioned_template.properties": [
 				{
-					"$if": "$format_version >= 1.16.100 and $format_version < 1.19.70",
+					"$if": "$format_version >= 1.16.100 and $format_version < 1.19.70 and $holiday_creator_features",
 					"$data": {
 						"$placeholder": {
 							"$dynamic.list.next_index": {
@@ -47,7 +52,16 @@
 		},
 		"$versioned_template.permutations": [
 			{
-				"$if": "$format_version >= 1.16.100",
+				"$if": "$format_version >= 1.16.100 and $format_version < 1.19.70 and $holiday_creator_features",
+				"$data": {
+					"$dynamic.list.next_index": {
+						"condition": "$molang.embedded",
+						"components": "$block.components"
+					}
+				}
+			},
+			{
+				"$if": "$format_version >= 1.19.70",
 				"$data": {
 					"$dynamic.list.next_index": {
 						"condition": "$molang.embedded",
