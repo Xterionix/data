@@ -36,7 +36,27 @@
 					}
 				},
 				{
-					"$if": "$format_version >= 1.19.70",
+					"$if": "$format_version >= 1.19.70 and $format_version < 1.20.10",
+					"$data": {
+						"$placeholder": {
+							"$dynamic.list.next_index": {
+								"@import.value.number": "$general.number",
+								"@import.value.boolean": "$general.boolean",
+								"values": {
+									"min": "$general.number",
+									"max": "$general.number"
+								},
+								"@meta": {
+									"validate": null
+								}
+							}
+						}
+					}
+				}
+			],
+			"$versioned_template.states": [
+				{
+					"$if": "$format_version >= 1.20.10",
 					"$data": {
 						"$placeholder": {
 							"$dynamic.list.next_index": {
