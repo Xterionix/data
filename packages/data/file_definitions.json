@@ -169,6 +169,7 @@
 	},
 	{
 		"id": "script",
+		"target_version": "$scripting",
 		"includes": "scripts/",
 		"file_viewer": "text",
 		"documentation": "Scripting",
