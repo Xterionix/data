@@ -21,7 +21,8 @@
         "base_game_version": {
             "$dynamic.list.index_triple": "$general.number"
         },
-        "lock_template_options": "$general.boolean"
+        "lock_template_options": "$general.boolean",
+        "allow_random_seed": "$general.boolean"
     },
     "modules": {
         "$dynamic.list.next_index": {
@@ -67,6 +68,11 @@
         "url": {
             "@meta": {
                 "is_value": true
+            }
+        },
+        "generated_with": {
+            "$placeholder": {
+                "$dynamic.list.next_index": "$general.translatable_text"
             }
         }
     },
