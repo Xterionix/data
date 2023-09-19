@@ -4,7 +4,12 @@
 		"description": {
 			"identifier": "$general.file_identifier and $general.block_identifier",
 			"is_experimental": "$general.boolean",
-			"traits": "$block.traits",
+			"$versioned_template.traits": [
+				{
+					"$if": "$format_version >= 1.20.0 and $holiday_creator_features",
+					"$data": "$block.traits"
+				}
+			],
 			"$versioned_template.menu_category": [
 				{
 					"$if": "$format_version >= 1.19.10",
