@@ -31,6 +31,7 @@
 	},
 	{
 		"id": "biome",
+		"target_version": "$custom_biomes",
 		"includes": "biomes/",
 		"file_viewer": "json",
 		"documentation": "Biomes",
@@ -74,6 +75,7 @@
 	},
 	{
 		"id": "feature",
+		"target_version": "$custom_biomes",
 		"includes": "features/",
 		"file_viewer": "json",
 		"start_state": "feature/main",
@@ -83,6 +85,7 @@
 	},
 	{
 		"id": "feature_rule",
+		"target_version": "$custom_biomes",
 		"includes": "feature_rules/",
 		"file_viewer": "json",
 		"start_state": "feature_rule/main",
@@ -166,6 +169,7 @@
 	},
 	{
 		"id": "script",
+		"target_version": "$scripting",
 		"includes": "scripts/",
 		"file_viewer": "text",
 		"documentation": "Scripting",
@@ -309,7 +313,7 @@
 	},
 	{
 		"id": "fog",
-		"target_version": "$project_target_version >= 1.16.100",
+		"target_version": "$upcoming_creator_features",
 		"includes": "fogs/",
 		"file_viewer": "json",
 		"start_state": "fog/main",
