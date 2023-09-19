@@ -22,7 +22,7 @@
 	"number0_15": {
 		"@meta": {
 			"validate": {
-				"confirm": "let x = Number(Bridge.Node.data); Bridge.Node.data === '' || Number.isNaN(x) || x < 0 || x > 15",
+				"confirm": "Bridge.Node.data === '' || Number.isNaN(Number(Bridge.Node.data)) || Number(Bridge.Node.data) < 0 || Number(Bridge.Node.data) > 15",
 				"then": {
 					"show": true,
 					"message": "Invalid data type: Expected number between 0 and 15"
@@ -51,7 +51,7 @@
 	"number0_255": {
 		"@meta": {
 			"validate": {
-				"confirm": "let x = Number(Bridge.Node.data); Bridge.Node.data === '' || Number.isNaN(x) || x < 0 || x > 255",
+				"confirm": "Bridge.Node.data === '' || Number.isNaN(Number(Bridge.Node.data)) || Number(Bridge.Node.data) < 0 || Number(Bridge.Node.data) > 255",
 				"then": {
 					"show": true,
 					"message": "Invalid data type: Expected number between 0 and 255"
