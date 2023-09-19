@@ -10,7 +10,8 @@
 	"capabilities": [
 		"experimental_custom_ui",
 		"chemistry",
-		"raytraced"
+		"raytraced",
+		"editorExtension"
 	],
 	"script_modules": [
 		"@minecraft/server",
