@@ -9,7 +9,7 @@
 			"$data": "('query.' + $molang.general.query_beta)"
 		},
 		{
-			"$data": "$molang.general.boolean and ('query.' + $molang.general.query) and ('variable.' + $molang.general.variable)"
+			"$data": "$molang.general.boolean and ('query.' + $molang.general.query) and ('variable.' + $molang.general.variable) and ('context.' + $molang.general.context)"
 		}
 	]
 }
