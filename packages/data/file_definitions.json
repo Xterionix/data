@@ -313,7 +313,7 @@
 	},
 	{
 		"id": "fog",
-		"target_version": "$project_target_version >= 1.16.100",
+		"target_version": "$upcoming_creator_features",
 		"includes": "fogs/",
 		"file_viewer": "json",
 		"start_state": "fog/main",
