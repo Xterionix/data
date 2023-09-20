@@ -444,7 +444,17 @@
 	},
 	"$versioned_template.minecraft:display_name": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+			"$data": {
+				"value": {
+					"@meta": {
+						"is_value": true
+					}
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.0",
 			"$data": {
 				"value": {
 					"@meta": {
