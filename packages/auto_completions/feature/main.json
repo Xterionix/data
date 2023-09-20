@@ -1093,9 +1093,10 @@
 			}
 		}
 	],
+	// Experimental
 	"$versioned_template.minecraft:beards_and_shavers": [
 		{
-			"$if": "$format_version >= 1.17.0",
+			"$if": "$format_version >= 1.17.0 and $custom_biomes",
 			"$data": {
 				"description": {
 					"identifier": "$general.file_identifier"
@@ -1122,7 +1123,7 @@
 	],
 	"$versioned_template.minecraft:rect_layout": [
 		{
-			"$if": "$format_version >= 1.17.0",
+			"$if": "$format_version >= 1.17.0 and $custom_biomes",
 			"$data": {
 				"description": {
 					"identifier": "$general.file_identifier"
