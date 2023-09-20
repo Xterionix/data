@@ -211,7 +211,7 @@
 	],
 	"$versioned_template.minecraft:repairable": [
 		{
-			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.0",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.0 and $holiday_creator_features",
 			"$data": {
 				"on_repaired": "$item.general.event_definition",
 				"repair_items": {
@@ -225,7 +225,20 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.20.0",
+			"$if": "$format_version >= 1.20.0 and $format_version < 1.20.10 $holiday_creator_features",
+			"$data": {
+				"repair_items": {
+					"$dynamic.list.next_index": {
+						"items": {
+							"$dynamic.list.next_index": "$general.block_identifier and $general.item_identifier"
+						},
+						"repair_amount": "$general.number and $molang.embedded"
+					}
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.10",
 			"$data": {
 				"repair_items": {
 					"$dynamic.list.next_index": {
