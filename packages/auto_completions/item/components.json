@@ -295,7 +295,13 @@
 	],
 	"$versioned_template.minecraft:fuel": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+			"$data": {
+				"duration": "$general.number"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.0",
 			"$data": {
 				"duration": "$general.number"
 			}
