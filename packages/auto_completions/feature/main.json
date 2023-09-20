@@ -608,66 +608,71 @@
 			}
 		}
 	],
-	"minecraft:structure_template_feature": {
-		"description": {
-			"identifier": "$general.file_identifier"
-		},
-		"structure_name": {
-			"@meta": {
-				"is_value": true
-			}
-		},
-		"adjustment_radius": [
-			"0",
-			"1",
-			"2",
-			"3",
-			"4",
-			"5",
-			"6",
-			"7",
-			"8",
-			"9",
-			"10",
-			"11",
-			"12",
-			"13",
-			"14",
-			"15",
-			"16"
-		],
-		"facing_direction": [
-			"north",
-			"south",
-			"east",
-			"west",
-			"random"
-		],
-		"constraints": {
-			"grounded": {},
-			"unburied": {},
-			"block_intersection": {
-				"$versioned_template": [
-					{
-						"$if": "$format_version < 1.16.100",
-						"$data": {
-							"block_whitelist": {
-								"$dynamic.list.next_index": "$feature.general.block_reference"
-							}
-						}
-					},
-					{
-						"$if": "$format_version >= 1.16.100",
-						"$data": {
-							"block_allowlist": {
-								"$dynamic.list.next_index": "$feature.general.block_reference"
-							}
-						}
+	"$versioned_template.minecraft:structure_template_feature": [
+		{
+			"$if": "$format_version >= 1.20.20 or $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"structure_name": {
+					"@meta": {
+						"is_value": true
 					}
-				]
+				},
+				"adjustment_radius": [
+					"0",
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16"
+				],
+				"facing_direction": [
+					"north",
+					"south",
+					"east",
+					"west",
+					"random"
+				],
+				"constraints": {
+					"grounded": {},
+					"unburied": {},
+					"block_intersection": {
+						"$versioned_template": [
+							{
+								"$if": "$format_version < 1.16.100",
+								"$data": {
+									"block_whitelist": {
+										"$dynamic.list.next_index": "$feature.general.block_reference"
+									}
+								}
+							},
+							{
+								"$if": "$format_version >= 1.16.100",
+								"$data": {
+									"block_allowlist": {
+										"$dynamic.list.next_index": "$feature.general.block_reference"
+									}
+								}
+							}
+						]
+					}
+				}
 			}
 		}
-	},
+	],
 	"minecraft:tree_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
