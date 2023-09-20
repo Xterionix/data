@@ -247,6 +247,15 @@
 			}
 		}
 	],
+	"$versioned_template.minecraft:chargeable": [
+		{
+			"$if": "$format_version >= 1.19.0 $holiday_creator_features",
+			"$data": {
+				"movement_modifier": "$general.decimal",
+				"on_complete": "$item.general.event_definition"
+			}
+		}
+	],
 	"$versioned_template.minecraft:weapon": [
 		{
 			"$if": "$format_version >= 1.16.100",
