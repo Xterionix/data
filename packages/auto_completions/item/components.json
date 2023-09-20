@@ -240,7 +240,14 @@
 	],
 	"$versioned_template.minecraft:cooldown": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.0 and $holiday_creator_features",
+			"$data": {
+				"category": "$item.general.cooldown_types",
+				"duration": "$general.decimal"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.0",
 			"$data": {
 				"category": "$item.general.cooldown_types",
 				"duration": "$general.decimal"
