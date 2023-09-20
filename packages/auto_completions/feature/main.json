@@ -295,6 +295,64 @@
 			}
 		}
 	],
+	"$versioned_template.minecraft:ore_feature": [
+		{
+			"$if": "$format_version < 1.16.220 and $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"count": "$general.number",
+				"places_block": "$feature.general.block_reference",
+				"may_replace": {
+					"$dynamic.list.next_index": "$feature.general.block_reference"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.16.220 and $custom_biomes and $format_version < 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"count": "$general.number",
+				"places_block": "$feature.general.block_reference",
+				"may_replace": {
+					"$dynamic.list.next_index": "$feature.general.block_reference"
+				},
+				"replace_rules": {
+					"$dynamic.list.next_index": {
+						"places_block": "$feature.general.block_reference",
+						"may_replace": {
+							"$dynamic.list.next_index": "$feature.general.block_reference"
+						}
+					}
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"count": "$general.number",
+				"places_block": "$feature.general.block_reference",
+				"discard_chance_on_air_exposure": "$general.decimal",
+				"may_replace": {
+					"$dynamic.list.next_index": "$feature.general.block_reference"
+				},
+				"replace_rules": {
+					"$dynamic.list.next_index": {
+						"places_block": "$feature.general.block_reference",
+						"may_replace": {
+							"$dynamic.list.next_index": "$feature.general.block_reference"
+						}
+					}
+				}
+			}
+		}
+	],
 	"minecraft:sequence_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
@@ -308,38 +366,6 @@
 			}
 		}
 	},
-	"$versioned_template.minecraft:ore_feature": [
-		{
-			"$data": {
-				"description": {
-					"identifier": "$general.file_identifier"
-				},
-				"count": "$general.number",
-				"places_block": "$feature.general.block_reference"
-			}
-		},
-		{
-			"$if": "$format_version < 1.16.220",
-			"$data": {
-				"may_replace": {
-					"$dynamic.list.next_index": "$feature.general.block_reference"
-				}
-			}
-		},
-		{
-			"$if": "$format_version >= 1.16.220",
-			"$data": {
-				"replace_rules": {
-					"$dynamic.list.next_index": {
-						"places_block": "$feature.general.block_reference",
-						"may_replace": {
-							"$dynamic.list.next_index": "$feature.general.block_reference"
-						}
-					}
-				}
-			}
-		}
-	],
 	"minecraft:scatter_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
