@@ -438,11 +438,11 @@
 	],
 	"$versioned_template.minecraft:render_offsets": [
 		{
-			"$if": "$format_version = 1.16.100",
+			"$if": "$format_version = 1.16.100 and $holiday_creator_features",
 			"$data": "$client_item.general.render_offsets"
 		},
 		{
-			"$if": "$format_version >= 1.16.200",
+			"$if": "$format_version >= 1.16.200 and $format_version < 1.20.10 and $holiday_creator_features",
 			"$data": {
 				"$item.general.hand_type": {
 					"$item.general.camera_type": "$item.general.render_offset"
