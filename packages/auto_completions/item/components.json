@@ -173,7 +173,14 @@
 	],
 	"$versioned_template.minecraft:enchantable": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.30 and $holiday_creator_features",
+			"$data": {
+				"slot": "$item.general.slots",
+				"value": "$general.number"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.30",
 			"$data": {
 				"slot": "$item.general.slots",
 				"value": "$general.number"
