@@ -43,7 +43,8 @@
 	"canopy_reference": {
 		"acacia_canopy": {
 			"canopy_size": "$general.number",
-			"leaf_block": "$feature.general.block_reference"
+			"leaf_block": "$feature.general.block_reference",
+			"simplify_canopy": "$general.boolean"
 		},
 		"canopy": {
 			"canopy_offset": "$feature.general.min-max_information",
@@ -58,7 +59,7 @@
 			"leaf_block": "$feature.general.block_reference",
 			"canopy_decoration": {
 				"decoration_chance": "$feature.general.chance_information",
-				"block_reference": "$feature.general.block_reference",
+				"decoration_block": "$feature.general.block_reference",
 				"num_steps": "$general.number",
 				"step_direction": [
 					"down",
@@ -68,16 +69,51 @@
 				]
 			}
 		},
+		"cherry_canopy": {
+			"leaf_block": "$feature.general.block_reference",
+			"height": "$general.number",
+			"radius": "$general.number",
+			"trunk_width": "$general.number",
+			"wide_bottom_layer_hole_chance": "$feature.general.chance_information",
+			"corner_hole_chance": "$feature.general.chance_information",
+			"hanging_leaves_chance": "$feature.general.chance_information",
+			"hanging_leaves_extension_chance": "$feature.general.chance_information"
+		},
 		"fancy_canopy": {
 			"height": "$general.number",
 			"radius": "$general.number",
 			"leaf_block": "$feature.general.block_reference"
 		},
+		"mangrove_canopy": {
+			"canopy_height": "$general.number",
+			"canopy_radius": "$general.number",
+			"leaf_placement_attempts": "$general.number",
+			"leaf_blocks": {
+				"dynamic.list.next_index": {
+					"0": "$feature.general.block_reference",
+					"1": "$general.number"
+				}
+			},
+			"canopy_decoration": {
+				"decoration_chance": "$feature.general.chance_information",
+				"decoration_block": "$feature.general.block_reference",
+				"num_steps": "$general.number",
+				"step_direction": [
+					"away",
+					"down",
+					"out",
+					"up"
+				]
+			},
+			"hanging_block": "$feature.general.block_reference",
+			"hanging_block_placement_chance": "$feature.general.chance_information"
+		},
 		"mega_canopy": {
 			"canopy_height": "$general.number",
 			"core_width": "$general.number",
 			"base_radius": "$general.number",
-			"leaf_block": "$feature.general.block_reference"
+			"leaf_block": "$feature.general.block_reference",
+			"simplify_canopy": "$general.boolean"
 		},
 		"mega_pine_canopy": {
 			"canopy_height": "$general.number",
