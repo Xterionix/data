@@ -145,7 +145,7 @@
 		"branch_length": "$feature.general.range_information",
 		"branch_position": "$feature.general.range_information",
 		"branch_chance": "$general.decimal",
-		"$load": "$feature.general.branch_canopy_refence"
+		"$load": "$feature.general.canopy_reference"
 	},
 	"mega_branch_reference": {
 		"branch_length": "$general.number",
