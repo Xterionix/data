@@ -220,7 +220,14 @@
 	],
 	"$versioned_template.minecraft:wearable": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.20 and $holiday_creator_features",
+			"$data": {
+				"slot": "$general.slot_type",
+				"dispensable": "$general.boolean"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
 			"$data": {
 				"slot": "$general.slot_type",
 				"dispensable": "$general.boolean"
