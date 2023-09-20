@@ -1,6 +1,6 @@
 {
+	// Todo: Find out if reexperimentified components exist
 	"minecraft:use_duration": "$general.number",
-	// Todo: Find out if reexperimentified
 	"minecraft:max_stack_size": "$general.number",
 	"minecraft:max_damage": "$general.number",
 	"minecraft:hand_equipped": "$general.boolean",
@@ -79,7 +79,11 @@
 	],
 	"$versioned_template.minecraft:allow_off_hand": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.20 and $holiday_creator_features",
+			"$data": "$general.boolean"
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
 			"$data": "$general.boolean"
 		}
 	],
