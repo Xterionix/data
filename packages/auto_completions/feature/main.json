@@ -1,19 +1,76 @@
 {
 	"format_version": "$general.format_version",
-	"minecraft:aggregate_feature": {
-		"description": {
-			"identifier": "$general.file_identifier"
-		},
-		"early_out": "$feature.general.early_outs",
-		"features": {
-			"$dynamic.list.next_index": {
-				"@meta": {
-					"is_value": true
-				},
-				"@import.value.feature_ref": "$dynamic.biome.feature_references"
+	"$versioned_template.minecraft:aggregate_feature": [
+		{
+			"$if": "$format_version >= 1.20.20 or $custom_biomes",
+			"$data": {
+				"minecraft:aggregate_feature": {
+					"description": {
+						"identifier": "$general.file_identifier"
+					},
+					"early_out": "$feature.general.early_outs",
+					"features": {
+						"$dynamic.list.next_index": {
+							"@meta": {
+								"is_value": true
+							},
+							"@import.value.feature_ref": "$dynamic.biome.feature_references"
+						}
+					}
+				}
 			}
 		}
-	},
+	],
+	"$versioned_template.minecraft:fossil_feature": [
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"minecraft:fossil_feature": {
+					"description": {
+						"identifier": "$general.file_identifier"
+					},
+					"ore_block": "$general.block_identifier",
+					"max_empty_corners": "$general.number"
+				}
+			}
+		}
+	],
+	"$versioned_template.minecraft:cave_carver_feature": [
+		{
+			"$if": "$format_version >= 1.16.220 and $format_version < 1.20.20 and $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"fill_with": "$feature.general.block_reference",
+				"width_modifier": "$general.number"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"fill_with": "$feature.general.block_reference",
+				"width_modifier": "$feature.molang_with_number",
+				"skip_carve_chance": "$general.number",
+				"height_limit": "$general.number",
+				"y_scale": {
+					"$dynamic.list.index_pair": "$general.decimal"
+				},
+				"horizontal_radius_multiplier": {
+					"$dynamic.list.index_pair": "$general.decimal"
+				},
+				"vertical_radius_multiplier": {
+					"$dynamic.list.index_pair": "$general.decimal"
+				},
+				"floor_level": {
+					"$dynamic.list.index_pair": "$general.decimal"
+				}
+			}
+		}
+	],
 	"minecraft:sequence_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
@@ -386,18 +443,6 @@
 			}
 		}
 	},
-	"$versioned_template.minecraft:cave_carver_feature": [
-		{
-			"$if": "$format_version >= 1.16.220",
-			"$data": {
-				"description": {
-					"identifier": "$general.file_identifier"
-				},
-				"fill_with": "$feature.general.block_reference",
-				"width_modifier": "$general.number"
-			}
-		}
-	],
 	"$versioned_template.minecraft:hell_cave_carver_feature": [
 		{
 			"$if": "$format_version >= 1.16.220",
