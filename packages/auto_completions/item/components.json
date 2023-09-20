@@ -64,7 +64,7 @@
 	"$versioned_template.minecraft:interact_button": [
 		{
 			"$if": "$format_version >= 1.20.30",
-			"$data": "$general.boolean"
+			"$data": "$general.boolean and $general.translatble_text"
 		}
 	],
 	"$versioned_template.minecraft:should_despawn": [
