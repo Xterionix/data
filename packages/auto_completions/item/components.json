@@ -17,12 +17,6 @@
 			"$data": "$general.boolean"
 		}
 	],
-	"$versioned_template.minecraft:ignores_permission": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": "$general.boolean"
-		}
-	],
 	"$versioned_template.minecraft:mining_speed": [
 		{
 			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.30 and $holiday_creator_features",
