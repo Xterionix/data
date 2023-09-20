@@ -67,7 +67,11 @@
 	],
 	"$versioned_template.minecraft:should_despawn": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.20 and $holiday_creator_features",
+			"$data": "$general.boolean"
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
 			"$data": "$general.boolean"
 		}
 	],
