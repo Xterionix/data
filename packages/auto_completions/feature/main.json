@@ -565,6 +565,49 @@
 			}
 		}
 	],
+	"$versioned_template.minecraft:snap_to_surface_feature": [
+		{
+			"$if": "$format_version >= 1.16.220 and $custom_biomes and $format_version < 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"feature_to_snap": {
+					"@meta": {
+						"is_value": true
+					},
+					"@import.value.feature_ref": "$dynamic.biome.feature_references"
+				},
+				"vertical_search_range": "$general.number",
+				"surface": [
+					"ceiling",
+					"floor"
+				]
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"feature_to_snap": {
+					"@meta": {
+						"is_value": true
+					},
+					"@import.value.feature_ref": "$dynamic.biome.feature_references"
+				},
+				"vertical_search_range": "$general.number",
+				"allow_air_placement": "$general.boolean",
+				"allow_underwater_placement": "$general.boolean",
+				"surface": [
+					"ceiling",
+					"floor",
+					"random_horizontal"
+				]
+			}
+		}
+	],
 	"minecraft:structure_template_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
@@ -784,27 +827,6 @@
 				"fill_with": "$feature.general.block_reference",
 				"width_modifier": "$general.number",
 				"replace_air_with": "$feature.general.block_reference"
-			}
-		}
-	],
-	"$versioned_template.minecraft:snap_to_surface_feature": [
-		{
-			"$if": "$format_version >= 1.16.220",
-			"$data": {
-				"description": {
-					"identifier": "$general.file_identifier"
-				},
-				"feature_to_snap": {
-					"@meta": {
-						"is_value": true
-					},
-					"@import.value.feature_ref": "$dynamic.biome.feature_references"
-				},
-				"vertical_search_range": "$general.number",
-				"surface": [
-					"ceiling",
-					"floor"
-				]
 			}
 		}
 	],
