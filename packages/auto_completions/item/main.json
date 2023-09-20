@@ -18,8 +18,18 @@
 			"identifier": "$general.file_identifier and $general.item_identifier",
 			"$versioned_template.category": [
 				{
-					"$if": "$format_version >= 1.16.100",
+					"$if": "$format_version >= 1.16.100 and $format_version < 1.20.10",
 					"$data": "$general.item_category"
+				}
+			],
+			"$versioned_template.menu_category": [
+				{
+					"$if": "$format_version >= 1.20.10",
+					"$data": {
+						"category": "$general.item_category",
+						"group": "$item.general.item_group_reference",
+						"is_hidden_in_commands": "$general.boolean"
+					}
 				}
 			],
 			"is_experimental": "$general.boolean"
