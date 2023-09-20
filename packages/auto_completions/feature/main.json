@@ -516,50 +516,55 @@
 			}
 		}
 	],
-	"minecraft:single_block_feature": {
-		"description": {
-			"identifier": "$general.file_identifier"
-		},
-		"places_block": "$feature.general.block_reference",
-		"enforce_survivability_rules": "$general.boolean",
-		"enforce_placement_rules": "$general.boolean",
-		"may_attach_to": {
-			"min_sides_must_attach": [
-				"1",
-				"2",
-				"3",
-				"4"
-			],
-			"auto_rotate": "$general.boolean",
-			"top": {
-				"$dynamic.list.next_index": "$general.block_identifier"
-			},
-			"bottom": {
-				"$dynamic.list.next_index": "$general.block_identifier"
-			},
-			"north": {
-				"$dynamic.list.next_index": "$general.block_identifier"
-			},
-			"east": {
-				"$dynamic.list.next_index": "$general.block_identifier"
-			},
-			"south": {
-				"$dynamic.list.next_index": "$general.block_identifier"
-			},
-			"west": {
-				"$dynamic.list.next_index": "$general.block_identifier"
-			},
-			"all": {
-				"$dynamic.list.next_index": "$general.block_identifier"
-			},
-			"sides": {
-				"$dynamic.list.next_index": "$general.block_identifier"
+	"$versioned_template.minecraft:single_block_feature": [
+		{
+			"$if": "$format_version >= 1.20.20 or $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"places_block": "$feature.general.block_reference",
+				"enforce_survivability_rules": "$general.boolean",
+				"enforce_placement_rules": "$general.boolean",
+				"may_attach_to": {
+					"min_sides_must_attach": [
+						"1",
+						"2",
+						"3",
+						"4"
+					],
+					"auto_rotate": "$general.boolean",
+					"top": {
+						"$dynamic.list.next_index": "$general.block_identifier"
+					},
+					"bottom": {
+						"$dynamic.list.next_index": "$general.block_identifier"
+					},
+					"north": {
+						"$dynamic.list.next_index": "$general.block_identifier"
+					},
+					"east": {
+						"$dynamic.list.next_index": "$general.block_identifier"
+					},
+					"south": {
+						"$dynamic.list.next_index": "$general.block_identifier"
+					},
+					"west": {
+						"$dynamic.list.next_index": "$general.block_identifier"
+					},
+					"all": {
+						"$dynamic.list.next_index": "$general.block_identifier"
+					},
+					"sides": {
+						"$dynamic.list.next_index": "$general.block_identifier"
+					}
+				},
+				"may_replace": {
+					"$dynamic.list.next_index": "$feature.general.block_reference"
+				}
 			}
-		},
-		"may_replace": {
-			"$dynamic.list.next_index": "$feature.general.block_reference"
 		}
-	},
+	],
 	"minecraft:structure_template_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
