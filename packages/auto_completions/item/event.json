@@ -45,18 +45,7 @@
 	},
 	"transform_item": {
 		"transform": {
-			"@import.value": "$general.item_identifier",
-			"@meta": {
-				"is_value": true,
-				"validate": {
-					"confirm": "true",
-					"then": {
-						"is_warning": true,
-						"show": true,
-						"message": "'transform_item' may crash Minecraft when used; removing it is recommended"
-					}
-				}
-			}
+			"@import.value": "$general.item_identifier"
 		}
 	},
 	"sequence": {
