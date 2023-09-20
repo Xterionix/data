@@ -148,7 +148,23 @@
 	],
 	"$versioned_template.minecraft:shooter": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.10 and $holiday_creator_features",
+			"$data": {
+				"max_draw_duration": "$general.number",
+				"charge_on_draw": "$general.boolean",
+				"scale_power_by_draw_duration": "$general.boolean",
+				"ammunition": {
+					"$dynamic.list.next_index": {
+						"item": "$general.item_identifier",
+						"use_offhand": "$general.boolean",
+						"search_inventory": "$general.boolean",
+						"use_in_creative": "$general.boolean"
+					}
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.10",
 			"$data": {
 				"max_draw_duration": "$general.number",
 				"charge_on_draw": "$general.boolean",
