@@ -15,5 +15,14 @@
 		],
 		"condition": "$molang.embedded"
 	},
+	"block_faces": [
+		"up",
+		"down",
+		"side",
+		"north",
+		"east",
+		"west",
+		"south"
+	],
 	"components": "$block.components and $dynamic.plugins.block_custom_components"
 }

@@ -4,18 +4,16 @@
 		{
 			"$if": "$format_version >= 1.20.20 or $custom_biomes",
 			"$data": {
-				"minecraft:aggregate_feature": {
-					"description": {
-						"identifier": "$general.file_identifier"
-					},
-					"early_out": "$feature.general.early_outs",
-					"features": {
-						"$dynamic.list.next_index": {
-							"@meta": {
-								"is_value": true
-							},
-							"@import.value.feature_ref": "$dynamic.biome.feature_references"
-						}
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"early_out": "$feature.general.early_outs",
+				"features": {
+					"$dynamic.list.next_index": {
+						"@meta": {
+							"is_value": true
+						},
+						"@import.value.feature_ref": "$dynamic.biome.feature_references"
 					}
 				}
 			}
@@ -25,13 +23,11 @@
 		{
 			"$if": "$format_version >= 1.20.20",
 			"$data": {
-				"minecraft:fossil_feature": {
-					"description": {
-						"identifier": "$general.file_identifier"
-					},
-					"ore_block": "$general.block_identifier",
-					"max_empty_corners": "$general.number"
-				}
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"ore_block": "$general.block_identifier",
+				"max_empty_corners": "$general.number"
 			}
 		}
 	],
@@ -53,7 +49,7 @@
 					"identifier": "$general.file_identifier"
 				},
 				"fill_with": "$feature.general.block_reference",
-				"width_modifier": "$feature.molang_with_number",
+				"width_modifier": "$feature.general.molang_with_number",
 				"skip_carve_chance": "$general.number",
 				"height_limit": "$general.number",
 				"y_scale": {
@@ -277,7 +273,7 @@
 					"identifier": "$general.file_identifier"
 				},
 				"fill_with": "$feature.general.block_reference",
-				"width_modifier": "$feature.molang_with_number",
+				"width_modifier": "$feature.general.molang_with_number",
 				"skip_carve_chance": "$general.number",
 				"height_limit": "$general.number",
 				"y_scale": {
@@ -350,6 +346,20 @@
 						}
 					}
 				}
+			}
+		}
+	],
+	"$versioned_template.minecraft:partially_exposed_blob_feature": [
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"placement_radius_around_floor": "$general.number",
+				"placement_probability_per_valid_position": "$general.decimal",
+				"exposed_face": "$block.general.block_faces",
+				"places_block": "$feature.general.block_reference"
 			}
 		}
 	],
