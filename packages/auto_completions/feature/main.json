@@ -221,6 +221,42 @@
 			}
 		}
 	],
+	"$versioned_template.minecraft:multiface_feature": [
+		{
+			"$if": "$format_version >= 1.17.0 and $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"places_block": "$feature.general.block_reference",
+				"search_range": "$general.number",
+				"can_place_on_floor": "$general.boolean",
+				"can_place_on_ceiling": "$general.boolean",
+				"can_place_on_wall": "$general.boolean",
+				"chance_of_spreading": "$general.deciaml",
+				"can_place_on": {
+					"$dynamic.list.next_index": "$feature.general.block_reference"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"places_block": "$feature.general.block_reference",
+				"search_range": "$general.number",
+				"can_place_on_floor": "$general.boolean",
+				"can_place_on_ceiling": "$general.boolean",
+				"can_place_on_wall": "$general.boolean",
+				"chance_of_spreading": "$general.deciaml",
+				"can_place_on": {
+					"$dynamic.list.next_index": "$feature.general.block_reference"
+				}
+			}
+		}
+	],
 	"minecraft:sequence_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
@@ -675,25 +711,6 @@
 				},
 				"extra_edge_column_chance": "$general.number",
 				"waterlogged": "$general.boolean"
-			}
-		}
-	],
-	"$versioned_template.minecraft:multiface_feature": [
-		{
-			"$if": "$format_version >= 1.17.0",
-			"$data": {
-				"description": {
-					"identifier": "$general.file_identifier"
-				},
-				"places_block": "$feature.general.block_reference",
-				"search_range": "$general.number",
-				"can_place_on_floor": "$general.boolean",
-				"can_place_on_ceiling": "$general.boolean",
-				"can_place_on_wall": "$general.boolean",
-				"chance_of_spreading": "$general.number",
-				"can_place_on": {
-					"$dynamic.list.next_index": "$feature.general.block_reference"
-				}
 			}
 		}
 	],
