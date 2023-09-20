@@ -422,7 +422,7 @@
 	],
 	"$versioned_template.minecraft:creative_category": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.20 and $holiday_creator_features",
 			"$data": {
 				"parent": "$item.general.item_group_reference and $general.item_category"
 			}
