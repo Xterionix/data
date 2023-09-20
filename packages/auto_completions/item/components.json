@@ -364,7 +364,16 @@
 	],
 	"$versioned_template.minecraft:throwable": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.10 and $holiday_creator_features",
+			"$data": {
+				"do_swing_animation": "$general.boolean",
+				"max_draw_duration": "$general.number",
+				"scale_power_by_draw_duration": "$general.boolean",
+				"launch_power_scale": "$general.number"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.10",
 			"$data": {
 				"do_swing_animation": "$general.boolean",
 				"max_draw_duration": "$general.number",
