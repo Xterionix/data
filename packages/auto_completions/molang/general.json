@@ -21,7 +21,6 @@
     "armor_texture_slot",
     "average_frame_time",
     "block_face",
-    "block_property",
     "blocking",
     "body_x_rotation",
     "body_y_rotation",
@@ -73,7 +72,6 @@
     "has_any_family",
     "has_armor_slot",
     "has_biome_tag",
-    "has_block_property",
     "has_cape",
     "has_collision",
     "has_dash_cooldown",
@@ -260,6 +258,14 @@
     "wing_flap_position",
     "wing_flap_speed",
     "yaw_speed"
+  ],
+  "query_pre_1.20.20": [
+    "block_property",
+    "has_block_property"
+  ],
+  "query_post_1.20.20": [
+    "block_state",
+    "has_block_state"
   ],
   "query_beta": [
     "biome_has_all_tags",
