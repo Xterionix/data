@@ -69,6 +69,12 @@
 			"$data": "$general.boolean"
 		}
 	],
+	"$versioned_template.minecraft:interact_button": [
+		{
+			"$if": "$format_version >= 1.20.30",
+			"$data": "$general.boolean"
+		}
+	],
 	"$versioned_template.minecraft:should_despawn": [
 		{
 			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.20 and $holiday_creator_features",
