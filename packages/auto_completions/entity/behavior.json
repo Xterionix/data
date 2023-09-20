@@ -752,6 +752,7 @@
 	"minecraft:behavior.melee_attack": {
 		"priority": "$general.number",
 		"attack_once": "$general.boolean",
+		"can_spread_on_fire": "$general.boolean",
 		"max_dist": "$general.number",
 		"melee_fov": "$general.degree",
 		"cooldown_time": "$general.decimal",
