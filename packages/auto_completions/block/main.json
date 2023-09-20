@@ -6,7 +6,7 @@
 			"is_experimental": "$general.boolean",
 			"$versioned_template.traits": [
 				{
-					"$if": "$format_version >= 1.20.0 and $holiday_creator_features",
+					"$if": "$format_version >= 1.20.0",
 					"$data": "$block.traits"
 				}
 			],
