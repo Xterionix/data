@@ -1015,7 +1015,44 @@
 	},
 	"$versioned_template.minecraft:vegetation_patch_feature": [
 		{
-			"$if": "$format_version >= 1.17.0",
+			"$if": "$format_version >= 1.17.0 and $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"replaceable_blocks": {
+					"$dynamic.list.next_index": "$feature.general.block_reference"
+				},
+				"ground_block": "$feature.general.block_reference",
+				"vegetation_feature": {
+					"@meta": {
+						"is_value": true
+					},
+					"@import.value.feature_ref": "$dynamic.biome.feature_references"
+				},
+				"surface": [
+					"floor",
+					"ceiling"
+				],
+				"depth": {
+					"@import.value": "$general.number",
+					"range_min": "$general.number",
+					"range_max": "$general.number"
+				},
+				"extra_deep_block_chance": "$general.number",
+				"vertical_range": "$general.number",
+				"vegetation_chance": "$general.number",
+				"horizontal_radius": {
+					"@import.value": "$general.number",
+					"range_min": "$general.number",
+					"range_max": "$general.number"
+				},
+				"extra_edge_column_chance": "$general.number",
+				"waterlogged": "$general.boolean"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
 			"$data": {
 				"description": {
 					"identifier": "$general.file_identifier"
