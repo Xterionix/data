@@ -43,12 +43,6 @@
 			"$data": "$general.boolean"
 		}
 	],
-	"$versioned_template.minecraft:explodable": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": "$general.boolean"
-		}
-	],
 	"$versioned_template.minecraft:interact_button": [
 		{
 			"$if": "$format_version >= 1.20.30",
