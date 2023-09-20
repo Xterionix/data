@@ -498,19 +498,24 @@
 			}
 		}
 	],
-	"minecraft:sequence_feature": {
-		"description": {
-			"identifier": "$general.file_identifier"
-		},
-		"features": {
-			"$dynamic.list.next_index": {
-				"@meta": {
-					"is_value": true
+	"$versioned_template.minecraft:sequence_feature": [
+		{
+			"$if": "$format_version >= 1.20.20 or $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
 				},
-				"@import.value.feature_ref": "$dynamic.biome.feature_references"
+				"features": {
+					"$dynamic.list.next_index": {
+						"@meta": {
+							"is_value": true
+						},
+						"@import.value.feature_ref": "$dynamic.biome.feature_references"
+					}
+				}
 			}
 		}
-	},
+	],
 	"minecraft:single_block_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
