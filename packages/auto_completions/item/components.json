@@ -223,7 +223,7 @@
 	],
 	"$versioned_template.minecraft:armor": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.20 and $holiday_creator_features",
 			"$data": {
 				"protection": "$general.number",
 				"texture_type": "$client_item.general.armor_types"
@@ -241,8 +241,15 @@
 		{
 			"$if": "$format_version >= 1.20.20",
 			"$data": {
-				"slot": "$general.slot_type",
-				"dispensable": "$general.boolean"
+				"slot": [
+					"slot.weapon.offhand",
+					"slot.armor.head",
+					"slot.armor.chest",
+					"slot.armor.legs",
+					"slot.armor.feet"
+				],
+				"dispensable": "$general.boolean",
+				"protection": "$general.number"
 			}
 		}
 	],
