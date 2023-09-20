@@ -953,6 +953,44 @@
 			}
 		}
 	],
+	"$versioned_template.minecraft:underwater_cave_carver_feature": [
+		{
+			"$if": "$format_version >= 1.16.220 and $format_version < 1.20.20 and $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"fill_with": "$feature.general.block_reference",
+				"width_modifier": "$general.number",
+				"replace_air_with": "$feature.general.block_reference"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"fill_with": "$feature.general.block_reference",
+				"width_modifier": "$feature.general.molang_with_number",
+				"skip_carve_chance": "$general.number",
+				"height_limit": "$general.number",
+				"y_scale": {
+					"$dynamic.list.index_pair": "$general.decimal"
+				},
+				"horizontal_radius_multiplier": {
+					"$dynamic.list.index_pair": "$general.decimal"
+				},
+				"vertical_radius_multiplier": {
+					"$dynamic.list.index_pair": "$general.decimal"
+				},
+				"floor_level": {
+					"$dynamic.list.index_pair": "$general.decimal"
+				},
+				"replace_air_with": "$feature.general.block_reference"
+			}
+		}
+	],
 	"minecraft:weighted_random_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
@@ -975,19 +1013,6 @@
 			}
 		}
 	},
-	"$versioned_template.minecraft:underwater_cave_carver_feature": [
-		{
-			"$if": "$format_version >= 1.16.220",
-			"$data": {
-				"description": {
-					"identifier": "$general.file_identifier"
-				},
-				"fill_with": "$feature.general.block_reference",
-				"width_modifier": "$general.number",
-				"replace_air_with": "$feature.general.block_reference"
-			}
-		}
-	],
 	"$versioned_template.minecraft:vegetation_patch_feature": [
 		{
 			"$if": "$format_version >= 1.17.0",
