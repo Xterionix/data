@@ -169,14 +169,6 @@
 			}
 		}
 	],
-	"$versioned_template.minecraft:knockback_resistance": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"protection": "$general.decimal"
-			}
-		}
-	],
 	"$versioned_template.minecraft:enchantable": [
 		{
 			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.30 and $holiday_creator_features",
