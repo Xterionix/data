@@ -465,6 +465,39 @@
 			}
 		}
 	],
+	"$versioned_template.minecraft:search_feature": [
+		{
+			"$if": "$format_version >= 1.20.20 or $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"places_features": {
+					"@meta": {
+						"is_value": true
+					},
+					"@import.value.feature_ref": "$dynamic.biome.feature_references"
+				},
+				"search_volume": {
+					"min": {
+						"$dynamic.list.index_triple": "$general.number"
+					},
+					"max": {
+						"$dynamic.list.index_triple": "$general.number"
+					}
+				},
+				"search_axis": [
+					"-x",
+					"+x",
+					"-y",
+					"+y",
+					"-z",
+					"+z"
+				],
+				"required_successes": "$general.number"
+			}
+		}
+	],
 	"minecraft:sequence_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
@@ -477,34 +510,6 @@
 				"@import.value.feature_ref": "$dynamic.biome.feature_references"
 			}
 		}
-	},
-	"minecraft:search_feature": {
-		"description": {
-			"identifier": "$general.file_identifier"
-		},
-		"places_features": {
-			"@meta": {
-				"is_value": true
-			},
-			"@import.value.feature_ref": "$dynamic.biome.feature_references"
-		},
-		"search_volume": {
-			"min": {
-				"$dynamic.list.index_triple": "$general.number"
-			},
-			"max": {
-				"$dynamic.list.index_triple": "$general.number"
-			}
-		},
-		"search_axis": [
-			"-x",
-			"+x",
-			"-y",
-			"+y",
-			"-z",
-			"+z"
-		],
-		"required_successes": "$general.number"
 	},
 	"minecraft:single_block_feature": {
 		"description": {
