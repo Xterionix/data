@@ -348,7 +348,19 @@
 	],
 	"$versioned_template.minecraft:icon": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.0 and $holiday_creator_features",
+			"$data": {
+				"texture": {
+					"@meta": {
+						"is_value": true
+					},
+					"@import.value": "$dynamic.rp.item_textures"
+				},
+				"frame": "$general.number and $molang.embedded"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.0",
 			"$data": {
 				"texture": {
 					"@meta": {
