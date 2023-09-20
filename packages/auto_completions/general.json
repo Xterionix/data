@@ -833,6 +833,7 @@
 		"maxcommandchainlength",
 		"mobgriefing",
 		"naturalregeneration",
+		"playersleepingpercentage",
 		"pvp",
 		"randomtickspeed",
 		"respawnblocksexplode",
