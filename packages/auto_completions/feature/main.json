@@ -144,7 +144,7 @@
 							"@meta": {
 								"is_molang": true
 							},
-							"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
+							"@import.value.molang": "$feature.general.molang_with_boolean"
 						},
 						"1": "$general.number"
 					}
@@ -158,7 +158,7 @@
 					"@meta": {
 						"is_molang": true
 					},
-					"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
+					"@import.value.molang": "$feature.general.molang_with_boolean"
 				},
 				"body_blocks": {
 					"$dynamic.list.next_index": {
@@ -186,7 +186,7 @@
 							"@meta": {
 								"is_molang": true
 							},
-							"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
+							"@import.value.molang": "$feature.general.molang_with_boolean"
 						},
 						"1": "$general.number"
 					}
@@ -200,7 +200,7 @@
 					"@meta": {
 						"is_molang": true
 					},
-					"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
+					"@import.value.molang": "$feature.general.molang_with_boolean"
 				},
 				"body_blocks": {
 					"$dynamic.list.next_index": {
@@ -363,57 +363,113 @@
 			}
 		}
 	],
+	"$versioned_template.minecraft:scatter_feature": [
+		{
+			"$if": "$format_version < 1.20.20 and $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"iterations": "$feature.general.molang_with_number",
+				"project_input_to_floor": "$general.boolean",
+				"coordinate_eval_order": "$feature.general.coordinate_eval_orders",
+				"scatter_chance": {
+					"@meta": {
+						"is_molang": true
+					},
+					"@import.value.molang": "$feature.general.molang_with_boolean",
+					"$load": "$feature.general.chance_information"
+				},
+				"x": {
+					"@meta": {
+						"is_molang": true
+					},
+					"@import.value.molang": "$feature.general.molang_with_boolean",
+					"extent": {
+						"$dynamic.list.index_pair": {
+							"@import.value": "$feature.general.molang_with_number",
+							"@meta": {
+								"validate": {
+									"confirm": "Bridge.Node.data === '' || Bridge.Node.data === 'true' || Bridge.Node.data === 'false'",
+									"then": {
+										"show": true,
+										"message": "Invalid data type: Expected number or MoLang"
+									}
+								}
+							}
+						}
+					},
+					"distribution": "$feature.general.distributions"
+				},
+				"z": "$feature.main.minecraft:scatter_feature.x",
+				"y": "$feature.main.minecraft:scatter_feature.x",
+				"places_feature": {
+					"$dynamic.list.next_index": {
+						"@meta": {
+							"is_value": true
+						},
+						"@import.value.feature_ref": "$dynamic.biome.feature_references"
+					}
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"iterations": "$feature.general.molang_with_number",
+				"project_input_to_floor": "$general.boolean",
+				"coordinate_eval_order": "$feature.general.coordinate_eval_orders",
+				"scatter_chance": {
+					"@meta": {
+						"is_molang": true
+					},
+					"@import.value.molang": "$feature.general.molang_with_boolean",
+					"$load": "$feature.general.chance_information"
+				},
+				"x": {
+					"@meta": {
+						"is_molang": true
+					},
+					"@import.value.molang": "$feature.general.molang_with_boolean",
+					"extent": {
+						"$dynamic.list.index_pair": {
+							"@import.value": "$feature.general.molang_with_number",
+							"@meta": {
+								"validate": {
+									"confirm": "Bridge.Node.data === '' || Bridge.Node.data === 'true' || Bridge.Node.data === 'false'",
+									"then": {
+										"show": true,
+										"message": "Invalid data type: Expected number or MoLang"
+									}
+								}
+							}
+						},
+						"step_size": "$general.number",
+						"grid_offset": "$general.number"
+					},
+					"distribution": "$feature.general.distributions"
+				},
+				"z": "$feature.main.minecraft:scatter_feature.x",
+				"y": "$feature.main.minecraft:scatter_feature.x",
+				"places_feature": {
+					"$dynamic.list.next_index": {
+						"@meta": {
+							"is_value": true
+						},
+						"@import.value.feature_ref": "$dynamic.biome.feature_references"
+					}
+				}
+			}
+		}
+	],
 	"minecraft:sequence_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
 		},
 		"features": {
-			"$dynamic.list.next_index": {
-				"@meta": {
-					"is_value": true
-				},
-				"@import.value.feature_ref": "$dynamic.biome.feature_references"
-			}
-		}
-	},
-	"minecraft:scatter_feature": {
-		"description": {
-			"identifier": "$general.file_identifier"
-		},
-		"iterations": "$general.number",
-		"project_input_to_floor": "$general.boolean",
-		"coordinate_eval_order": "$feature.general.coordinate_eval_orders",
-		"scatter_chance": {
-			"@meta": {
-				"is_molang": true
-			},
-			"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)",
-			"$load": "$feature.general.chance_information"
-		},
-		"x": {
-			"@meta": {
-				"is_molang": true
-			},
-			"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)",
-			"extent": {
-				"$dynamic.list.index_pair": {
-					"@import.value": "$general.number and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)",
-					"@meta": {
-						"validate": {
-							"confirm": "Bridge.Node.data === '' || Bridge.Node.data === 'true' || Bridge.Node.data === 'false'",
-							"then": {
-								"show": true,
-								"message": "Invalid data type: Expected number or MoLang"
-							}
-						}
-					}
-				}
-			},
-			"distribution": "$feature.general.distributions"
-		},
-		"z": "$feature.main.minecraft:scatter_feature.x",
-		"y": "$feature.main.minecraft:scatter_feature.x",
-		"places_feature": {
 			"$dynamic.list.next_index": {
 				"@meta": {
 					"is_value": true
