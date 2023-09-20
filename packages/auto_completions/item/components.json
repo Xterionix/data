@@ -49,14 +49,6 @@
 			"$data": "$general.boolean"
 		}
 	],
-	"$versioned_template.minecraft:dye_powder": [
-		{
-			"$if": "$format_version >= 1.16.100",
-			"$data": {
-				"color": "$general.number"
-			}
-		}
-	],
 	"$versioned_template.minecraft:mirrored_art": [
 		{
 			"$if": "$format_version >= 1.16.100",
