@@ -212,7 +212,15 @@
 	],
 	"$versioned_template.minecraft:record": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.10 and $holiday_creator_features",
+			"$data": {
+				"sound_event": "$item.general.music_events",
+				"duration": "$general.number",
+				"comparator_signal": "$general.number"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.10",
 			"$data": {
 				"sound_event": "$item.general.music_events",
 				"duration": "$general.number",
