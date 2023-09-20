@@ -376,7 +376,7 @@
 	],
 	"$versioned_template.minecraft:digger": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.20 and $holiday_creator_features",
 			"$data": {
 				"use_efficiency": "$general.boolean",
 				"on_dig": "$item.general.event_definition",
@@ -391,6 +391,25 @@
 						},
 						"speed": "$general.number",
 						"on_dig": "$item.general.event_definition",
+						"use_efficiency": "$general.boolean"
+					}
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"use_efficiency": "$general.boolean",
+				"destroy_speeds": {
+					"$dynamic.list.next_index": {
+						"block": {
+							"@import.value": "$general.block_identifier",
+							"tags": [
+								"query.any_tag()",
+								"query.all_tags()"
+							]
+						},
+						"speed": "$general.number",
 						"use_efficiency": "$general.boolean"
 					}
 				}
