@@ -90,7 +90,19 @@
 	],
 	"$versioned_template.minecraft:entity_placer": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.0 and $holiday_creator_features",
+			"$data": {
+				"entity": "$general.entity_identifier",
+				"use_on": {
+					"$dynamic.list.next_index": "$general.block_identifier"
+				},
+				"dispense_on": {
+					"$dynamic.list.next_index": "$general.block_identifier"
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.0",
 			"$data": {
 				"entity": "$general.entity_identifier",
 				"use_on": {
@@ -139,7 +151,7 @@
 	],
 	"$versioned_template.minecraft:durability": [
 		{
-			"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.0 and $holiday_creator_features",
 			"$data": {
 				"max_durability": "$general.number",
 				"damage_chance": {
@@ -295,7 +307,7 @@
 	],
 	"$versioned_template.minecraft:fuel": [
 		{
-			"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.0 and $holiday_creator_features",
 			"$data": {
 				"duration": "$general.number"
 			}
@@ -460,7 +472,7 @@
 	},
 	"$versioned_template.minecraft:display_name": [
 		{
-			"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.0 and $holiday_creator_features",
 			"$data": {
 				"value": {
 					"@meta": {
