@@ -135,6 +135,92 @@
 			}
 		}
 	],
+	"$versioned_template.minecraft:growing_plant_feature": [
+		{
+			"$if": "$format_version >= 1.16.220 and $custom_biomes",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"height_distribution": {
+					"$dynamic.list.next_index": {
+						"0": {
+							"@meta": {
+								"is_molang": true
+							},
+							"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
+						},
+						"1": "$general.number"
+					}
+				},
+				"allow_water": "$general.boolean",
+				"growth_direction": [
+					"UP",
+					"DOWN"
+				],
+				"age": {
+					"@meta": {
+						"is_molang": true
+					},
+					"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
+				},
+				"body_blocks": {
+					"$dynamic.list.next_index": {
+						"0": "$general.block_identifier",
+						"1": "$general.number"
+					}
+				},
+				"head_blocks": {
+					"$dynamic.list.next_index": {
+						"0": "$general.block_identifier",
+						"1": "$general.number"
+					}
+				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.20",
+			"$data": {
+				"description": {
+					"identifier": "$general.file_identifier"
+				},
+				"height_distribution": {
+					"$dynamic.list.next_index": {
+						"0": {
+							"@meta": {
+								"is_molang": true
+							},
+							"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
+						},
+						"1": "$general.number"
+					}
+				},
+				"allow_water": "$general.boolean",
+				"growth_direction": [
+					"UP",
+					"DOWN"
+				],
+				"age": {
+					"@meta": {
+						"is_molang": true
+					},
+					"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
+				},
+				"body_blocks": {
+					"$dynamic.list.next_index": {
+						"0": "$general.block_identifier",
+						"1": "$general.number"
+					}
+				},
+				"head_blocks": {
+					"$dynamic.list.next_index": {
+						"0": "$general.block_identifier",
+						"1": "$general.number"
+					}
+				}
+			}
+		}
+	],
 	"minecraft:sequence_feature": {
 		"description": {
 			"identifier": "$general.file_identifier"
@@ -529,50 +615,6 @@
 				"fill_with": "$feature.general.block_reference",
 				"width_modifier": "$general.number",
 				"replace_air_with": "$feature.general.block_reference"
-			}
-		}
-	],
-	"$versioned_template.minecraft:growing_plant_feature": [
-		{
-			"$if": "$format_version >= 1.16.220",
-			"$data": {
-				"description": {
-					"identifier": "$general.file_identifier"
-				},
-				"height_distribution": {
-					"$dynamic.list.next_index": {
-						"0": {
-							"@meta": {
-								"is_molang": true
-							},
-							"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
-						},
-						"1": "$general.number"
-					}
-				},
-				"allow_water": "$general.boolean",
-				"growth_direction": [
-					"UP",
-					"DOWN"
-				],
-				"age": {
-					"@meta": {
-						"is_molang": true
-					},
-					"@import.value.molang": "$molang.general.boolean and ('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)"
-				},
-				"body_blocks": {
-					"$dynamic.list.next_index": {
-						"0": "$general.block_identifier",
-						"1": "$general.number"
-					}
-				},
-				"head_blocks": {
-					"$dynamic.list.next_index": {
-						"0": "$general.block_identifier",
-						"1": "$general.number"
-					}
-				}
 			}
 		}
 	],
