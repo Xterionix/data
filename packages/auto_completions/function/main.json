@@ -398,6 +398,14 @@
 			}
 		}
 	},
+	// Todo: Save recipes and load them
+	"recipe": {
+		"$function.general.recipe_options": {
+			"$function.general.target_selector": {
+				"$function.general.target_selector": {}
+			}
+		}
+	},
 	"reload": {},
 	"replaceitem": {
 		"block": {

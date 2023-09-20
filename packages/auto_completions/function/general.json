@@ -178,5 +178,9 @@
 	"shake_types": [
 		"positional",
 		"rotational"
+	],
+	"recipe_options": [
+		"give",
+		"take"
 	]
 }
