@@ -5,78 +5,73 @@
 			"$function.general.ability": "$general.boolean"
 		}
 	},
-	"$versioned_template.camera": [
-		{
-			"$if": "$experimental_cameras",
-			"$data": {
-				"$function.general.target_selector": {
-					"clear": {},
-					"fade": {
-						"color": {
-							"$general.number0_255": {
-								"$general.number0_255": "$general.number0_255"
-							}
-						},
-						"time": {
+	"camera": {
+		"$function.general.target_selector": {
+			"clear": {},
+			"fade": {
+				"color": {
+					"$general.number0_255": {
+						"$general.number0_255": "$general.number0_255"
+					}
+				},
+				"time": {
+					"$general.decimal": {
+						"$general.decimal": {
 							"$general.decimal": {
-								"$general.decimal": {
-									"$general.decimal": {
-										"color": {
-											"$load": "$function.main.camera.$function&dot;general&dot;target_selector.fade.color"
-										}
+								"color": {
+									"$load": "$function.main.camera.$function&dot;general&dot;target_selector.fade.color"
+								}
+							}
+						}
+					}
+				}
+			},
+			"set": {
+				"$function.general.camera_presets": {
+					"default": {},
+					"ease": {
+						"$general.decimal": {
+							"$function.general.easings": {
+								"default": {},
+								"facing": {
+									"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.facing"
+								},
+								"rot": {
+									"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.rot"
+								},
+								"pos": {
+									"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.pos"
+								}
+							}
+						}
+					},
+					"facing": {
+						"@import.value": "$function.general.target_selector",
+						"$function.general.location": {
+							"$function.general.location": "$function.general.location"
+						}
+					},
+					"pos": {
+						"$function.general.location": {
+							"$function.general.location": {
+								"$function.general.location": {
+									"facing": {
+										"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.facing"
+									},
+									"rot": {
+										"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.rot"
 									}
 								}
 							}
 						}
 					},
-					"set": {
-						"$function.general.camera_presets": {
-							"default": {},
-							"ease": {
-								"$general.decimal": {
-									"$function.general.easings": {
-										"default": {},
-										"facing": {
-											"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.facing"
-										},
-										"rot": {
-											"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.rot"
-										},
-										"pos": {
-											"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.pos"
-										}
-									}
-								}
-							},
-							"facing": {
-								"@import.value": "$function.general.target_selector",
-								"$function.general.location": {
-									"$function.general.location": "$function.general.location"
-								}
-							},
-							"pos": {
-								"$function.general.location": {
-									"$function.general.location": {
-										"$function.general.location": {
-											"facing": {
-												"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.facing"
-											},
-											"rot": {
-												"$load": "$function.main.camera.$function&dot;general&dot;target_selector.set.$function&dot;general&dot;camera_presets.rot"
-											}
-										}
-									}
-								}
-							},
-							"rot": {
-								"$general.number": "$general.number"
-							}
-						}
+					"rot": {
+						"$general.number": "$general.number"
 					}
 				}
 			}
 		}
-	],
+	},
 	"camerashake": {
 		"add": {
 			"$function.general.target_selector": {
