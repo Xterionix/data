@@ -443,7 +443,11 @@
 	],
 	"$versioned_template.minecraft:hover_text_color": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.20.10 and $holiday_creator_features",
+			"$data": "$general.minecraft_color"
+		},
+		{
+			"$if": "$format_version >= 1.20.10",
 			"$data": "$general.minecraft_color"
 		}
 	],
