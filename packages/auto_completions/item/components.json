@@ -353,7 +353,17 @@
 	],
 	"$versioned_template.minecraft:food": [
 		{
-			"$if": "$format_version >= 1.16.100",
+			"$if": "$format_version >= 1.18.10",
+			"$data": {
+				"on_consume": "$item.general.event_definition",
+				"nutrition": "$general.number",
+				"can_always_eat": "$general.boolean",
+				"saturation_modifier": "$general.decimal",
+				"using_converts_to": "$general.item_identifier"
+			}
+		},
+		{
+			"$if": "$format_version >= 1.16.100 and $format_version < 1.18.10",
 			"$data": {
 				"on_consume": "$item.general.event_definition",
 				"nutrition": "$general.number",
