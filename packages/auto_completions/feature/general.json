@@ -4,7 +4,8 @@
 		"uniform",
 		"inverse_gaussian",
 		"fixed_grid",
-		"jittered_grid"
+		"jittered_grid",
+		"triangle"
 	],
 	"molang": "('query.' + $molang.general.world_gen_query) and ('variable.' + $molang.general.world_gen_variable)",
 	"molang_with_boolean": "$molang.general.boolean and $feature.molang",
