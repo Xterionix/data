@@ -56,7 +56,8 @@
 		"file_viewer": "json",
 		"start_state": "dialog/main",
 		"file_creator": "dialog",
-		"highlighter": "dialog"
+		"highlighter": "dialog",
+		"lightning_cache": "dialog"
 	},
 	{
 		"id": "entity",
@@ -75,7 +76,7 @@
 	},
 	{
 		"id": "feature",
-		"target_version": "$custom_biomes",
+		"target_version": "$custom_biomes or $format_version >= 1.20.20",
 		"includes": "features/",
 		"file_viewer": "json",
 		"start_state": "feature/main",
@@ -85,7 +86,7 @@
 	},
 	{
 		"id": "feature_rule",
-		"target_version": "$custom_biomes",
+		"target_version": "$custom_biomes or $format_version >= 1.20.20",
 		"includes": "feature_rules/",
 		"file_viewer": "json",
 		"start_state": "feature_rule/main",
