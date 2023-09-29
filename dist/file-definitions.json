@@ -56,7 +56,8 @@
 		"file_viewer": "json",
 		"start_state": "dialog/main",
 		"file_creator": "dialog",
-		"highlighter": "dialog"
+		"highlighter": "dialog",
+		"lightning_cache": "dialog"
 	},
 	{
 		"id": "entity",
