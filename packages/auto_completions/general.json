@@ -855,6 +855,11 @@
 		"peaceful",
 		"p"
 	],
+	"dimensions": [
+		"nether",
+		"overworld",
+		"the_end"
+	],
 	"gamemode": [
 		"adventure",
 		"creative",

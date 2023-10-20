@@ -162,18 +162,23 @@
 			"$general.enchantment_name": "$general.number"
 		}
 	},
-	"execute": {
-		"$function.general.target_selector": {
-			"$function.general.location": {
-				"$function.general.location": {
+	"$versioned_template.execute": [
+		{
+			"$if": "$project_target_version < 1.19.50",
+			"$data": {
+				"$function.general.target_selector": {
 					"$function.general.location": {
-						"$load": "$function.main",
-						"detect": {
+						"$function.general.location": {
 							"$function.general.location": {
-								"$function.general.location": {
+								"$load": "$function.main",
+								"detect": {
 									"$function.general.location": {
-										"$function.general.block_identifier": {
-											"$general.number": "$function.main"
+										"$function.general.location": {
+											"$function.general.location": {
+												"$function.general.block_identifier": {
+													"$general.number": "$function.main"
+												}
+											}
 										}
 									}
 								}
@@ -182,8 +187,12 @@
 					}
 				}
 			}
+		},
+		{
+			"$if": "$project_target_version >= 1.19.50",
+			"$data": "$function.general.execute_subcommands"
 		}
-	},
+	],
 	"fill": {
 		"$function.general.location": {
 			"$function.general.location": {

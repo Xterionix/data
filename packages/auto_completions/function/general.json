@@ -182,5 +182,157 @@
 	"recipe_options": [
 		"give",
 		"take"
-	]
+	],
+	"axes": [
+		"x",
+		"y",
+		"z",
+		"xy",
+		"xz",
+		"yz",
+		"xyz"
+	],
+	"anchors": [
+		"eyes",
+		"feet"
+	],
+	"scan_mode": [
+		"masked",
+		"all"
+	],
+	"score_compare_operators": [
+		"<",
+		"<=",
+		"=",
+		">",
+		">="
+	],
+	"execute_subcommands": {
+		"align": {
+			"$function.general.axes": {
+				"$load": "$function.general.execute_subcommands"
+			}
+		},
+		"anchored": {
+			"$function.general.anchors": {
+				"$load": "$function.general.execute_subcommands"
+			}
+		},
+		"as": {
+			"$function.general.target_selector": {
+				"$load": "$function.general.execute_subcommands"
+			}
+		},
+		"at": {
+			"$function.general.target_selector": {
+				"$load": "$function.general.execute_subcommands"
+			}
+		},
+		"facing": {
+			"$function.general.location": {
+				"$function.general.location": {
+					"$function.general.location": {
+						"$load": "$function.general.execute_subcommands"
+					}
+				}
+			},
+			"entity": {
+				"$function.general.target_selector": {
+					"$function.general.anchors": {
+						"$load": "$function.general.execute_subcommands"
+					}
+				}
+			}
+		},
+		"if": {
+			"block": {
+				"$function.general.location": {
+					"$function.general.location": {
+						"$function.general.location": {
+							"$function.general.block_identifier": {
+								"$load": "$function.general.execute_subcommands"
+							}
+						}
+					}
+				}
+			},
+			"blocks": {
+				"$function.general.location": {
+					"$function.general.location": {
+						"$function.general.location": {
+							"$function.general.location": {
+								"$function.general.location": {
+									"$function.general.location": {
+										"$function.general.location": {
+											"$function.general.location": {
+												"$function.general.location": {
+													"$function.general.scan_mode": {
+														"$load": "$function.general.execute_subcommands"
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"entity": {
+				"$function.general.target_selector": {
+					"$load": "$function.general.execute_subcommands"
+				}
+			},
+			"score": {
+				"$function.general.target_selector": {
+					"$general.translatable_text": {
+						"$function.general.score_compare_operators": {
+							"$function.general.target_selector": {
+								"$general.translatable_text": {
+									"$load": "$function.general.execute_subcommands"
+								}
+							}
+						},
+						"matches": {
+							"$general.number": {
+								"$load": "$function.general.execute_subcommands"
+							}
+						}
+					}
+				}
+			}
+		},
+		"in": {
+			"$general.dimensions": {
+				"$load": "$function.general.execute_subcommands"
+			}
+		},
+		"positioned": {
+			"$function.general.location": {
+				"$function.general.location": {
+					"$function.general.location": {
+						"$load": "$function.general.execute_subcommands"
+					}
+				}
+			},
+			"as": {
+				"$load": "$function.general.execute_subcommands.as"
+			}
+		},
+		"rotated": {
+			"$general.number": {
+				"$general.number": {
+					"$load": "$function.general.execute_subcommands"
+				}
+			},
+			"as": {
+				"$load": "$function.general.execute_subcommands.as"
+			}
+		},
+		"run": "$function.main",
+		"unless": {
+			"$load": "$function.general.execute_subcommands.if"
+		}
+	}
 }
