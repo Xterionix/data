@@ -44,7 +44,6 @@
     "combine_entities",
     "count",
     "current_squish_value",
-    "dash_cooldown_progress",
     "day",
     "death_ticks",
     "debug_output",
@@ -127,6 +126,7 @@
     "is_ignited",
     "is_illager_captain",
     "is_in_contact_with_water",
+    "query.is_in_lava",
     "is_in_love",
     "is_in_ui",
     "is_in_water",
@@ -248,6 +248,9 @@
     "time_of_day",
     "time_since_last_vibration_detection",
     "time_stamp",
+    "query.timer_flag_1",
+    "query.timer_flag_2",
+    "query.timer_flag_3",
     "total_emitter_count",
     "total_particle_count",
     "trade_tier",
@@ -266,6 +269,9 @@
   "query_post_1.20.20": [
     "block_state",
     "has_block_state"
+  ],
+  "query_pre_1.20.40": [
+    "dash_cooldown_progress"
   ],
   "query_beta": [
     "biome_has_all_tags",
