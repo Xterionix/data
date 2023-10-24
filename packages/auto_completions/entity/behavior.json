@@ -1162,7 +1162,8 @@
 		"max_look_count": "$general.number",
 		"min_look_time": "$general.number",
 		"max_look_time": "$general.number",
-		"probability": "$general.decimal"
+		"probability": "$general.decimal",
+		"continue_sitting_on_reload": "$general.bool_property"
 	},
 	"minecraft:behavior.random_sitting": {
 		"priority": "$general.number",
