@@ -1341,7 +1341,9 @@
 			"keep_owner": "$general.boolean",
 			"block_types": {
 				"$dynamic.list.next_index": "$general.block_identifier"
-			}
+			},
+			"range_min": "$general.number",
+			"range_max": "$general.number"
 		}
 	},
 	"minecraft:trusting": {

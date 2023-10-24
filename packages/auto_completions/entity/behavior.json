@@ -1642,6 +1642,48 @@
 			"dynamic.list.index_pair": "$general.number"
 		}
 	},
+	"minecraft:behavior.timer_flag_1": {
+		"control_flags": [
+			"move",
+			"look"
+		],
+		"cooldown_range": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"duration_range": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"on_end": "$entity.general.event_definition",
+		"on_start": "$entity.general.event_definition"
+	},
+	"minecraft:behavior.timer_flag_2": {
+		"control_flags": [
+			"move",
+			"look"
+		],
+		"cooldown_range": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"duration_range": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"on_end": "$entity.general.event_definition",
+		"on_start": "$entity.general.event_definition"
+	},
+	"minecraft:behavior.timer_flag_3": {
+		"control_flags": [
+			"move",
+			"look"
+		],
+		"cooldown_range": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"duration_range": {
+			"$dynamic.list.index_pair": "$general.number"
+		},
+		"on_end": "$entity.general.event_definition",
+		"on_start": "$entity.general.event_definition"
+	},
 	"minecraft:behavior.trade_interest": {
 		"priority": "$general.number",
 		"within_radius": "$general.number",
