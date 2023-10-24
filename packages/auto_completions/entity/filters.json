@@ -66,6 +66,7 @@
 		"in_caravan": "$general.boolean",
 		"is_underground": "$general.boolean",
 		"is_in_village": "$general.boolean",
+		"in_overworld": "$general.boolean",
 		"on_ground": "$general.boolean",
 		"on_ladder": "$general.boolean",
 		"is_climbing": "$general.boolean",
