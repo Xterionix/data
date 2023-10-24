@@ -258,7 +258,7 @@
 	],
 	"$versioned_template.minecraft:weapon": [
 		{
-			"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+			"$if": "$format_version >= 1.16.100 and $holiday_creator_features and $format_version < 1.20.40",
 			"$data": {
 				"on_hurt_entity": "$item.general.event_definition",
 				"on_not_hurt_entity": "$item.general.event_definition",
@@ -344,7 +344,7 @@
 	],
 	"$versioned_template.minecraft:on_use_on": [
 		{
-			"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+			"$if": "$format_version >= 1.16.100 and $holiday_creator_features and $format_version < 1.20.40",
 			"$data": {
 				"on_use_on": {
 					"event": "$dynamic.item.events",
@@ -363,7 +363,7 @@
 	],
 	"$versioned_template.minecraft:on_use": [
 		{
-			"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+			"$if": "$format_version >= 1.16.100 and $holiday_creator_features and $format_version < 1.20.40",
 			"$data": {
 				"on_use": "$item.general.event_definition"
 			}
