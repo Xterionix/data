@@ -944,7 +944,6 @@
 				"expand_path_exceptions": [
 					"thrown_potion_effect",
 					"douse_fire",
-					"arrow_effect",
 					"remove_on_hit",
 					"teleport_owner"
 				]
@@ -1018,7 +1017,9 @@
 			},
 			"thrown_potion_effect": {},
 			"douse_fire": {},
-			"arrow_effect": {},
+			"arrow_effect": {
+				"apply_effect_to_blocking_targets": "$general.boolean"
+			},
 			"remove_on_hit": {},
 			"teleport_owner": {},
 			"particle_on_hit": {
