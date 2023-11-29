@@ -6,7 +6,7 @@
 				"do_not_upgrade"
 			]
 		},
-		"do_not_upgrade": {},
+		"do_not_upgrade": { },
 		"description": {
 			"identifier": "$general.file_identifier and $general.entity_identifier",
 			"runtime_identifier": "$vanilla.entity_identifier",
@@ -25,7 +25,7 @@
 			"scripts": {
 				"animate": {
 					"$dynamic.list.next_index": {
-						"$dynamic.entity.animation_references": {},
+						"$dynamic.entity.animation_references": { },
 						"$placeholder": "$molang.embedded",
 						"@import.value.refs": "$dynamic.entity.animation_references"
 					}
@@ -98,7 +98,7 @@
 				],
 				"$versioned_template.run_command": [
 					{
-						"$if": "$format_version >= 1.16.100",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 						"$data": {
 							"command": {
 								"$dynamic.list.next_index": "$function.embedded_no_slash"
@@ -108,7 +108,7 @@
 				],
 				"$versioned_template.damage": [
 					{
-						"$if": "$format_version >= 1.16.100",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 						"$data": {
 							"type": "$general.damage_type",
 							"amount": "$general.number",
@@ -121,7 +121,7 @@
 				],
 				"$versioned_template.decrement_stack": [
 					{
-						"$if": "$format_version >= 1.16.100",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 						"$data": {
 							"ignore_game_mode": "$general.boolean"
 						}
@@ -129,13 +129,13 @@
 				],
 				"$versioned_template.die": [
 					{
-						"$if": "$format_version >= 1.16.100",
-						"$data": {}
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+						"$data": { }
 					}
 				],
 				"$versioned_template.add_mob_effect": [
 					{
-						"$if": "$format_version >= 1.16.100",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 						"$data": {
 							"effect": "$general.effect_name",
 							"target": [
@@ -149,7 +149,7 @@
 				],
 				"$versioned_template.remove_mob_effect": [
 					{
-						"$if": "$format_version >= 1.16.100",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 						"$data": {
 							"effect": "$general.effect_name",
 							"target": [
@@ -161,7 +161,7 @@
 				],
 				"$versioned_template.play_effect": [
 					{
-						"$if": "$format_version >= 1.16.100",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 						"$data": {
 							"data": "$general.number",
 							"target": [
@@ -177,7 +177,7 @@
 				],
 				"$versioned_template.play_sound": [
 					{
-						"$if": "$format_version >= 1.16.100",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 						"$data": {
 							"target": [
 								"self",
@@ -189,7 +189,7 @@
 				],
 				"$versioned_template.teleport": [
 					{
-						"$if": "$format_version >= 1.16.100",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 						"$data": {
 							"target": [
 								"self",
@@ -208,7 +208,7 @@
 				],
 				"$versioned_template.transform_item": [
 					{
-						"$if": "$format_version >= 1.16.100",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
 						"$data": {
 							"transform": "$general.item_identifier"
 						}
