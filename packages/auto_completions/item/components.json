@@ -275,7 +275,7 @@
 	],
 	"$versioned_template.minecraft:chargeable": [
 		{
-			"$if": "$format_version >= 1.19.0 $holiday_creator_features",
+			"$if": "$format_version >= 1.19.0 and $holiday_creator_features and $format_version < 1.20.50",
 			"$data": {
 				"movement_modifier": "$general.decimal",
 				"on_complete": "$item.general.event_definition"
