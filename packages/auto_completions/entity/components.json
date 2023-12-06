@@ -1,9 +1,4 @@
 {
-	/*
-		Todo
-		
-	],
-	*/
 	"@meta": {
 		"expand_path_exceptions": [
 			"minecraft:block_climber",
@@ -172,7 +167,7 @@
 		"barter_table": "$dynamic.loot_table_files",
 		"cooldown_after_being_attacked": "$general.number"
 	},
-	"minecraft:block_climber": {},
+	"minecraft:block_climber": { },
 	"minecraft:block_sensor": {
 		"sensor_radius": "$general.number",
 		"on_break": {
@@ -308,10 +303,10 @@
 		},
 		"simulate_waves": "$general.boolean"
 	},
-	"minecraft:burns_in_daylight": {},
-	"minecraft:can_climb": {},
-	"minecraft:can_fly": {},
-	"minecraft:can_power_jump": {},
+	"minecraft:burns_in_daylight": { },
+	"minecraft:can_climb": { },
+	"minecraft:can_fly": { },
+	"minecraft:can_power_jump": { },
 	"minecraft:celebrate_hunt": {
 		"celebration_targets": "$entity.filters",
 		"broadcast": "$general.boolean",
@@ -480,7 +475,7 @@
 	"minecraft:environment_sensor": {
 		"triggers": "$entity.general.event_definition"
 	},
-	"minecraft:equip_item": {},
+	"minecraft:equip_item": { },
 	"minecraft:equipment": {
 		"table": "$dynamic.loot_table_files",
 		"slot_drop_chance": {
@@ -533,8 +528,8 @@
 		"destroy_affected_by_griefing": "$general.boolean",
 		"allow_damage_underwater": "$general.boolean"
 	},
-	"minecraft:fire_immune": {},
-	"minecraft:floats_in_liquid": {},
+	"minecraft:fire_immune": { },
+	"minecraft:floats_in_liquid": { },
 	"minecraft:flocking": {
 		"block_distance": "$general.decimal",
 		"block_weight": "$general.decimal",
@@ -648,7 +643,7 @@
 		"interval": "$molang.embedded",
 		"sound_event": "$general.sound"
 	},
-	"minecraft:hide": {},
+	"minecraft:hide": { },
 	"minecraft:home": {
 		"home_block_list": {
 			"$dynamic.list.next_index": "$general.block_identifier"
@@ -671,7 +666,7 @@
 			}
 		}
 	},
-	"minecraft:input_ground_controlled": {},
+	"minecraft:input_ground_controlled": { },
 	"minecraft:inside_block_notifier": {
 		"block_list": {
 			"$dynamic.list.next_index": {
@@ -728,29 +723,29 @@
 		"private": "$general.boolean",
 		"restrict_to_owner": "$general.boolean"
 	},
-	"minecraft:is_baby": {},
-	"minecraft:is_charged": {},
-	"minecraft:is_chested": {},
+	"minecraft:is_baby": { },
+	"minecraft:is_charged": { },
+	"minecraft:is_chested": { },
 	"minecraft:is_dyeable": {
 		"interact_text": "$general.translatable_text"
 	},
-	"minecraft:is_hidden_when_invisible": {},
-	"minecraft:is_ignited": {},
-	"minecraft:is_illager_captain": {},
-	"minecraft:is_pregnant": {},
-	"minecraft:is_saddled": {},
-	"minecraft:is_shaking": {},
-	"minecraft:is_sheared": {},
-	"minecraft:is_stackable": {},
-	"minecraft:is_stunned": {},
-	"minecraft:is_tamed": {},
+	"minecraft:is_hidden_when_invisible": { },
+	"minecraft:is_ignited": { },
+	"minecraft:is_illager_captain": { },
+	"minecraft:is_pregnant": { },
+	"minecraft:is_saddled": { },
+	"minecraft:is_shaking": { },
+	"minecraft:is_sheared": { },
+	"minecraft:is_stackable": { },
+	"minecraft:is_stunned": { },
+	"minecraft:is_tamed": { },
 	"minecraft:item_controllable": {
 		"control_items": {
 			"$dynamic.list.next_index": "$general.item_identifier"
 		}
 	},
-	"minecraft:item_hopper": {},
-	"minecraft:jump.dynamic": {},
+	"minecraft:item_hopper": { },
+	"minecraft:jump.dynamic": { },
 	"minecraft:jump.static": {
 		"jump_power": "$general.decimal"
 	},
@@ -783,7 +778,7 @@
 	"minecraft:loot": {
 		"table": "$dynamic.loot_table_files"
 	},
-	"minecraft:managed_wandering_trader": {},
+	"minecraft:managed_wandering_trader": { },
 	"minecraft:mark_variant": {
 		"value": "$general.number"
 	},
@@ -892,14 +887,14 @@
 			}
 		}
 	},
-	"minecraft:out_of_control": {},
+	"minecraft:out_of_control": { },
 	"minecraft:peek": {
 		"on_open": "$entity.general.event_definition",
 		"on_close": "$entity.general.event_definition",
 		"on_target_open": "$entity.general.event_definition"
 	},
-	"minecraft:persist_sit": {},
-	"minecraft:persistent": {},
+	"minecraft:persist_sit": { },
+	"minecraft:persistent": { },
 	"minecraft:physics": {
 		"has_collision": "$general.boolean",
 		"has_gravity": "$general.boolean",
@@ -1015,13 +1010,13 @@
 			"stick_in_ground": {
 				"shake_time": "$general.decimal"
 			},
-			"thrown_potion_effect": {},
-			"douse_fire": {},
+			"thrown_potion_effect": { },
+			"douse_fire": { },
 			"arrow_effect": {
 				"apply_effect_to_blocking_targets": "$general.boolean"
 			},
-			"remove_on_hit": {},
-			"teleport_owner": {},
+			"remove_on_hit": { },
+			"teleport_owner": { },
 			"particle_on_hit": {
 				"particle_type": "$general.particle_name",
 				"num_particles": "$general.number",
@@ -1133,7 +1128,7 @@
 			}
 		}
 	},
-	"minecraft:scaffolding_climber": {},
+	"minecraft:scaffolding_climber": { },
 	"minecraft:scale": {
 		"value": "$general.decimal"
 	},
@@ -1234,7 +1229,7 @@
 		"max": "$general.number",
 		"min": "$general.number"
 	},
-	"minecraft:suspect_tracking": {},
+	"minecraft:suspect_tracking": { },
 	"minecraft:tameable": {
 		"probability": "$general.decimal",
 		"tame_items": {
@@ -1305,7 +1300,7 @@
 		},
 		"time_down_event": "$entity.general.event_definition"
 	},
-	"minecraft:trade_resupply": {},
+	"minecraft:trade_resupply": { },
 	"minecraft:trade_table": {
 		"display_name": "$general.translatable_text",
 		"table": "$dynamic.trade_table_files",
@@ -1353,7 +1348,7 @@
 		},
 		"trust_event": "$entity.general.event_definition"
 	},
-	"minecraft:trust": {},
+	"minecraft:trust": { },
 	"minecraft:type_family": {
 		"family": {
 			"$dynamic.list.next_index": "$entity.general.family"
@@ -1368,12 +1363,12 @@
 	"minecraft:variant": {
 		"value": "$general.number"
 	},
-	"minecraft:vibration_damper": {},
-	"minecraft:vibration_listener": {},
+	"minecraft:vibration_damper": { },
+	"minecraft:vibration_listener": { },
 	"minecraft:walk_animation_speed": {
 		"value": "$general.decimal"
 	},
-	"minecraft:wants_jockey": {},
+	"minecraft:wants_jockey": { },
 	"minecraft:water_movement": {
 		"drag_factor": "$general.decimal"
 	}
