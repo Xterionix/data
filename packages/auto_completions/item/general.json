@@ -186,5 +186,8 @@
 		"scale": {
 			"$dynamic.list.index_triple": "$general.decimal"
 		}
-	}
+	},
+	"tags": [
+		"minecraft:is_food"
+	]
 }
