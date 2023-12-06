@@ -35,7 +35,8 @@
 			"minecraft:suspect_tracking",
 			"minecraft:vibration_damper",
 			"minecraft:vibration_listener",
-			"minecraft:persist_sit"
+			"minecraft:persist_sit",
+			"minecraft:can_join_raid"
 		]
 	},
 	"minecraft:addrider": {
@@ -739,6 +740,7 @@
 	"minecraft:is_stackable": { },
 	"minecraft:is_stunned": { },
 	"minecraft:is_tamed": { },
+	"minecraft:can_join_raid": { },
 	"minecraft:item_controllable": {
 		"control_items": {
 			"$dynamic.list.next_index": "$general.item_identifier"
