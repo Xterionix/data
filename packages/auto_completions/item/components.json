@@ -1,5 +1,4 @@
 {
-	// Todo: Find out if reexperimentified components exist
 	"$version_template.minecraft:use_duration": [
 		{
 			"$if": "$format_version < 1.20.50",
@@ -15,7 +14,6 @@
 			}
 		}
 	],
-	"minecraft:max_stack_size": "$general.number",
 	"$versioned_template.minecraft:max_stack_size": [
 		{
 			"$if": "$format_version < 1.20.0",
