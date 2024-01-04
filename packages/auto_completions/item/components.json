@@ -1,8 +1,14 @@
 {
 	"$version_template.minecraft:use_duration": [
 		{
-			"$if": "$format_version < 1.20.50",
+			"$if": "$format_version < 1.20.20",
 			"$data": "$general.number"
+		},
+		{
+			"$if": "$format_version > 1.20.20 and $format_version < 1.20.50",
+			"$data": {
+				"value": "$general.boolean"
+			}
 		}
 	],
 	"$version_template.minecraft:use_modifiers": [
@@ -27,8 +33,30 @@
 		}
 	],
 	"minecraft:max_damage": "$general.number",
-	"minecraft:hand_equipped": "$general.boolean",
-	"minecraft:stacked_by_data": "$general.boolean",
+	"$versioned_template.minecraft:hand_equipped": [
+		{
+			"$if": "$format_version < 1.20.0",
+			"$data": "$general.boolean"
+		},
+		{
+			"$if": "$format_version >= 1.20.0",
+			"$data": {
+				"value": "$general.boolean"
+			}
+		}
+	],
+	"$versioned_template.minecraft:stacked_by_data": [
+		{
+			"$if": "$format_version < 1.20.0",
+			"$data": "$general.boolean"
+		},
+		{
+			"$if": "$format_version >= 1.20.0",
+			"$data": {
+				"value": "$general.boolean"
+			}
+		}
+	],
 	"$versioned_template.minecraft:foil": [
 		{
 			"$if": "$format_version < 1.20.20",
@@ -38,7 +66,9 @@
 	"$versioned_template.minecraft:glint": [
 		{
 			"$if": "$format_version >= 1.20.20",
-			"$data": "$general.boolean"
+			"$data": {
+				"value": "$general.boolean"
+			}
 		}
 	],
 	"$versioned_template.minecraft:mining_speed": [
@@ -54,7 +84,9 @@
 		},
 		{
 			"$if": "$format_version >= 1.20.20",
-			"$data": "$general.number"
+			"$data": {
+				"value": "$general.number"
+			}
 		}
 	],
 	"$versioned_template.minecraft:can_destroy_in_creative": [
@@ -64,7 +96,9 @@
 		},
 		{
 			"$if": "$format_version >= 1.20.10",
-			"$data": "$general.boolean"
+			"$data": {
+				"value": "$general.boolean"
+			}
 		}
 	],
 	"$versioned_template.minecraft:interact_button": [
@@ -80,7 +114,9 @@
 		},
 		{
 			"$if": "$format_version >= 1.20.20",
-			"$data": "$general.boolean"
+			"$data": {
+				"value": "$general.boolean"
+			}
 		}
 	],
 	"$versioned_template.minecraft:liquid_clipped": [
@@ -90,7 +126,9 @@
 		},
 		{
 			"$if": "$format_version >= 1.20.20",
-			"$data": "$general.boolean"
+			"$data": {
+				"value": "$general.boolean"
+			}
 		}
 	],
 	"$versioned_template.minecraft:allow_off_hand": [
@@ -100,7 +138,9 @@
 		},
 		{
 			"$if": "$format_version >= 1.20.20",
-			"$data": "$general.boolean"
+			"$data": {
+				"value": "$general.boolean"
+			}
 		}
 	],
 	"$versioned_template.minecraft:projectile": [
@@ -572,7 +612,9 @@
 		},
 		{
 			"$if": "$format_version >= 1.20.10",
-			"$data": "$general.minecraft_color"
+			"$data": {
+				"value": "$general.minecraft_color"
+			}
 		}
 	],
 	"$versioned_template.minecraft:food": [
