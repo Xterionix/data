@@ -20,7 +20,10 @@
         "smoker"
     ],
     "contexts": [
-        "PlayerInWater"
+        "PlayerInWater",
+        "PlayerHasManyItems",
+        "AlwaysUnlocked",
+        "None"
     ],
     "tags": "$dynamic.cache.block.recipe_tags and $dynamic.cache.recipe.tags and $recipe.general.vanilla_tags",
     "item_block_identifier": "$general.item_identifier and $general.block_identifier"
