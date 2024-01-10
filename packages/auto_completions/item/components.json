@@ -438,7 +438,7 @@
 			"$if": "$format_version >= 1.20.50",
 			"$data": {
 				"tags": {
-					"dynamic.list.next_index": "$item.general.tags"
+					"$dynamic.list.next_index": "$item.general.tags"
 				}
 			}
 		}
