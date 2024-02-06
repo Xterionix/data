@@ -72,6 +72,8 @@
 		"is_climbing": "$general.boolean",
 		"is_sneaking": "$general.boolean",
 		"is_moving": "$general.boolean",
+		"is_panicking": "$general.boolean",
+		"is_sprinting": "$general.boolean",
 		"is_missing_health": "$general.boolean",
 		"is_riding": "$general.boolean",
 		"is_owner": "$general.boolean",
