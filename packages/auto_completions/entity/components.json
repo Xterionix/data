@@ -65,7 +65,8 @@
 					"$dynamic.list.next_index": "$general.item_identifier"
 				},
 				"grow_up": "$entity.general.event_definition",
-				"transform_to_item": "$general.item_identifier"
+				"transform_to_item": "$general.item_identifier",
+				"interact_filters": "$entity.filters"
 			}
 		},
 		{
