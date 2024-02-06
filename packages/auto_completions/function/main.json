@@ -263,6 +263,15 @@
 			}
 		}
 	},
+	"$versioned_template.hud": [
+		{
+			"$if": "$upcoming_creator_features",
+			"data": {
+				"hide": "$function.general.hud_elements",
+				"reset": "$function.general.hud_elements"
+			}
+		}
+	],
 	"inputpermission": {
 		"$function.general.inputpermission_actions": {
 			"$function.general.target_selector": {
