@@ -269,7 +269,7 @@
 			}
 		},
 		{
-			"$if": "$format_version >= 1.20.10",
+			"$if": "$format_version >= 1.20.10 and $format_version < 1.20.60",
 			"$data": {
 				"@import.value": [
 					"$general.model_identifier"
@@ -278,6 +278,19 @@
 				"bone_visibility": {
 					"$placeholder": "$general.boolean and $molang.embedded"
 				}
+			}
+		},
+		{
+			"$if": "$format_version >= 1.20.60",
+			"$data": {
+				"@import.value": [
+					"$general.model_identifier"
+				],
+				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries and $block.general.geometries",
+				"bone_visibility": {
+					"$placeholder": "$general.boolean and $molang.embedded"
+				},
+				"culling": "$general.translatable_text"
 			}
 		}
 	],
