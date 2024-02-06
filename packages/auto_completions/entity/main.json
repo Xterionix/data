@@ -98,7 +98,7 @@
 				],
 				"$versioned_template.run_command": [
 					{
-						"$if": "$format_version >= 1.16.100 and $holiday_creator_features",
+						"$if": "$format_version >= 1.16.100 and $holiday_creator_features and $format_version < 1.20.60",
 						"$data": {
 							"command": {
 								"$dynamic.list.next_index": "$function.embedded_no_slash"
@@ -269,6 +269,11 @@
 				},
 				"emit_vibration": {
 					"vibration": "$entity.general.vibrations"
+				},
+				"queue_command": {
+					"command": {
+						"$dynamic.list.next_index": "$function.embedded_no_slash"
+					}
 				}
 			}
 		}
