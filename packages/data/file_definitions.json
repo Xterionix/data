@@ -51,13 +51,13 @@
 		"file_creator": "block"
 	},
 	{
-		"id": "dialog",
-		"includes": "dialogue/",
+		"id": "block_culling_rules",
+		"includes": "block_culling/",
 		"file_viewer": "json",
-		"start_state": "dialog/main",
-		"file_creator": "dialog",
-		"highlighter": "dialog",
-		"lightning_cache": "dialog"
+		"start_state": "block_culling_rules/main",
+		"file_creator": "block_culling_rules",
+		"highlighter": "block_culling_rules",
+		"lightning_cache": "block_culling_rules"
 	},
 	{
 		"id": "entity",
