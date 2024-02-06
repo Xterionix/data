@@ -266,6 +266,9 @@
 							"is_value": true
 						}
 					}
+				},
+				"emit_vibration": {
+					"vibration": "$entity.general.vibrations"
 				}
 			}
 		}
