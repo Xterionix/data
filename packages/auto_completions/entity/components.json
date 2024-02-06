@@ -736,7 +736,8 @@
 				"barter": "$general.boolean",
 				"admire": "$general.boolean",
 				"use_item": "$general.boolean",
-				"vibration": "$entity.general.vibrations"
+				"vibration": "$entity.general.vibrations",
+				"drop_item_slot": "$general.number"
 			}
 		}
 	},
