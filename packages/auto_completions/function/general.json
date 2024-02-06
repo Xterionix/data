@@ -334,5 +334,19 @@
 		"unless": {
 			"$load": "$function.general.execute_subcommands.if"
 		}
-	}
+	},
+	"hud_elements": [
+		"paperdoll",
+		"armor",
+		"tooltips",
+		"touch_controls",
+		"crosshair",
+		"hotbar",
+		"health",
+		"progress_bar",
+		"hunger",
+		"air_bubbles",
+		"horse_health",
+		"all"
+	]
 }
