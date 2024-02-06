@@ -1,6 +1,6 @@
 {
 	"name": "bridgex-data",
-	"version": "1.1.72",
+	"version": "1.1.73",
 	"description": "Provide data for the bridge. editor",
 	"main": "dist/auto-completions.js",
 	"scripts": {
