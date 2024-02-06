@@ -247,7 +247,7 @@
 	"$versioned_template.minecraft:geometry": [
 		{
 			"$if": "$format_version >= 1.16.100 and $format_version < 1.19.40",
-			"$data": "$general.model_identifier and $dynamic.rp.block_geometries"
+			"$data": "$general.model_identifier and $dynamic.rp.block_geometries and $block.general.geometries"
 		},
 		{
 			"$if": "$format_version >= 1.19.40 and $format_version < 1.19.80",
@@ -255,7 +255,7 @@
 				"@import.value": [
 					"$general.model_identifier"
 				],
-				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries"
+				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries and $block.general.geometries"
 			}
 		},
 		{
@@ -264,7 +264,7 @@
 				"@import.value": [
 					"$general.model_identifier"
 				],
-				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries",
+				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries and $block.general.geometries",
 				"bone_visibility": {
 					"$placeholder": "$general.boolean"
 				}
@@ -276,7 +276,7 @@
 				"@import.value": [
 					"$general.model_identifier"
 				],
-				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries",
+				"identifier": "$general.model_identifier and $dynamic.rp.block_geometries and $block.general.geometries",
 				"bone_visibility": {
 					"$placeholder": "$general.boolean and $molang.embedded"
 				}
