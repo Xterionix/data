@@ -9,6 +9,6 @@
                 "@import.value.biome_id": "$dynamic.current_file_name"
             }
         },
-        "components": "$biome.components and $biome.tags"
+        "components": "$biome.components"
     }
 }
