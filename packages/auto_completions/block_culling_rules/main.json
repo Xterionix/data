@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.60",
+    "minecraft:block_culling_rules": {
+        "description": {
+            "identifier": "$general.file_identifier"
+        },
+        "rules": {
+            "$dynamic.list.next_index": {
+                "geometry_part": {
+                    "bone": "$general.translatable_text",
+                    "cube": "$general.number",
+                    "face": "$block.general.block_faces"
+                },
+                "direction": "$block.general.block_faces"
+            }
+        }
+    }
+}
