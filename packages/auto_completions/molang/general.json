@@ -275,7 +275,15 @@
     "bone_orientation_trs",
     "bone_orientation_matrix",
     "block_state",
-    "has_block_state"
+    "has_block_state",
+    "rider_body_x_rotation",
+    "rider_body_y_rotation",
+    "rider_head_x_rotation",
+    "rider_head_y_rotation",
+    "ride_body_x_rotation",
+    "ride_body_y_rotation",
+    "ride_head_x_rotation",
+    "ride_head_y_rotation"
   ],
   "world_gen_query": [
     "above_top_solid",
