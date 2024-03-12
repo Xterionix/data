@@ -170,6 +170,7 @@
 		"surface_mob",
 		"target_distance",
 		"trusts",
+		"was_last_hurt_by",
 		"weather_at_position",
 		"weather"
 	],
