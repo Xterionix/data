@@ -223,7 +223,8 @@
 						"opaque",
 						"blend",
 						"alpha_test",
-						"double_sided"
+						"double_sided",
+						"alpha_test_single_sided"
 					],
 					"ambient_occlusion": "$general.boolean",
 					"face_dimming": "$general.boolean"
@@ -234,7 +235,8 @@
 						"opaque",
 						"blend",
 						"alpha_test",
-						"double_sided"
+						"double_sided",
+						"alpha_test_single_sided"
 					],
 					"ambient_occlusion": "$general.boolean",
 					"face_dimming": "$general.boolean"
