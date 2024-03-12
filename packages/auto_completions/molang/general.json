@@ -296,7 +296,6 @@
     "get_riders",
     "has_player_rider",
     "is_attached",
-    "is_feeling_happy",
     "scoreboard",
     "self",
     "target"
