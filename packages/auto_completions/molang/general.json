@@ -76,6 +76,7 @@
     "has_dash_cooldown",
     "has_gravity",
     "has_owner",
+    "has_player_rider",
     "has_property",
     "has_rider",
     "has_target",
@@ -92,6 +93,7 @@
     "is_admiring",
     "is_alive",
     "is_angry",
+    "is_attached",
     "is_attached_to_entity",
     "is_avoiding_block",
     "is_avoiding_mobs",
@@ -294,8 +296,7 @@
     "get_nearby_entities_except_self",
     "get_ride",
     "get_riders",
-    "has_player_rider",
-    "is_attached",
+
     "scoreboard",
     "self",
     "target"
