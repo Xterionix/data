@@ -51,7 +51,10 @@
 	],
 	"cooldown_types": [
 		"chorusfruit",
-		"ender_pearl"
+		"ender_pearl",
+		"goat_horn",
+		"shield",
+		"wind_charge"
 	],
 	"fertilizer_types": [
 		"bonemeal",
