@@ -5,30 +5,6 @@
 	},
 	"$versioned_template": [
 		{
-			"$if": "$molang_features",
-			"$data": "('query.' + $molang.general.query_beta)"
-		},
-		{
-			"$if": "$format_version >= 1.20.20",
-			"$data": "('query.' + $molang.general.query_post_1.20.20)"
-		},
-		{
-			"$if": "$format_version < 1.20.20",
-			"$data": "('query.' + $molang.general.query_pre_1.20.20)"
-		},
-		{
-			"$if": "$format_version < 1.20.40",
-			"$data": "('query.' + $molang.general.query_pre_1.20.40)"
-		},
-		{
-			"$if": "$format_version >= 1.20.60",
-			"$data": "('query.' + $molang.general.query_beta_pre_1.20.60)"
-		},
-		{
-			"$if": "$format_version < 1.20.60 and $molang_features",
-			"$data": "('query.' + $molang.general.query_beta_pre_1.20.60)"
-		},
-		{
 			"$data": "$molang.general.boolean and ('query.' + $molang.general.query) and ('variable.' + $molang.general.variable) and ('context.' + $molang.general.context)"
 		}
 	]

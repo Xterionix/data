@@ -262,20 +262,7 @@
     "walk_distance",
     "wing_flap_position",
     "wing_flap_speed",
-    "yaw_speed"
-  ],
-  "query_pre_1.20.20": [
-    "block_property",
-    "has_block_property"
-  ],
-  "query_post_1.20.20": [
-    "block_state",
-    "has_block_state"
-  ],
-  "query_pre_1.20.40": [
-    "dash_cooldown_progress"
-  ],
-  "query_beta_pre_1.20.60": [
+    "yaw_speed",
     "is_cooldown_type",
     "cooldown_time",
     "cooldown_time_remaining",
@@ -286,20 +273,9 @@
     "block_has_all_tags",
     "block_has_any_tag",
     "bone_orientation_trs",
-    "bone_orientation_matrix"
-  ],
-  "query_beta": [
-    "biome_has_all_tags",
-    "biome_has_any_tag",
-    "client_input_type",
-    "get_nearby_entities",
-    "get_nearby_entities_except_self",
-    "get_ride",
-    "get_riders",
-
-    "scoreboard",
-    "self",
-    "target"
+    "bone_orientation_matrix",
+    "block_state",
+    "has_block_state"
   ],
   "world_gen_query": [
     "above_top_solid",
